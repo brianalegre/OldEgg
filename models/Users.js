@@ -12,20 +12,17 @@ Users.init(
       autoIncrement: true,
     },
     username: {
-      //username must be between 6-12 characters
-      type: DataTypes.STRING(12),
+      //username must be no more than 16 characters
+      type: DataTypes.STRING(16),
       allowNull: false,
       unique: true,
-      validate: {
-        len: [6],
-      },
     },
     first_name: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(16),
       allowNull: false,
     },
     last_name: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(16),
       allowNull: false,
     },
     email: {
