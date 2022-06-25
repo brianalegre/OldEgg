@@ -12,10 +12,10 @@ Users.init(
       autoIncrement: true,
     },
     username: {
-      type: DataTypes.STRING,
+      //username must be between 6-12 characters
+      type: DataTypes.STRING(12),
       allowNull: false,
       unique: true,
-      //username must be atleast 6 characters
       validate: {
         len: [6],
       },
@@ -44,12 +44,30 @@ Users.init(
         len: [8],
       },
     },
+    cart_id: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'carts',
+        key: 'cart_id',
+      },
+    },
+    balance: {
+      type: DataTypes.DECIMAL(10, 2),
+      allowNull: false,
+      validate: {
+        isDecimal: true,
+      },
+    },
   },
   {
     hooks: {
-        beforeCreate: async (password) => {
-            //add hashing of password here
-        }
+      beforeCreate: async (userData) => {
+        userData.username = await userData.username.toLowerCase();
+        userData.email = await userData.email.toLowerCase();
+        userData.password = await bcrypt.hash(newUserData.password, 5);
+        return userData;
+      },
     },
     sequelize,
     timestamps: false,
