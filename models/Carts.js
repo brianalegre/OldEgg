@@ -15,7 +15,7 @@ Carts.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        mode: 'users',
+        model: 'users',
         key: 'user_id',
       },
     },

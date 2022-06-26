@@ -20,10 +20,16 @@ Users.init(
     first_name: {
       type: DataTypes.STRING(16),
       allowNull: false,
+      validate: {
+        isAlphanumeric: true,
+      },
     },
     last_name: {
       type: DataTypes.STRING(16),
       allowNull: false,
+      validate: {
+        isAlphanumeric: true,
+      },
     },
     email: {
       type: DataTypes.STRING,
@@ -52,6 +58,7 @@ Users.init(
     balance: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
+      defaultValue: 500.00,
       validate: {
         isDecimal: true,
       },

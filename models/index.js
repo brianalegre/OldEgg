@@ -1,11 +1,28 @@
-//the MODEL of the MVC, define all data logic and relations here
-
 //import the example model
-
 const Users = require('./Users')
 const Categories = require('./Categories')
 const Products = require('./Products')
 const Carts = require('./Carts')
+
+Products.belongsTo(Categories, {
+  foreignKey: "category_id",
+});
+
+Categories.hasMany(Products, {
+  foreignKey: "category_id",
+});
+
+Users.hasOne(Carts, {
+  foreignKey: "cart_id",
+})
+
+Carts.belongsTo(Users, {
+  foreignKey: "user_id"
+})
+
+Carts.hasMany(Products, {
+  foreignKey: "product_id"
+})
 
 
 module.exports = {

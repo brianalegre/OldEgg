@@ -47,9 +47,11 @@ Products.init(
     date_posted: {
         //formatted to 'YYYY-MM-DD'
         type: DataTypes.DATEONLY,
+        allowNull: false,
     },
     product_img: {
         type: DataTypes.STRING,
+        allowNull: false,
     }
   },
   {
