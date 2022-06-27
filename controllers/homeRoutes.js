@@ -7,9 +7,16 @@ router.get('/', (req, res) => {
   res.render('home');
 });
 
-router.get('/otherpage', (req, res) => {
-  //this will render the view otherpage.handlebars
-  res.render('otherpage');
+router.get('/login', (req, res) => {
+  res.render('login')
+});
+
+router.get('/signup', (req, res) => {
+  res.render('signup')
+});
+
+router.get('/portal', (req, res) => {
+  res.render('portal')
 });
 
 module.exports = router;
