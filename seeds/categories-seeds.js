@@ -11,7 +11,7 @@ const categoriesData = [
     category_name: 'Computer Cases',
   },
   {
-    category_name: 'Mother Boards',
+    category_name: 'Motherboards',
   },
   {
     category_name: 'Memory',
