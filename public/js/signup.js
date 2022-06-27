@@ -1,3 +1,5 @@
+const signupForm = document.querySelector('#signup-form')
+
 const signupFormHandler = async event => {
     event.preventDefault();
   
@@ -7,6 +9,7 @@ const signupFormHandler = async event => {
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
   
+    // Check all form variables 
     if (firstName && lastName && userName && email && password) {
       const response = await fetch('/api/users', {
         method: 'POST',
@@ -15,13 +18,40 @@ const signupFormHandler = async event => {
       });
   
       if (response.ok) {
-        document.location.replace('/');
-      } else {
-        alert('Failed to sign up.');
+        return document.location.replace('/');
       }
+      const checkMessage = document.querySelector('.invalid-auth')
+
+      if (checkMessage) {
+        checkMessage.remove()
+      }
+
+      const message = {
+        tag: 'p',
+        setAttr: {
+          class: 'invalid-auth'
+        },
+        textContent: 'Unable to post user data, unable to signup.',
+        appendTo: signupForm
+      }
+      return appendContent(message)
     }
+    // If one of the form variables is undefined continue here.
+    const checkMessage = document.querySelector('.invalid-auth')
+
+    if (checkMessage) {
+      checkMessage.remove()
+    }
+
+    const message = {
+        tag: 'p',
+        setAttr: {
+            class: 'invalid-auth'
+        },
+        textContent: 'You must fill out the entire form!',
+        appendTo: signupForm
+    }
+    appendContent(message)
 }
 
-document
-    .querySelector('#signup-form')
-    .addEventListener('submit', signupFormHandler);
+signupForm.addEventListener('submit', signupFormHandler);
