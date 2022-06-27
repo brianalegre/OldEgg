@@ -63,14 +63,14 @@ Users.init(
         isDecimal: true,
       },
     },
-    view_history: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: 'products',
-        key: 'product_id',
-      },
-    },
+    // view_history: {
+    //   type: DataTypes.INTEGER,
+    //   allowNull: true,
+    //   references: {
+    //     model: 'products',
+    //     key: 'product_id',
+    //   },
+    // },
   },
   {
     hooks: {
