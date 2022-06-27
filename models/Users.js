@@ -50,10 +50,11 @@ Users.init(
     cart_id: {
       type: DataTypes.INTEGER,
       allowNull: true,
-      references: {
-        model: 'carts',
-        key: 'cart_id',
-      },
+      unique: true,
+      // references: {
+      //   model: 'carts',
+      //   key: 'cart_id',
+      // },
     },
     balance: {
       type: DataTypes.DECIMAL(10, 2),

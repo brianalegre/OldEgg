@@ -16,10 +16,6 @@ Users.hasOne(Carts, {
   foreignKey: "cart_id",
 })
 
-// Users.hasMany(Products, {
-//   foreignKey: "product_id"
-// })
-
 Carts.belongsTo(Users, {
   foreignKey: "user_id"
 })
@@ -28,6 +24,17 @@ Carts.hasMany(Products, {
   foreignKey: "product_id"
 })
 
+Products.belongsTo(Carts, {
+  foreignKey: "product_id"
+})
+
+// Products.belongsToMany(Users, {
+//   through: Carts,
+// })
+
+// Users.hasMany(Products, {
+//   foreignKey: "product_id"
+// })
 
 module.exports = {
     Products,
