@@ -1,15 +1,26 @@
 const sequelize = require('../config/connection');
-const { Example } = require('../models');
-const exampleData = require('./exampleData.json');
+const seedCategories = require('./categories-seeds');
+const seedProducts = require('./products-seeds');
+const seedUsers = require('./users-seeds');
+const seedCarts = require('./carts-seeds');
 
-// force: true will drop the table if it already exists
-//npm run seed will execute this file, which will seed the database with the example data
-const seedDatabase = async () => {
+const seedAll = async () => {
+
   await sequelize.sync({ force: true });
+  console.log('--- DB SYNCED! ---');
+  await seedCategories();
+  console.log('--- CATEGORIES SEEDED! ---');
 
-  const examples = await Example.bulkCreate(exampleData);
-  console.log(`seeded ${examples.length} examples`);
+  await seedProducts();
+  console.log('--- PRODUCTS SEEDED! ---');
+
+  await seedUsers();
+  console.log('--- USERS SEEDED! ---');
+
+  await seedCarts();
+  console.log('--- CARTS SEEDED! ---');
+
   process.exit(0);
 };
 
-seedDatabase();
+seedAll();
