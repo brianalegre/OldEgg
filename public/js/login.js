@@ -8,14 +8,17 @@ const loginFormHandler = async event => {
   
     // Check all form variables 
     if (email && password) {
-      const response = await fetch('/api/users/login', {
-        method: 'POST',
-        body: JSON.stringify({ email, password }),
-        headers: { 'Content-Type': 'application/json' },
-      });
-  
-      if (response.ok) {
-        return document.location.replace('/');
+      try {
+        const response = await fetch('/api/login', {
+          method: 'POST',
+          body: JSON.stringify({ email, password }),
+          headers: { 'Content-Type': 'application/json' },
+        });
+        if (response.ok) {
+          return document.location.replace('/');
+        }
+      } catch (err) {
+        console.log(err)
       }
       const checkMessage = document.querySelector('.invalid-auth')
 

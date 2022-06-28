@@ -11,30 +11,34 @@ const signupFormHandler = async event => {
   
     // Check all form variables 
     if (firstName && lastName && userName && email && password) {
-      const response = await fetch('/api/users', {
-        method: 'POST',
-        body: JSON.stringify({ firstName, lastName, userName, email, password }),
-        headers: { 'Content-Type': 'application/json' },
-      });
-  
-      if (response.ok) {
-        return document.location.replace('/');
-      }
-      const checkMessage = document.querySelector('.invalid-auth')
+        try {
+            const response = await fetch('/api/signup', {
+            method: 'POST',
+            body: JSON.stringify({ firstName, lastName, userName, email, password }),
+            headers: { 'Content-Type': 'application/json' },
+            });
+    
+            if (response.ok) {
+                return document.location.replace('/');
+            }
+        } catch (err) {
+            console.log(err)
+        }
+        const checkMessage = document.querySelector('.invalid-auth')
 
-      if (checkMessage) {
-        checkMessage.remove()
-      }
+        if (checkMessage) {
+            checkMessage.remove()
+        }
 
-      const message = {
-        tag: 'p',
-        setAttr: {
-          class: 'invalid-auth'
-        },
-        textContent: 'Unable to post user data, unable to signup.',
-        appendTo: signupForm
-      }
-      return appendContent(message)
+        const message = {
+            tag: 'p',
+            setAttr: {
+            class: 'invalid-auth'
+            },
+            textContent: 'Unable to post user data, unable to signup.',
+            appendTo: signupForm
+        }
+        return appendContent(message)
     }
     // If one of the form variables is undefined continue here.
     const checkMessage = document.querySelector('.invalid-auth')
