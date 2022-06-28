@@ -1,32 +1,33 @@
 //import the example model
-const Users = require('./Users')
-const Categories = require('./Categories')
-const Products = require('./Products')
-const Carts = require('./Carts')
+const Users = require('./Users');
+const Categories = require('./Categories');
+const Products = require('./Products');
+const Carts = require('./Carts');
 
 Products.belongsTo(Categories, {
-  foreignKey: "category_id",
+  foreignKey: 'category_id',
 });
 
 Categories.hasMany(Products, {
-  foreignKey: "category_id", 
+  foreignKey: 'category_id',
+});
+
+Carts.belongsTo(Users, {
+  foreignKey: 'user_id',
 });
 
 Users.hasOne(Carts, {
-  foreignKey: "cart_id",
-})
-
-Carts.belongsTo(Users, {
-  foreignKey: "user_id"
-})
+  foreignKey: 'cart_id',
+});
 
 Carts.hasMany(Products, {
-  foreignKey: "product_id"
-})
+  foreignKey: 'product_id',
+});
 
 Products.belongsTo(Carts, {
-  foreignKey: "product_id"
-})
+  foreignKey: 'product_id',
+});
+
 
 // Products.belongsToMany(Users, {
 //   through: Carts,
@@ -37,8 +38,8 @@ Products.belongsTo(Carts, {
 // })
 
 module.exports = {
-    Products,
-    Categories,
-    Users,
-    Carts,
-  };
+  Products,
+  Categories,
+  Users,
+  Carts,
+};

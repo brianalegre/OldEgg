@@ -3,8 +3,12 @@
 const router = require('express').Router();
 const categoriesRoutes = require('./categoriesRoutes');
 const productsRoutes = require('./productsRoutes');
+const usersRoutes = require('./usersRoutes');
+const cartsRoutes = require('./cartsRoutes');
 
 router.use('/categories', categoriesRoutes);
 router.use('/products', productsRoutes);
+router.use('/users', usersRoutes);
+router.use('/carts', cartsRoutes);
 
 module.exports = router;

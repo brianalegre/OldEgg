@@ -51,7 +51,6 @@ Users.init(
     cart_id: {
       type: DataTypes.INTEGER,
       allowNull: true,
-      unique: true,
       // references: {
       //   model: 'carts',
       //   key: 'cart_id',
