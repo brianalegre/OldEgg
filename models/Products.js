@@ -18,8 +18,8 @@ Products.init(
     },
     description: {
       //using dataType character count
-        type: DataTypes.TEXT,
-        allowNull: false,
+      type: DataTypes.TEXT,
+      allowNull: false,
     },
     price: {
       //added arguments to decimal for accuracy.
@@ -45,14 +45,14 @@ Products.init(
       },
     },
     date_posted: {
-        //formatted to 'YYYY-MM-DD'
-        type: DataTypes.DATEONLY,
-        allowNull: false,
+      //formatted to 'YYYY-MM-DD'
+      type: DataTypes.DATEONLY,
+      allowNull: false,
     },
     product_img: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    }
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
   },
   {
     sequelize,

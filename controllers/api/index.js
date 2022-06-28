@@ -2,7 +2,9 @@
 //it will bring in all api routes and export 1 router middleware
 const router = require('express').Router();
 const categoriesRoutes = require('./categoriesRoutes');
+const productsRoutes = require('./productsRoutes');
 
 router.use('/categories', categoriesRoutes);
+router.use('/products', productsRoutes);
 
 module.exports = router;
