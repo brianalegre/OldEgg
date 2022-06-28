@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Carts extends Model {}
+class Carts extends Model { }
 
 Carts.init(
   {
@@ -31,6 +31,7 @@ Carts.init(
       //added arguments to decimal for accuracy.
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
+      defaultValue: 0.00,
       validate: {
         isDecimal: true,
       },
