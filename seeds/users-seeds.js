@@ -7,7 +7,7 @@ const usersData = [
     last_name: 'Alegre',
     email: 'brianalegre@gmail.com',
     password: 'iLoveCats321',
-    cart_id: 1,
+    // cart_id: 1,
     // view_history: [3, 2, 6]
   },
   {
@@ -24,7 +24,7 @@ const usersData = [
     email: 'kevinlazaro@gmail.com',
     password: '2Legit2Quit',
     balance: 405.5,
-    cart_id: 2,
+    // cart_id: 2,
     // view_history: 6
   },
   {

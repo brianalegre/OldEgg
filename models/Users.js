@@ -2,7 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 
-class Users extends Model {}
+class Users extends Model { }
 
 Users.init(
   {
@@ -47,10 +47,10 @@ Users.init(
       validate: {
         len: [8],
       },
-    },
-    cart_id: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
+      // },
+      // cart_id: {
+      //   type: DataTypes.INTEGER,
+      //   allowNull: true,
       // references: {
       //   model: 'carts',
       //   key: 'cart_id',

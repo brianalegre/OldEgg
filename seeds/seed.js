@@ -5,10 +5,9 @@ const seedUsers = require('./users-seeds');
 const seedCarts = require('./carts-seeds');
 
 const seedAll = async () => {
-  
+
   await sequelize.sync({ force: true });
   console.log('--- DB SYNCED! ---');
-  
   await seedCategories();
   console.log('--- CATEGORIES SEEDED! ---');
 
