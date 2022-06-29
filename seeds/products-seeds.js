@@ -8,7 +8,7 @@ const productsData = [
     stock: 4,
     date_posted: '2021-06-01',
     product_img:
-      'https://nzxt.com/assets/cms/34299/1617971513-h510i-2020-white-black-kraken-x-system.png?fit=max&fm=jpg&w=1000',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_1/image.jpg',
     category_id: 3,
   },
   {
@@ -19,7 +19,7 @@ const productsData = [
     stock: 8,
     date_posted: '2022-03-25',
     product_img:
-      'https://dlcdnwebimgs.asus.com/gain/834c6831-d2a4-480f-9e6a-e12053f32ca2/',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_2/image.jpg',
     category_id: 2,
   },
   {
@@ -30,7 +30,7 @@ const productsData = [
     stock: 2,
     date_posted: '2021-02-21',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/AT2ES220424A13Sq.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_3/image.jpg',
     category_id: 1,
   },
   {
@@ -41,7 +41,7 @@ const productsData = [
     stock: 12,
     date_posted: '2020-01-13',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/B601S2203151yMkf.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_4/image.jpg',
     category_id: 4,
   },
   {
@@ -52,7 +52,7 @@ const productsData = [
     stock: 2,
     date_posted: '2022-06-23',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/20-147-784-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_5/image.jpg',
     category_id: 5,
   },
   {
@@ -62,7 +62,7 @@ const productsData = [
     stock: 31,
     date_posted: '2022-05-01',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/19-113-735-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_6/image.jpg',
     category_id: 6,
   },
   {
@@ -73,7 +73,7 @@ const productsData = [
     stock: 15,
     date_posted: '2021-03-21',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/11-147-283-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_7/image.jpg',
     category_id: 3,
   },
   {
@@ -84,7 +84,7 @@ const productsData = [
     stock: 2,
     date_posted: '2018-03-21',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/A2W0S201117kN6Ok.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_8/image.jpg',
     category_id: 6,
   },
   {
@@ -94,7 +94,7 @@ const productsData = [
     price: 189.99,
     stock: 21,
     date_posted: '2020-12-17',
-    product_img: 'https://c1.neweggimages.com/ProductImage/24-281-027-S01.jpg',
+    product_img: 'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_9/image.jpg',
     category_id: 1,
   },
   {
@@ -104,7 +104,7 @@ const productsData = [
     stock: 16,
     date_posted: '2020-01-21',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/22-148-834-07.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_10/image.jpg',
     category_id: 5,
   },
   {
@@ -114,7 +114,7 @@ const productsData = [
     stock: 6,
     date_posted: '2019-11-21',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/AZUES210824qhks6.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_11/image.jpg',
     category_id: 2,
   },
   {
@@ -125,7 +125,7 @@ const productsData = [
     stock: 6,
     date_posted: '2021-03-01',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/13-145-371-01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_12/image.jpg',
     category_id: 4,
   },
   {
@@ -136,7 +136,7 @@ const productsData = [
     stock: 13,
     date_posted: '2021-05-13',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/19-113-569-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_13/image.jpg',
     category_id: 6,
   },
   {
@@ -147,7 +147,7 @@ const productsData = [
     stock: 4,
     date_posted: '2022-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/13-119-512-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_14/image.jpg',
     category_id: 4,
   },
 ];
