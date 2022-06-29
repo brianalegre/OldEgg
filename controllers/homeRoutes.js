@@ -8,15 +8,15 @@ router.get('/', (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-  res.render('login')
+  res.render('login');
 });
 
 router.get('/signup', (req, res) => {
-  res.render('signup')
+  res.render('signup');
 });
 
 router.get('/portal', (req, res) => {
-  res.render('portal')
+  res.render('portal');
 });
 
 module.exports = router;
