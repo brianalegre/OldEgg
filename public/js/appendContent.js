@@ -1,24 +1,16 @@
-let appendContent = (obj) => {
-    let content = document.createElement(obj.tag)
-    let keys = Object.keys(obj.setAttr)
-    let values = Object.values(obj.setAttr)
+const appendContent = (obj) => {
+    const element = obj
+    const content = document.createElement(obj.tag)
+    const attributes = Object.entries(obj.setAttr)
 
-    //Looping over object setAttr keys and values and setting it as contents attributes
-    for (var i = 0; i < keys.length; i++) {
-        content.setAttribute(keys[i], values[i])
+    //Looping over all attributes and assigning it to content
+    for (const [key, value] of attributes) {
+        content.setAttribute(key, value)
     }
 
-    if ('textContent' in obj) {
-        let contentContent = document.createTextNode(obj.textContent)
+    if ('textContent' in element) {
+        const contentContent = document.createTextNode(element.textContent)
         content.appendChild(contentContent)
     }
-
-    if ('insertBefore' in obj) {
-        obj.appendTo.appendChild(content)
-        obj.insertBefore[0].insertBefore(content, obj.insertBefore[1])
-        return content
-    } else {
-        obj.appendTo.appendChild(content)
-        return content
-    }
+    element.appendTo.appendChild(content)
 }
