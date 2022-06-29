@@ -2,6 +2,12 @@ header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
+* {
+  background-color: #F0F2F4;  
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .invalid-auth {
   color: darkred;
 }
@@ -86,3 +92,5 @@ header, .project:not(:last-child) {
   display: inherit;
   flex-direction: inherit;
 }
+
+/* Home Page */
