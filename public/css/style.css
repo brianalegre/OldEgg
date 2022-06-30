@@ -124,12 +124,12 @@ header, .project:not(:last-child) {
 }
 
 .category-container {
-  grid-gap: 5px;
-  display: grid;
+  display: flex;
   gap: 5px;
-  grid-template-columns: repeat(auto-fit, 15rem);
   height: fit-content;
   justify-content: center;
   justify-items: center;
   padding: 5px;
 }
+
+/* Single Product Page */

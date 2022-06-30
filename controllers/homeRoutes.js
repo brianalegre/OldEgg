@@ -19,4 +19,8 @@ router.get('/portal', (req, res) => {
   res.render('portal');
 });
 
+router.get('/singleproduct', (req, res) => {
+  res.render('singleproduct');
+});
+
 module.exports = router;
