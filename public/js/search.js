@@ -1,7 +1,7 @@
 // API CALL
 const apiURL = 'http://localhost:3001/api/search/';
 
-// Get Data from API
+// Test API Call
 function getProducts() {
   console.log('GETPRODUCTS CALLED ----');
   fetch(apiURL + 'NZXT')
