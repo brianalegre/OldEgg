@@ -148,12 +148,11 @@ header, .project:not(:last-child) {
 }
 
 .product-image {
-  height: 40rem;
+  height: 30rem;
   background-color: white;
 }
 
 .product-image-container {
-  /* border: solid black; */
   background-color: white;
 }
 
@@ -168,6 +167,20 @@ header, .project:not(:last-child) {
   width: fit-content;
 }
 
+.product-details p {
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.cart-buttons {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
 .alt-btn {
   border-radius: 10px;
   box-shadow: 0px 1px 3px #666666 ;
@@ -176,6 +189,7 @@ header, .project:not(:last-child) {
   background: black;
   padding: 20px 40px 20px 40px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .add-cart-svg {
