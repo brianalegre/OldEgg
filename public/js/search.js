@@ -1,17 +1,15 @@
 // API CALL
-const apiURL = 'http://localhost:3001/api/search/';
-
 // Test API Call
-function getProducts() {
+const getProducts = async () => {
   console.log('GETPRODUCTS CALLED ----');
-  fetch(apiURL + 'NZXT')
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      console.log(data);
-    }
-    );
+  const apiURL = 'http://localhost:3001/api/search/';
+  
+  try {
+  const data = await fetch(apiURL + 'NZXT')
+  console.log(data)
+  } catch (err) {
+    console.log(err)
+  }
 }
 
 getProducts();
