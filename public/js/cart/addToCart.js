@@ -1,7 +1,3 @@
-const renderCart = () => {
-    const res = await fetch('/api')
-}
-
 const addToCart = async () => {
     try {
         const res = await fetch('/api/carts', {

@@ -19,6 +19,14 @@ router.get('/portal', (req, res) => {
   res.render('portal');
 });
 
+router.get('/cart', (req, res) => {
+  res.render('cart');
+});
+
+router.get('/wishlist', (req, res) => {
+  res.render('wishlist');
+});
+
 // router.get('/singleproduct', (req, res) => {
 //   res.render('singleproduct');
 // });
