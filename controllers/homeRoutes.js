@@ -23,8 +23,8 @@ router.get('/singleproduct', (req, res) => {
   res.render('singleproduct');
 });
 
-router.get('/categoriespage', (req, res) => {
-  res.render('categoriespage');
-});
+// router.get('/categoriespage', (req, res) => {
+//   res.render('categoriespage');
+// });
 
 module.exports = router;

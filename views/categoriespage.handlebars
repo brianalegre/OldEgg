@@ -12,15 +12,17 @@
                 </div>
             </div>
             {{!-- duplicate card for placeholder --}}
-            <div class="product-card">
-                <img src="../images/products/gpuProduct1.jpeg" alt="" class="card-image">
-                <div class="card-product-details">
-                    <div class="product-title">
-                        <h4>ASUS TUF Gaming GeForce RTX 3070 Ti 8GB GDDR6X PCI Express 4.0</h4>
-                    </div>
-                    <p class="card-price">$699.00</p>
-                </div>
-            </div>
+
+        {{!-- FOR EACH PARTIAL --}}
+        <section class="flex-row justify-center">
+            {{#each categories.products}}
+            {{> category-details}}
+            {{/each}}
+        </section>
+                    
+
+
+            {{!-- 3rd dup --}}
             <div class="product-card">
                 <img src="../images/products/gpuProduct1.jpeg" alt="" class="card-image">
                 <div class="card-product-details">
