@@ -15,26 +15,29 @@ const loginFormHandler = async (event) => {
         headers: { 'Content-Type': 'application/json' },
       });
 
+      console.log(response)
+
       if (response.ok) {
         return document.location.replace('/');
       }
+      const checkMessage = document.querySelector('.invalid-auth');
+
+      if (checkMessage) {
+        checkMessage.remove();
+      }
+      const message = {
+        tag: 'p',
+        setAttr: {
+          class: 'invalid-auth',
+        },
+        // set this to backend message
+        textContent: 'Unable to confirm username/password combination.',
+        appendTo: loginForm,
+      };
+      return appendContent(message);
     } catch (err) {
       console.log(err);
     }
-    const checkMessage = document.querySelector('.invalid-auth');
-
-    if (checkMessage) {
-      checkMessage.remove();
-    }
-    const message = {
-      tag: 'p',
-      setAttr: {
-        class: 'invalid-auth',
-      },
-      textContent: 'Unable to confirm username/password combination.',
-      appendTo: loginForm,
-    };
-    return appendContent(message);
   }
   // If one of the form variables is undefined check here.
   const checkMessage = document.querySelector('.invalid-auth');
@@ -54,4 +57,5 @@ const loginFormHandler = async (event) => {
   appendContent(message);
 };
 
-loginForm.addEventListener('submit', loginFormHandler);
+loginForm
+  .addEventListener('submit', loginFormHandler);
