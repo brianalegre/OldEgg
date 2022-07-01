@@ -5,12 +5,23 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>My Project Name</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     {{! this is the main html file wrapper for all your views }}
     <nav>
-      <a href="/">Home</a>
-      <a href="/login">Login</a>
+      <h1 class="nav-header">OldEgg</h1>
+      <div class="search-box">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" placeholder="Search product..." name="">
+      </div>
+      
+      <div class="nav-options">
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/wish-list">Wish List</a>
+        <a href="/cart">Cart</a>
+      </div>
     </nav>
 
     {{! placeholder for where the view will be injected }}

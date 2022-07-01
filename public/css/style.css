@@ -6,6 +6,14 @@ header, .project:not(:last-child) {
   background-color: #F0F2F4;  
   box-sizing: border-box;
   margin: 0;
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .invalid-auth {
@@ -13,15 +21,15 @@ header, .project:not(:last-child) {
 }
 
 #login-container {
-  height: 65vh;
-  width: 25vw;
-  background-color: #D9D9D9;
+  height: 50vh;
+  width: 20vw;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: .5em;
+  background-color: white;
 }
 
 .login-header {
@@ -29,33 +37,38 @@ header, .project:not(:last-child) {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 2px solid black;
-  width: 20vw;
-  height: 17.5vh;
   margin-bottom: 2.5rem;
   border-radius: 20px;
-  background-color: white;
+  background-color: inherit;
 }
 
 .login-header h1 {
   font-size: 2.75rem;
   margin: .25em;
+  background-color: inherit;
 }
 
 .login-header p {
   font-size: 1rem;
+  background-color: inherit;
 }
 
 #login-form {
   display: inherit;
   flex-direction: inherit;
+  background-color: inherit;
 }
 
 .form-group {
-  margin: .5em;
+  margin: 1em;
   display: inherit;
   flex-direction: inherit;
+  background-color: inherit;
   font-weight: bolder;
+}
+
+.form-group label {
+  background-color: inherit;
 }
 
 .form-group input {
@@ -65,12 +78,13 @@ header, .project:not(:last-child) {
   border: .1px solid rgb(180, 180, 180);
   border-radius: 5px;
   padding: 0 1em 0 1em;
+  background-color: inherit;
 }
 
 .form-group button {
   height: 5vh;
   border: .1px solid rgb(180, 180, 180);
-  background-color: #006E52;
+  background-color: black;
   border-radius: 5px;
   color: white;
 }
@@ -133,3 +147,60 @@ header, .project:not(:last-child) {
   justify-items: center;
   padding: 5px;
 }
+
+/*NAVBAR*/
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3em;
+  width: 100vw;
+}
+
+.nav-header {
+  font-size: 3rem;
+}
+
+.search-box {
+  width: 500px;
+	height: 50px;
+	background-color: #F0F2F4;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.search-box i {
+  font-size: 20px;
+	color: black;
+  background-color: white;
+  margin-right: .5em;
+}
+
+.search-box input {
+  background-color: white;
+  flex: 1;
+	height: 40px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	padding-left: 10px;
+}
+
+.nav-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-options a {
+  margin-left: 1em;
+  margin-right: 1em;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+
