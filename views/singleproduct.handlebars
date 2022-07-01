@@ -4,16 +4,15 @@
         {{!-- image container --}}
         <div class="product-image-container">
             {{!-- image --}}
-            <img class= "product-image" src="https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_2/image.jpg" alt="productImage" class="product-image" alt="productImage" class="product-image">
+            <img class= "product-image" src="{{products.product_img}}" alt="productImage" class="product-image" alt="productImage" class="product-image">
         </div>
         <div class="product-details">
-            {{!-- placeholder for p tags, will replace depending on user item selection --}}
-            <h2>ASUS TUF Gaming GeForce RTX 3070 Ti 8GB GDDR6X PCI Express 4.0</h2>
+            <h2>{{products.product_name}}</h2>
             <hr>
-            <p class="category-title"><b>Category </b>GPU</p>
-            <p class="product-description"><b>Description </b>8GB 256-Bit GDDR6X</p>
-            <p class="product-price"><b>Price </b>$699.0</p>
-            <p class="product-stock"><b>Stock </b>8</p>
+            <p class="category-title"><b>Category </b>{{products.category.category_name}}</p>
+            <p class="product-description"><b>Description </b>{{products.description}}</p>
+            <p class="product-price"><b>Price </b>${{products.price}}</p>
+            <p class="product-stock"><b>Stock </b>{{products.stock}}</p>
             <div class="cart-buttons">
                 <button class="alt-btn">Add to Cart  <img class = "add-cart-svg" src="../images/icons/productpage/addtocart-icon.png" alt="" class="cart-image"></button>
             </div>
