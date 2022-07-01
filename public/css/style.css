@@ -283,13 +283,13 @@ hr {
   font-size: larger;
 }
 
-.cart-buttons {
+.cart-btn-container {
   display: flex;
   align-items: center;
   flex-grow: 1;
 }
 
-.alt-btn {
+.cart-btn {
   border-radius: 10px;
   box-shadow: 0px 1px 3px #666666 ;
   color: white;
