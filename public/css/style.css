@@ -208,13 +208,19 @@ nav {
   align-items: center;
 }
 
-.nav-options a {
+.nav-options a, button {
   margin-left: 1em;
   margin-right: 1em;
   text-decoration: none;
   color: black;
   font-weight: 600;
   font-size: 1.5rem;
+}
+
+#logout-btn {
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 /* Single Product Page */
@@ -283,7 +289,7 @@ hr {
   font-size: larger;
 }
 
-.cart-btn-container {
+#cart-btn-container {
   display: flex;
   align-items: center;
   flex-grow: 1;
@@ -304,11 +310,7 @@ hr {
   background-color: black;
 }
 
-
-
 /* categories page */
-
-
 .products-card-list {
   display: flex;
   place-content: flex-start;

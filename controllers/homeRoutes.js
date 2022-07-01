@@ -4,7 +4,7 @@ const router = require('express').Router();
 //when a GET request is received on the root(/) route,
 //render the home.handlebars view
 router.get('/', (req, res) => {
-  res.render('home');
+  res.render('home', {logged_in: req.session.logged_in});
 });
 
 router.get('/login', (req, res) => {
