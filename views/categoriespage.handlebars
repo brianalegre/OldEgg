@@ -1,6 +1,4 @@
-<div class="categories-page-container">
-    <div class="categories-container">
-    <h1>{{categories.category_name}}</h1>
+
         {{!-- <h2>GPUs</h2>
         <div class="products-card-list">
             <div class="product-card">
@@ -15,11 +13,12 @@
             {{!-- duplicate card for placeholder --}}
 
         {{!-- FOR EACH PARTIAL --}}
-        <section class="flex-row justify-center">
-            {{#each categories.products}}
-            {{> category-details}}
-            {{/each}}
-        </section>
+    <div class="categories-page-container">            
+        <h1>{{categories.category_name}}</h1>
+        {{#each categories.products}}
+        {{> category-details}}
+        {{/each}}
+    </div>
                     
 
 
