@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const { Categories, Products } = require('../models');
 
-// GET all galleries for homepage
+//end point of /categories
+
 router.get('/categories', async (req, res) => {
   try {
     const categoriesData = await Categories.findAll({
@@ -23,7 +24,8 @@ router.get('/categories', async (req, res) => {
 });
 
 
-// GET one gallery
+// GET one category
+
 router.get('/categories/:id', async (req, res) => {
   try {
     const categoriesData = await Categories.findByPk(req.params.id, {
@@ -39,7 +41,7 @@ router.get('/categories/:id', async (req, res) => {
     const categories = categoriesData.get({ plain: true });
     res.render('categoriespage', {
       categories,
-      // loggedIn: req.session.loggedI
+      // loggedIn: req.session.loggedIn
     });
   } catch (err) {
     console.log(err);

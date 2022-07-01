@@ -19,9 +19,9 @@ router.get('/portal', (req, res) => {
   res.render('portal');
 });
 
-router.get('/singleproduct', (req, res) => {
-  res.render('singleproduct');
-});
+// router.get('/singleproduct', (req, res) => {
+//   res.render('singleproduct');
+// });
 
 // router.get('/categoriespage', (req, res) => {
 //   res.render('categoriespage');
