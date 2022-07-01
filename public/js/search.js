@@ -6,7 +6,7 @@ const getProducts = async () => {
   
   try {
   const data = await fetch(apiURL + 'NZXT')
-  console.log(data)
+  console.log(data.json())
   } catch (err) {
     console.log(err)
   }
