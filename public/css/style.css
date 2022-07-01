@@ -226,6 +226,7 @@ nav {
 
 .product-image-container {
   background-color: white;
+  box-shadow: 0 0 1px rgb(48 48 48 / 54%);
 }
 
 .product-details {
@@ -243,6 +244,7 @@ nav {
   font-size: 2rem;
 }
 
+/* creates line seperating title and details */
 .product-details hr {
   width: 100%;
 }
@@ -287,5 +289,45 @@ hr {
 
 .add-cart-svg {
   background-color: black;
+}
+
+
+
+/* categories page */
+
+
+.products-card-list {
+  display: flex;
+  place-content: flex-start;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-evenly;
+  justify-items: center;
+  width: 100%;
+}
+
+.product-card {
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 1px rgb(48 48 48 / 54%) ;
+}
+
+.product-card img {
+  height: 20rem;
+  background-color: white;
+}
+
+.product-title h4 {
+  font-size: 1rem;
+}
+
+.card-product-details {
+  color: black;
+  box-shadow: 0 0 1px rgb(48 48 48 / 54%);
+  width: 100%;
+  padding: 0 2rem;
 }
 
