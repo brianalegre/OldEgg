@@ -7,8 +7,7 @@ router.get('/categories', async (req, res) => {
   try {
     const categoriesData = await Categories.findAll({
       include: [{ model: Products }]
-    }
-    );
+    });
 
     const categories = categoriesData.map((category) =>
       category.get({ plain: true })
@@ -22,7 +21,6 @@ router.get('/categories', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 
 // GET one category
 

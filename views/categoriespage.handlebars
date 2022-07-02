@@ -13,9 +13,9 @@
             {{!-- duplicate card for placeholder --}}
 
         {{!-- FOR EACH PARTIAL --}}
+    <h1 class="categories-page-title">{{categories.category_name}}</h1>
     <div class="categories-page-container">            
         {{!-- Categories title --}}
-        <h1>{{categories.category_name}}</h1>
         {{#each categories.products}}
         {{> category-details}}
         {{/each}}
