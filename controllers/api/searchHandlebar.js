@@ -25,6 +25,10 @@ router.get('/:product_searched', async (req, res) => {
         ],
       },
     });
+    // If no products are found, return a 404 error
+    // if (!productSearch) {
+    //   res.render('notFound');
+    // }
     // console.log('BACKEND productSearch----', productSearch);
     const products = productSearch.map((product) =>
       product.get({ plain: true })
