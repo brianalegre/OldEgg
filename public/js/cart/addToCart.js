@@ -1,10 +1,13 @@
-const addToCart = async () => {
+const addToCart = async targ => {
     try {
-        const res = await fetch('/api/carts', {
-            method: 'POST',
-            body: JSON.stringify({ username, email, password }),
-            headers: { 'Content-Type': 'application/json' }
-        })
+        const productId = targ.dataset.id
+        console.log(productId)
+
+        // const res = await fetch('/api/carts', {
+        //     method: 'POST',
+        //     body: JSON.stringify({  }),
+        //     headers: { 'Content-Type': 'application/json' }
+        // })
     } catch (err) {
         console.log(err)
     }
@@ -12,10 +15,10 @@ const addToCart = async () => {
 }
 
 document
-    .getElementById('cart-btn-container')
+    .getElementById('.cart-btn-container')
     .addEventListener('click', targ => {
         if (targ.target && targ.target.matches('.cart-btn')) {
-            addToCart()
+            addToCart(targ.target)
         }
     })
 
