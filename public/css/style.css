@@ -7,7 +7,7 @@ header, .project:not(:last-child) {
 }
 
 * {
-  background-color: #F0F2F4;  
+  /* background-color: #F0F2F4;   */
   box-sizing: border-box;
   margin: 0;
   max-width: 100%;
@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #F0F2F4;
 }
 
 .invalid-auth {
@@ -347,7 +348,20 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0 1px rgb(48 48 48 / 54%) ;
+  box-shadow: 0 0 5px rgb(48 48 48 / 54%) ;
+  /* transition: .5s ease-in-out; */
+  
+}
+
+/* Hover effect over product cards */
+.product-card a {
+  transition: .5s ease-in-out;
+}
+
+.product-card a:hover {
+  box-shadow: 0 0 20px 5px black;
+  transition: .5s ease-in-out;
+  cursor: pointer;
 }
 
 .product-card img {
@@ -361,9 +375,13 @@ hr {
 
 .card-product-details {
   color: black;
-  box-shadow: 0 0 1px rgb(48 48 48 / 54%);
+  box-shadow: 0 0 5px rgb(48 48 48 / 54%);
   width: 100%;
-  padding: 0 2rem;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* cart */
