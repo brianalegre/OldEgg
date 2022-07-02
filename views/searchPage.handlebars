@@ -1,0 +1,11 @@
+<h1> THIS IS THE SEARCH PAGE</h1>
+
+        {{!-- FOR EACH PARTIAL --}}
+    <h1 class="categories-page-title">{{categories.category_name}}</h1>
+    <div class="categories-page-container">            
+        {{!-- Categories title --}}
+        {{#each categories.products}}
+        {{> category-details}}
+        {{/each}}
+    </div>
+                    

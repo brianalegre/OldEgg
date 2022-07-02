@@ -1,15 +1,15 @@
-// API CALL
-// Test API Call
-const getProducts = async () => {
-  console.log('GETPRODUCTS CALLED ----');
-  const apiURL = 'http://localhost:3001/api/search/';
-  
-  try {
-  const data = await fetch(apiURL + 'NZXT')
-  console.log(data.json())
-  } catch (err) {
-    console.log(err)
-  }
-}
+// // API CALL
+// // Test API Call
+// const getProducts = async () => {
+//   console.log('GETPRODUCTS CALLED ----');
+//   const apiURL = 'http://localhost:3001/api/search/';
 
-getProducts();
+//   try {
+//     const data = await fetch(apiURL + 'NZXT')
+//     console.log(data.json())
+//   } catch (err) {
+//     console.log(err)
+//   }
+// }
+
+// getProducts();
