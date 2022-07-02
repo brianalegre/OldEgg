@@ -251,7 +251,9 @@ nav {
 
 .product-image-container {
   background-color: white;
-  box-shadow: 0 0 1px rgb(48 48 48 / 54%);
+  box-shadow: 0 0 5px rgb(48 48 48 / 54%);
+  border: solid 1px black;
+  padding: 1.5rem;
 }
 
 .product-details {
@@ -359,7 +361,7 @@ hr {
 }
 
 .product-card a:hover {
-  box-shadow: 0 0 20px 5px black;
+  box-shadow: 0 0 20px 0px black;
   transition: .5s ease-in-out;
   cursor: pointer;
 }
