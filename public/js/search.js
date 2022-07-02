@@ -5,7 +5,7 @@ var searchKey = document.getElementById('searchText');
 function searchProducts() {
   // Get Input Value
   var searchInputVal = document.getElementById('searchText').value.trim();
-  var queryString = 'http://localhost:3001/api/search/' + searchInputVal;
+  var queryString = 'http://localhost:3001/search/' + searchInputVal;
 
   // Go to next page
   location.assign(queryString);

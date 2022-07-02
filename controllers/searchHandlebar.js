@@ -1,13 +1,11 @@
 const router = require('express').Router();
-const { Categories, Products } = require('../../models');
+const { Categories, Products } = require('../models');
 const { Op } = require('sequelize');
 
 
-//end point of /categories
-
-router.get('/:product_searched', async (req, res) => {
+//end point of /search
+router.get('/search/:product_searched', async (req, res) => {
   try {
-    // console.log('THIS IS THE SEARCH TERM:', req.params.product_searched);
     const productSearch = await Products.findAll({
       include: [{ model: Categories }],
       where: {
@@ -25,15 +23,13 @@ router.get('/:product_searched', async (req, res) => {
         ],
       },
     });
-    // If no products are found, return a 404 error
-    // if (!productSearch) {
-    //   res.render('notFound');
-    // }
-    // console.log('BACKEND productSearch----', productSearch);
     const products = productSearch.map((product) =>
       product.get({ plain: true })
     );
-    // console.log('BACKEND products----', products);
+    // If no products are found, redirect to 404 page
+    if (products.length === 0) {
+      res.redirect('/');
+    }
     res.render('searchPage', {
       products,
       // loggedIn: req.session.loggedIn,
