@@ -366,10 +366,75 @@ hr {
   padding: 0 2rem;
 }
 
-#footer{
+/* cart */
+#cart-container {
+  display: flex;
+  flex-direction: column;
+  padding: .5em;
+  width: 70vw;
+  min-width: fit-content;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  margin: .5em;
+  justify-content: left;
+  align-items: center;
+}
+
+.cart-item-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 7px;
+  background-color: black;
+  margin-right: 2em;
+}
+
+.cart-item-desc {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  max-width: 25vw;
+}
+
+.cart-item-options {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.cart-item-options button {
+  border: 1px solid black;
+  color: white;
+  background: black;
+  border-radius: 10px;
+  margin: .25em;
+  padding: .4em;
+  font-size: 1rem;
+}
+
+.cart-item-options button:hover {
+  color: white;
+  border: 1px solid darkgreen;
+  background-color: darkgreen;
+  cursor: pointer;
+}
+
+#cart-item-delete:hover {
+  color: white;
+  border: 1px solid darkred;
+  background-color: darkred;
+  cursor: pointer;
+}
+
+/* footer */
+
+#footer {
   /* flex-wrap: wrap; */
   margin-top: auto;
   position:relative;
   bottom: 0;
  }
-

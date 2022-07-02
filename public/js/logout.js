@@ -1,3 +1,5 @@
+const logoutBtn = document.querySelector('#logout-btn')
+
 const logoutBtnHandler = async () => {
     try {
       const res = await fetch('/api/users/logout', {
@@ -6,7 +8,7 @@ const logoutBtnHandler = async () => {
       })
   
       if (res.ok) {
-        return document.location.replace('/')
+        return document.location.replace('/login')
       }
       alert('Failed to logout')
     } catch (err) {
@@ -14,6 +16,4 @@ const logoutBtnHandler = async () => {
     }
 }
 
-document
-    .querySelector('#logout-btn')
-    .addEventListener('click', logoutBtnHandler) 
+if (logoutBtn) logoutBtn.addEventListener('click', logoutBtnHandler) 
