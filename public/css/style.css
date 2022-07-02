@@ -367,6 +367,7 @@ hr {
 .product-card img {
   height: 20rem;
   background-color: white;
+  padding: 1.5rem;
 }
 
 .product-title h4 {
@@ -380,7 +381,7 @@ hr {
   padding: 1rem;
   background-color: white;
   display: flex;
-  align-items: center;
+  justify-content: space-around;
   gap: 1rem;
 }
 
