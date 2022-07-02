@@ -1,11 +1,15 @@
 <div class="categories-container">
-        <div class="products-card-list">
-            <div class="product-card">
-                <img src="{{product_img}}" alt="" class="card-image">
-                <div class="card-product-details">
-                    <div class="product-title">
-                        <h4>{{product_name}}</h4>
-                    </div>
-                    <p class="card-price">${{price}}</p>
+    <div class="products-card-list">
+        <div class="product-card">
+        <a style="text-decoration: none"href="/products/{{product_id}}">
+            <img src="{{product_img}}" alt="" class="card-image">
+            <div class="card-product-details">
+                <div class="product-title">
+                    <h4>{{product_name}}</h4>
                 </div>
+                <p class="card-price">${{price}}</p>
             </div>
+        </a>
+        </div>
+    </div>
+</div>

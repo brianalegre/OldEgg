@@ -316,6 +316,21 @@ hr {
 }
 
 /* categories page */
+.categories-page-title {
+  font-size: 2rem;
+  margin: 1em;
+}
+
+.categories-page-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+  height: 75vh;
+}
+
+
 .products-card-list {
   display: flex;
   place-content: flex-start;
@@ -414,3 +429,12 @@ hr {
   background-color: darkred;
   cursor: pointer;
 }
+
+/* footer */
+
+#footer {
+  /* flex-wrap: wrap; */
+  margin-top: auto;
+  position:relative;
+  bottom: 0;
+ }
