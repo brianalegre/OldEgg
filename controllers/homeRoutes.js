@@ -20,11 +20,11 @@ router.get('/portal', (req, res) => {
 });
 
 router.get('/cart', (req, res) => {
-  res.render('cart');
+  res.render('cart', {logged_in: req.session.logged_in});
 });
 
 router.get('/wishlist', (req, res) => {
-  res.render('wishlist');
+  res.render('wishlist', {logged_in: req.session.logged_in});
 });
 
 // router.get('/singleproduct', (req, res) => {
