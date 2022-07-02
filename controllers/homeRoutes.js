@@ -19,10 +19,6 @@ router.get('/portal', (req, res) => {
   res.render('portal');
 });
 
-router.get('/cart', (req, res) => {
-  res.render('cart', {logged_in: req.session.logged_in});
-});
-
 router.get('/wishlist', (req, res) => {
   res.render('wishlist', {logged_in: req.session.logged_in});
 });
