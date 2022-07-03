@@ -1,4 +1,4 @@
-<div class="categories-container">
+{{!-- <div class="categories-container">
     <div class="products-card-list">
         <div class="product-card">
         <a style="text-decoration: none"href="/products/{{product_id}}">
@@ -12,4 +12,14 @@
         </a>
         </div>
     </div>
+</div> --}}
+
+<div class="sr-item-container">
+    <a style="text-decoration: none"href="/products/{{product_id}}" class="sr-item">
+        <img src="{{product_img}}" alt="" class="sr-image">
+        <div class="sr-item-details">
+            <h2 class="sr-item-title">{{product_name}}</h2>
+            <p class="sr-item-price">{{price}}</p>
+        </div>
+    </a>
 </div>
