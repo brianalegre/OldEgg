@@ -1,10 +1,10 @@
-<h1> Search Results </h1>
+<h1 class="searchResults-heading"> Search Results </h1>
 
-        {{!-- FOR EACH PARTIAL --}}
-    {{!-- <h1 class="categories-page-title">{{categories.category_name}}</h1> --}}
-    <div class="categories-page-container">            
-        {{!-- Categories title --}}
+<div class="serchResults-page-container">
+    <div class="sr-list">
         {{#each products}}
         {{> search-details}}
         {{/each}}
     </div>
+</div>
+
