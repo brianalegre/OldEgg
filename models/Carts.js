@@ -19,14 +19,14 @@ Carts.init(
         key: 'user_id',
       },
     },
-    product_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      references: {
-        model: 'products',
-        key: 'product_id',
-      },
-    },
+    // product_id: {
+    //   type: DataTypes.INTEGER,
+    //   allowNull: false,
+    //   references: {
+    //     model: 'products',
+    //     key: 'product_id',
+    //   },
+    // },
     total_price: {
       //added arguments to decimal for accuracy.
       type: DataTypes.DECIMAL(10, 2),
