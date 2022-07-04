@@ -17,7 +17,7 @@ Carts.hasMany(Products, {
   foreignKey: 'product_id'
 });
 
-Products.hasMany(z, {
+Products.hasMany(Carts, {
   foreignKey: 'product_id'
 });
 
