@@ -1,52 +1,48 @@
 <html lang='en'>
-  <head>
-    <meta charset='UTF-8' />
-    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <title>My Project Name</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/91ed65ac39.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    {{! this is the main html file wrapper for all your views }}
-    <nav>
-      <h1 class="nav-header">OldEgg</h1>
-      <div class="search-box">
-        <i class="fa fa-search" aria-hidden="true"></i>
-        <input type="text" id="searchText" placeholder="Search product..." name="">
-      </div>
-      
-      <div class="nav-options">
-        <a href="/">Home <span class="nav-icons"><i class="fa-solid fa-house"></i></span></a>
-        {{#if logged_in}}
-        <a id="logout-btn">Logout <span class="nav-icons"><i class="fa-solid fa-user-large"></i></span></button>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>My Project Name</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/91ed65ac39.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  {{! this is the main html file wrapper for all your views }}
+  <nav>
+    <h1 class="nav-header">OldEgg</h1>
+    <div class="search-box">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <input type="text" id="searchText" placeholder="Search product..." name="">
+    </div>
+
+    <div class="nav-options">
+      <a href="/">Home <span class="nav-icons"><i class="fa-solid fa-house"></i></span></a>
+      {{#if logged_in}}
+      <a id="logout-btn">Logout <span class="nav-icons"><i class="fa-solid fa-user-large"></i></span></button>
         <a href="/cart">Cart <span class="nav-icons"><i class="fa-solid fa-cart-shopping"></i></a>
         <a href="/wishlist">Wish List <span class="nav-icons"><i class="fa-solid fa-heart"></i></a>
         {{else}}
         <a id="login-btn" href="/login">Login <span class="nav-icons"><i class="fa-solid fa-user-large"></i></span></a>
         {{/if}}
-      </div>
-    </nav>
+    </div>
+  </nav>
 
+  {{! placeholder for where the view will be injected }}
+  {{{body}}}
 
-    {{! placeholder for where the view will be injected }}
-    {{{body}}}
+  <footer id="footer">THIS IS A FOOTER</footer>
+  {{! placeholder for where the view will be injected }}
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+  <script src="/js/cart/renderCart.js"></script>
+  <script src="/js/cart/addToCart.js"></script>
+  <script src="/js/search.js"></script>
+</body>
 
-    <footer id="footer">THIS IS A FOOTER</footer>
-    {{! placeholder for where the view will be injected }}
-<<<<<<< HEAD
-    {{#if logged_in}}
-    <script src="/js/logout.js"></script>
-    {{/if}}
-    <script src="/js/cart/renderCart.js"></script>
-    <script src="/js/cart/addToCart.js"></script>
-=======
-    <script src="/js/logout.js"></script>
-    <script src="/js/search.js"></script>
-    
-
->>>>>>> 168fdc178c34237e312f4863de0e3ffe50852169
-  </body>
 </html>
-
