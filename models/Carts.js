@@ -19,21 +19,12 @@ Carts.init(
         key: 'user_id',
       },
     },
-    // product_id: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    //   references: {
-    //     model: 'products',
-    //     key: 'product_id',
-    //   },
-    // },
-    total_price: {
-      //added arguments to decimal for accuracy.
-      type: DataTypes.DECIMAL(10, 2),
+    product_id: {
+      type: DataTypes.INTEGER,
       allowNull: false,
-      defaultValue: 0.00,
-      validate: {
-        isDecimal: true,
+      references: {
+        model: 'products',
+        key: 'product_id',
       },
     },
   },
