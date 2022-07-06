@@ -504,6 +504,10 @@ hr {
   padding: 1rem;
 }
 
+.sr-item-details {
+  color: black;
+}
+
 /* footer */
 
 .footer-container {
@@ -522,14 +526,17 @@ hr {
   align-items: flex-start;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  padding: 1rem;
-  
+  padding: 2rem;
+  gap: 10rem;
 }
 
 .footer-list {
   list-style: none;
 }
 
+.footer-bottom {
+  padding: 2rem;
+}
 
 
 
