@@ -11,7 +11,6 @@ router.get('/cart', async (req, res) => {
       const dbProductInfo = await Products.findAll({where: {product_id: cartProductsIds}})
       const cartProducts = dbProductInfo.map(product => product.get({plain:true}))
 
-      console.log(cartProducts, 'THIS IS CART DATA FROM DB')
       res.render('cart', {
         cartProducts,
         logged_in: req.session.logged_in
@@ -24,14 +23,24 @@ router.get('/cart', async (req, res) => {
 
 router.post('/cart', async (req, res) => {
     try {
-      const currentProduct = await Products.findOne({where: {product_id: req.body.productId}})
-      const cartData = await Carts.findOne({where: {user_id: req.session.user_id}})
-      if (cartData === null) {
-        // Carts.create
-      }
-    //   console.log(currentProduct, 'THIS IS CURRENT PRODUCT!!!!')
-    } catch (err) {
+      const checkProduct = await Carts.findAll(
+        {
+          where: { 
+            user_id: req.session.user_id,
+            product_id: req.body.productId
+          }
+        }
+      )
 
+      if (!!checkProduct) {
+        const cartData = await Carts.create({
+          user_id: req.session.user_id,
+          product_id: req.body.productId
+        })
+        return res.status(200).json(cartData);
+      }
+    } catch (err) {
+      res.status(400).json(err);
     }
 });
 

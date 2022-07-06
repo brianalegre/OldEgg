@@ -33,15 +33,16 @@
   </nav>
 
   {{! placeholder for where the view will be injected }}
-  {{{body}}}
+  <section id="section-input">
+    {{{body}}}
+  </section>
 
   <footer id="footer">THIS IS A FOOTER</footer>
   {{! placeholder for where the view will be injected }}
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
-  <script src="/js/cart/renderCart.js"></script>
-  <script src="/js/cart/addToCart.js"></script>
+  <script src="/js/addToCart.js"></script>
   <script src="/js/search.js"></script>
 </body>
 
