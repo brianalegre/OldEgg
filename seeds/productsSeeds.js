@@ -216,6 +216,116 @@ const productsData = [
       'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_13/image.jpg',
     category_id: 6,
   },
+  {
+    product_name: 'GIGABYTE G27Q 27" 144Hz 1440P Gaming Monitor',
+    description:
+      '2560 x 1440 IPS Display, 1ms (MPRT) Response Time, 92% DCI-P3, VESA Display HDR400, FreeSync Premium, 1x DisplayPort 1.2',
+    price: 249.99,
+    stock: 7,
+    date_posted: '2020-04-20',
+    product_img:
+      'https://m.media-amazon.com/images/I/713JEi+CQDL.jpg',
+    category_id: 1,
+  },
+  {
+    product_name: 'MSI Optix AG321CQR 32"',
+    description:
+      'QHD 2560 x 1440 (2K) 165Hz HDMI DisplayPort, Tilt Swivel Pivot Height Adjust AMD FreeSync Premium Curved Gaming Monitor',
+    price: 269.99,
+    stock: 11,
+    date_posted: '2020-04-20',
+    product_img:
+      'https://media.officedepot.com/images/f_auto,q_auto,e_sharpen,h_450/products/7032186/7032186_o51_et_8060279/7032186',
+    category_id: 1,
+  },
+  {
+    product_name: 'ASUS TUF Gaming VG289Q1A 28"',
+    description:
+      'UHD 3840 x 2160 (4K) 60 Hz 2 x HDMI, DisplayPort, Audio FreeSync Built-in Speakers HDR 10 IPS Gaming Monitor',
+    price: 329.99,
+    stock: 19,
+    date_posted: '2020-04-20',
+    product_img:
+      'https://m.media-amazon.com/images/I/81CYz-i1nML._AC_SL1500_.jpg',
+    category_id: 1,
+  },
+  {
+    product_name: 'GIGABYTE G32QC A 32" 165Hz',
+    description:
+      '2K QHD 1ms (MPRT), 93% DCI-P3, VESA HDR400, FreeSync Premium Pro, 1 x DisplayPort 1.2, 2 x HDMI 2,0, 2 x USB 3.0 Curved Gaming Monitor',
+    price: 279.99,
+    stock: 5,
+    date_posted: '2020-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/24-012-012-V07.jpg',
+    category_id: 1,
+  },
+  {
+    product_name: 'GIGABYTE M28U 28" 144Hz 2160P',
+    description:
+      'UHD 3840 x 2160 4K SS IPS, 1ms (GTG), 94% DCI-P3, HDR Ready, FreeSync Premium Pro, 1 x DisplayPort 1.4, 2 x HDMI 2.1, 3 x USB 3.0, 1 x USB',
+    price: 649.99,
+    stock: 2,
+    date_posted: '2020-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/24-012-040-V01.jpg',
+    category_id: 1,
+  },
+  {
+    product_name: 'Lenovo Q24h-10 24"',
+    description:
+      '2560 x 1440 (2K) QHD LED Backlit LCD Hub Monitor, USB-C, 75 Hz, 4 ms, AMD FreeSync, 99% sRGB',
+    price: 269.99,
+    stock: 19,
+    date_posted: '2020-04-20',
+    product_img:
+      'https://www.lenovo.com/medias/66A8GAC6-500-1.png?context=bWFzdGVyfHJvb3R8MzU5NzR8aW1hZ2UvcG5nfGgxOS9oNzMvMTA4NTc5MDg1NjgwOTQucG5nfDk5Njg5Y2ZhNzFkODBkNzdmN2Q1M2QzMGUyN2MyOGNjZmE5NGQ5NWMyYTRkNjM0OWVhMjY1MjIyYjJkOTNmMDU',
+    category_id: 1,
+  },
+  {
+    product_name: 'AORUS FV43U 43" QLED',
+    description:
+      'UHD 4K 3840 x 2160 144Hz 1ms (MPRT) FreeSync Premium Pro, 1 x Display Port 1.4, 2 x HDMI 2.1, 2 x USB 3.0, KVM w/ USB Type-C Gaming Monitor',
+    price: 1099.99,
+    stock: 4,
+    date_posted: '2020-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/24-716-002-V09.jpg',
+    category_id: 1,
+  },
+  {
+    product_name: 'LG 24" 24QP500-B 2560 x 1440',
+    description:
+      'QHD 2K IPS 75Hz HDR10 AMD FreeSync HDMI DisplayPort VESA Tilt Monitor',
+    price: 196.99,
+    stock: 28,
+    date_posted: '2020-04-20',
+    product_img:
+      'https://www.lg.com/us/images/monitors/md08000261/gallery/medium01.jpg',
+    category_id: 1,
+  },
+  {
+    product_name: 'Acer KA272U biipx UM.HX2AA.004 27"',
+    description:
+      'QHD 2560 x 1440 (2K) 1ms VRB 75 Hz 2 x HDMI, DisplayPort AMD RADEON FreeSync Technology Gaming Monitor',
+    price: 249.99,
+    stock: 12,
+    date_posted: '2020-04-20',
+    product_img:
+      'https://www.bhphotovideo.com/cdn-cgi/image/format=auto,fit=scale-down,width=500,quality=95/https://www.bhphotovideo.com/images/images500x500/acer_um_hx2aa_s03_kg272_27_lcd_ips_1627382126_1651388.jpg',
+    category_id: 1,
+  },
+  {
+    product_name: 'ASUS 27" 1440P Video Conference Monitor (BE279QSK)',
+    description:
+      'QHD (2560 x 1440), IPS, Built-in 2MP Webcam, Mic Array, Speakers, Eye Care, Wall Mountable, AI Noise-canceling, USB-C, HDMI, Zoom Certified',
+    price: 303.41,
+    stock: 9,
+    date_posted: '2020-04-20',
+    product_img:
+      'https://dlcdnwebimgs.asus.com/gain/62aff790-1601-407c-9bc7-88f1b595a257/w692',
+    category_id: 1,
+  },
 ];
 
 const seedProducts = () => Products.bulkCreate(productsData);
