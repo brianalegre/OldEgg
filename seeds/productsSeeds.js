@@ -326,6 +326,149 @@ const productsData = [
       'https://dlcdnwebimgs.asus.com/gain/62aff790-1601-407c-9bc7-88f1b595a257/w692',
     category_id: 1,
   },
+  {
+    product_name: 'ASRock Z690 Phantom Gaming',
+    description:
+      'LGA 1700 DDR5 ATX Intel Motherboard',
+    price: 149.99,
+    stock: 10,
+    date_posted: '2021-03-11',
+    product_img:
+      'https://www.asrock.com/mb/photo/Z690%20Phantom%20Gaming%204D5(M1).png',
+    category_id: 4,
+  },
+  {
+    product_name: 'ASUS TUF Gaming Z690-Plus WiFi D4',
+    description:
+      'LGA 1700 Intel 12th Gen ATX Gaming Motherboard- PCIe 5.0, DDR4, 4xM.2/NVMe SSD, 14+2 Power Stages, WiFi 6, Intel 2.5Gb LAN',
+    price: 289.99,
+    stock: 6,
+    date_posted: '2021-03-11',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/13-119-506-V01.jpg',
+    category_id: 4,
+  },
+  {
+    product_name: 'GIGABYTE Z690 AORUS MASTER',
+    description:
+      'LGA 1700 Intel Z690 EATX Motherboard with DDR5, 5x M.2, PCIe 5.0, USB 3.2 Gen2X2 Type-C, Intel WiFi 6E, AQUANTIA 10GbE LAN',
+    price: 399.99,
+    stock: 12,
+    date_posted: '2021-03-11',
+    product_img:
+      'https://m.media-amazon.com/images/I/81zmlBWaCbL._AC_SL1500_.jpg',
+    category_id: 4,
+  },
+  {
+    product_name: 'MSI PRO Z690-A DDR4',
+    description:
+      'LGA 1700 Intel Z690 SATA 6Gb/s ATX Intel Motherboard',
+    price: 194.99,
+    stock: 19,
+    date_posted: '2021-03-11',
+    product_img:
+      'https://storage-asset.msi.com/global/picture/image/feature/mb/PRO-Z690-A-DDR4/board02.png',
+    category_id: 4,
+  },
+  {
+    product_name: 'MSI MAG B550 TOMAHAWK',
+    description:
+      'AM4 ATX AMD Motherboard',
+    price: 169.99,
+    stock: 5,
+    date_posted: '2021-03-11',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-326-V01.jpg',
+    category_id: 4,
+  },
+  {
+    product_name: 'GIGABYTE B550 GAMING X V2',
+    description:
+      'AM4 ATX AMD Motherboard',
+    price: 129.99,
+    stock: 24,
+    date_posted: '2018-02-22',
+    product_img:
+      'https://www.awd-it.co.uk/media/catalog/product/1/_/1_2_1_1.jpg',
+    category_id: 4,
+  },
+  {
+    product_name: 'ASRock B550 Phantom',
+    description:
+      'Gaming-ITX/ax AM4 Mini ITX AMD Motherboard',
+    price: 159.99,
+    stock: 17,
+    date_posted: '2018-02-22',
+    product_img:
+      'https://www.awd-it.co.uk/media/catalog/product/1/_/1_2_1_1.jpg',
+    category_id: 4,
+  },
+  {
+    product_name: 'MSI MEG Z590 UNIFY',
+    description:
+      'LGA 1200 ATX Intel Motherboard',
+    price: 219.99,
+    stock: 11,
+    date_posted: '2021-02-22',
+    product_img:
+      'https://storage-asset.msi.com/global/picture/image/feature/mb/Z490/MPG/box8.png',
+    category_id: 4,
+  },
+  {
+    product_name: 'GIGABYTE Z690I AORUS ULTRA LITE DDR4',
+    description:
+      'LGA 1700 Intel Z690 SATA 6Gb/s Mini ITX Intel Motherboard',
+    price: 150.99,
+    stock: 16,
+    date_posted: '2022-01-21',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/13-145-396-04.jpg',
+    category_id: 4,
+  },
+  {
+    product_name: 'ASUS Prime X570-Pro',
+    description:
+      'Ryzen 3 AM4 with PCIe Gen4, Dual M.2, HDMI, SATA 6Gb/s USB 3.2 Gen 2 ATX Motherboard',
+    price: 259.99,
+    stock: 13,
+    date_posted: '2022-01-27',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/13-119-196-V01.jpg',
+    category_id: 4,
+  },
+  {
+    product_name: 'LISM X99 S3 Gaming Motherboard',
+    description:
+      'LGA2011 V3 Support Intel XEON E5 DDR4 ECC REG Memory NVME USB3.0 ATX Server Support Turbo boost',
+    price: 179.99,
+    stock: 8,
+    date_posted: '2021-02-12',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/B601S220101JqxcG.jpg',
+    category_id: 4,
+  },
+  {
+    product_name: 'B250C BTC Mining Machine Motherboard',
+    description:
+      'USB 3.0 to PCI-E X1 Graphics Card Support LGA 1151 DDR4 SATA3.0 for Miner',
+    price: 164.99,
+    stock: 6,
+    date_posted: '2022-01-11',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/B601S220429aaJEV.jpg',
+    category_id: 4,
+  },
+  {
+    product_name: 'GIGABYTE Z690 AORUS TACHYON',
+    description:
+      'LGA 1700 Intel Z690 EATX Motherboard with DDR5, Quad M.2, PCIe 5.0, USB 3.2 Gen2X2 Type-C, Intel WiFi 6E, Intel 2.5 GbE LAN',
+    price: 499.99,
+    stock: 17,
+    date_posted: '2022-01-11',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/13-145-364-V01.jpg',
+    category_id: 4,
+  },
 ];
 
 const seedProducts = () => Products.bulkCreate(productsData);
