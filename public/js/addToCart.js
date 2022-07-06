@@ -5,13 +5,12 @@ const addToCart = async targ => {
     try {
         const productId = targ.dataset.id
 
-        const res = await fetch('/cart', {
+        const response = await fetch('/cart', {
             method: 'POST',
             body: JSON.stringify({ productId }),
             headers: { 'Content-Type': 'application/json' }
         })
-
-        console.log(res)
+        console.log(response)
     } catch (err) {
         console.log(err)
     }
