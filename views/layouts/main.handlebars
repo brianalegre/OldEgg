@@ -21,21 +21,20 @@
     </div>
 
     <div class="nav-options">
-      <a href="/">Home <span class="nav-icons"><i class="fa-solid fa-house"></i></span></a>
-      {{#if logged_in}}
-      <a id="logout-btn">Logout <span class="nav-icons"><i class="fa-solid fa-user-large"></i></span></button>
-        <a href="/cart">Cart <span class="nav-icons"><i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="/wishlist">Wish List <span class="nav-icons"><i class="fa-solid fa-heart"></i></a>
+      <a href="/">Home <img src="../images/icons/navbar/akar-icons_home.png" alt="home-button icon">
+        {{#if logged_in}}
+        <a id="logout-btn">Logout <img src="../images/icons/navbar/ri_logout-circle-line.png" alt="logout icon"></a>
+        <a href="/cart">Cart <img src="../images/icons/navbar/cart-nav-icon.png" alt="cart icon"></a>
+        <a href="/wishlist">Wish List <img src="../images/icons/navbar/akar-icons_heart.png" src="wishlist icon"></a>
         {{else}}
-        <a id="login-btn" href="/login">Login <span class="nav-icons"><i class="fa-solid fa-user-large"></i></span></a>
+        <a id="login-btn" href="/login">Login <img src="../images/icons/navbar/login-icon.png" alt="login icon"></a>
         {{/if}}
     </div>
   </nav>
 
+  {{! placeholder for where the view will be injected }}
   <div class="page-container">
-    {{! placeholder for where the view will be injected }}
     {{{body}}}
-
   </div>
 
   <footer class="footer-container">
@@ -99,10 +98,12 @@
     </div>
   </footer>
   {{! placeholder for where the view will be injected }}
+  {{#if logged_in}}
   <script src="/js/logout.js"></script>
+  {{/if}}
+  <script src="/js/cart/renderCart.js"></script>
+  <script src="/js/cart/addToCart.js"></script>
   <script src="/js/search.js"></script>
-
-
 </body>
 
 </html>

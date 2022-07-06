@@ -16,4 +16,4 @@ const logoutBtnHandler = async () => {
     }
 }
 
-if (logoutBtn) logoutBtn.addEventListener('click', logoutBtnHandler) 
+logoutBtn.addEventListener('click', logoutBtnHandler) 

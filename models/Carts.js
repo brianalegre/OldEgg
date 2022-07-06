@@ -27,15 +27,6 @@ Carts.init(
         key: 'product_id',
       },
     },
-    total_price: {
-      //added arguments to decimal for accuracy.
-      type: DataTypes.DECIMAL(10, 2),
-      allowNull: false,
-      defaultValue: 0.00,
-      validate: {
-        isDecimal: true,
-      },
-    },
   },
   {
     sequelize,

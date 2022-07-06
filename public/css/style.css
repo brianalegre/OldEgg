@@ -414,6 +414,8 @@ hr {
   margin: .5em;
   justify-content: left;
   align-items: center;
+  text-decoration: none;
+  color: black;
 }
 
 .cart-item-image {
