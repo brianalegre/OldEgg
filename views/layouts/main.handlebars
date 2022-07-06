@@ -1,44 +1,108 @@
 <html lang='en'>
-  <head>
-    <meta charset='UTF-8' />
-    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <title>My Project Name</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/91ed65ac39.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    {{! this is the main html file wrapper for all your views }}
-    <nav>
-      <h1 class="nav-header">OldEgg</h1>
-      <div class="search-box">
-        <i class="fa fa-search" aria-hidden="true"></i>
-        <input type="text" id="searchText" placeholder="Search product..." name="">
-      </div>
-      
-      <div class="nav-options">
-        <a href="/">Home <span class="nav-icons"><i class="fa-solid fa-house"></i></span></a>
-        {{#if logged_in}}
-        <a id="logout-btn">Logout <span class="nav-icons"><i class="fa-solid fa-user-large"></i></span></button>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>My Project Name</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/91ed65ac39.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  {{! this is the main html file wrapper for all your views }}
+  <nav>
+    <h1 class="nav-header">OldEgg</h1>
+    <div class="search-box">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <input type="text" id="searchText" placeholder="Search product..." name="">
+    </div>
+
+    <div class="nav-options">
+      <a href="/">Home <span class="nav-icons"><i class="fa-solid fa-house"></i></span></a>
+      {{#if logged_in}}
+      <a id="logout-btn">Logout <span class="nav-icons"><i class="fa-solid fa-user-large"></i></span></button>
         <a href="/cart">Cart <span class="nav-icons"><i class="fa-solid fa-cart-shopping"></i></a>
         <a href="/wishlist">Wish List <span class="nav-icons"><i class="fa-solid fa-heart"></i></a>
         {{else}}
         <a id="login-btn" href="/login">Login <span class="nav-icons"><i class="fa-solid fa-user-large"></i></span></a>
         {{/if}}
-      </div>
-    </nav>
+    </div>
+  </nav>
 
-
+  <div class="page-container">
     {{! placeholder for where the view will be injected }}
     {{{body}}}
 
-    <footer id="footer">THIS IS A FOOTER</footer>
-    {{! placeholder for where the view will be injected }}
-    <script src="/js/logout.js"></script>
-    <script src="/js/search.js"></script>
-    
+  </div>
 
-  </body>
+  <footer class="footer-container">
+    <div class="footer-top">
+      <ul class="footer-list">
+        <li>
+          <h2>About</h2>
+        </li>
+        <li>
+          <p>Contact Us</p>
+        </li>
+        <li>
+          <p>About us</p>
+        </li>
+        <li>
+          <p>Careers</p>
+        </li>
+        <li>
+          <p>Gift Cards</p>
+        </li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <h2>Help</h2>
+        </li>
+        <li>
+          <p>Payments</p>
+        </li>
+        <li>
+          <p>Shipping</p>
+        </li>
+        <li>
+          <p>Cancellations & Returns</p>
+        </li>
+        <li>
+          <p>FAQs</p>
+        </li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <h2>Github</h2>
+        </li>
+        <li>
+          <p>Brian</p>
+        </li>
+        <li>
+          <p>Allec</p>
+        </li>
+        <li>
+          <p>Tony</p>
+        </li>
+        <li>
+          <p>Kevin</p>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <p>Copyright © 2022 Old Egg. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  {{! placeholder for where the view will be injected }}
+  <script src="/js/logout.js"></script>
+  <script src="/js/search.js"></script>
+
+
+</body>
+
 </html>
-
