@@ -12,6 +12,10 @@ Carts.belongsTo(Users, {
   foreignKey: 'user_id'
 });
 
+Carts.hasMany(Products, {
+  foreignKey: 'product_id'
+});
+
 Categories.hasMany(Products, {
   foreignKey: 'category_id',
 });
