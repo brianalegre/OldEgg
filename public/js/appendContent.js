@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 const appendContent = (obj) => {
   const element = obj;
   const content = document.createElement(obj.tag);
