@@ -150,6 +150,72 @@ const productsData = [
       'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_14/image.jpg',
     category_id: 4,
   },
+  {
+    product_name: 'Intel Core i7-10700KF',
+    description:
+      'Core i7 10th Gen Comet Lake 8-Core 3.8 GHz LGA 1200 125W Desktop Processor',
+    price: 289.96,
+    stock: 11,
+    date_posted: '2021-05-13',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll300/19-118-128-01.jpg',
+    category_id: 6,
+  },
+  {
+    product_name: 'Intel Core i5-11400F',
+    description:
+      'Core i5 11th Gen Rocket Lake 6-Core 2.6 GHz LGA 1200 65W Desktop Processor',
+    price: 151.99,
+    stock: 5,
+    date_posted: '2021-05-13',
+    product_img:
+      'https://cdn11.bigcommerce.com/s-3kliogr9m/images/stencil/1280x1280/products/382/1415/Box_T4_i5F_11th_H93494_Ang03_Left_V01_HIGHRES_SIMPLIF__91936.1635983492.jpg?c=1',
+    category_id: 6,
+  },
+  {
+    product_name: 'Intel Core i5-12600KF',
+    description:
+      'Core i5 12th Gen Alder Lake 10-Core (6P+4E) 3.7 GHz LGA 1700 125W Desktop Processor',
+    price: 259.99,
+    stock: 16,
+    date_posted: '2021-05-13',
+    product_img:
+      'https://media.ldlc.com/r1600/ld/products/00/05/90/01/LD0005900180_1.jpg',
+    category_id: 6,
+  },
+  {
+    product_name: 'Intel Core i7-12700KF',
+    description:
+      'Core i7 12th Gen Alder Lake 12-Core (8P+4E) 3.6 GHz LGA 1700 125W Desktop Processor',
+    price: 377.98,
+    stock: 9,
+    date_posted: '2021-05-13',
+    product_img:
+      'https://www.tradeinn.com/f/13845/138457079/intel-i7-12700kf-box-processor.jpg',
+    category_id: 6,
+  },
+  {
+    product_name: 'Intel Core i9-10900K',
+    description:
+      '6-Core 3.6 GHz (4.2 GHz Max Boost) Socket AM4 65W 100-100000031BOX Desktop Processor',
+    price: 389.88,
+    stock: 4,
+    date_posted: '2021-05-13',
+    product_img:
+      'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6411/6411492cv11d.jpg',
+    category_id: 6,
+  },
+  {
+    product_name: 'Intel Core i3-12100',
+    description:
+      'Core i3 12th Gen Alder Lake Quad-Core 3.3 GHz LGA 1700 Processor 60W Intel UHD Graphics 730 Desktop Processor',
+    price: 129.98,
+    stock: 22,
+    date_posted: '2021-05-13',
+    product_img:
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_13/image.jpg',
+    category_id: 6,
+  },
 ];
 
 const seedProducts = () => Products.bulkCreate(productsData);
