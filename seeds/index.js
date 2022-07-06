@@ -19,8 +19,8 @@ const seedAll = async () => {
 
     await seedCarts();
     console.log('--- CARTS SEEDED! ---');
-  } catch(err) {
-    console.log(err)
+  } catch (err) {
+    console.log(err);
   }
   process.exit(0);
 };
