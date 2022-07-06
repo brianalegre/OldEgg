@@ -1,3 +1,3 @@
-const renderCart = () => {
-    const res = await fetch('/api')
-}
+// const renderCart = async () => {
+//     const res = await fetch('/api')
+// }

@@ -4,12 +4,11 @@ const Categories = require('./Categories');
 const Products = require('./Products');
 const Carts = require('./Carts');
 
-
-Users.hasOne(Carts, {
+Users.hasMany(Carts, {
   foreignKey: 'user_id'
 });
 
-Carts.hasOne(Users, {
+Carts.belongsTo(Users, {
   foreignKey: 'user_id'
 });
 
@@ -17,18 +16,13 @@ Carts.hasMany(Products, {
   foreignKey: 'product_id'
 });
 
-Products.hasMany(Carts, {
-  foreignKey: 'product_id'
+Categories.hasMany(Products, {
+  foreignKey: 'category_id',
 });
 
 Products.belongsTo(Categories, {
   foreignKey: 'category_id',
 });
-
-Categories.hasMany(Products, {
-  foreignKey: 'category_id',
-});
-
 
 module.exports = {
   Products,

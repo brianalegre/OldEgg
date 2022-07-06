@@ -37,7 +37,6 @@ Products.init(
         isNumeric: true,
       },
     },
-
     date_posted: {
       //formatted to 'YYYY-MM-DD'
       type: DataTypes.DATEONLY,
