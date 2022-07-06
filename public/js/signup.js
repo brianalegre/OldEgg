@@ -25,7 +25,7 @@ const signupFormHandler = async (event) => {
       });
 
       if (response.ok) {
-        return document.location.replace('/');
+        return document.location.replace('/login');
       }
     } catch (err) {
       console.log(err);
