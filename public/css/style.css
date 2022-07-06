@@ -198,6 +198,10 @@ nav {
   margin: .5em;
 }
 
+.search-box img {
+  padding: 5px;
+} 
+
 .nav-icons {
   font-size: .825em;
 }
