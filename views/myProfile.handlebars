@@ -4,7 +4,7 @@
         <div class="login-header">
             <h1>My Profile</h1>
         </div>
-        <form id="signup-form">
+        <form id="userUpdate-form">
             {{!-- Username --}}
             <div class="form-group">
                 <label for="username-signup">Username: {{user.username}}</label>
@@ -16,31 +16,31 @@
             {{!-- First Name --}}
             <div class="form-group">
                 <label for="firstname-signup">First Name</label>
-                <input type="text" class="form-control" id="update-username" value="{{user.first_name}}">
+                <input type="text" class="form-control" id="update-firstname" value="{{user.first_name}}">
             </div>
             {{!-- Last Name --}}
             <div class="form-group">
                 <label for="lastname-signup">Last Name</label>
-                <input type="text" class="form-control" id="update-username" value="{{user.last_name}}">
+                <input type="text" class="form-control" id="update-lastname" value="{{user.last_name}}">
             </div>
             {{!-- Email --}}
             <div class="form-group">
                 <label for="email-signup">Email</label>
-                <input type="text" class="form-control" id="update-username" value="{{user.email}}">
+                <input type="text" class="form-control" id="update-email" value="{{user.email}}">
             </div>
             {{!-- Change Password --}}
             <div class="form-group">
                 <label for="password-signup">New Password</label>
-                <input class="form-input" type="password" id="password-signup" placeholder="Enter New Password..." />
+                <input class="form-input" type="password" id="password-login" placeholder="Enter New Password..." />
             </div>
             <div class="form-group">
                 {{!-- Confirm Password --}}
                 <label for="password-signup">Confirm New Password</label>
-                <input class="form-input" type="password" id="password-signup" placeholder="Confirm New Password..." />
+                <input class="form-input" type="password" id="password-confirm" placeholder="Confirm New Password..." />
             </div>
             {{!-- Submit Button --}}
             <div class="form-group">
-                <button type="submit" data-id={{user.user_id}}> Update <i class="fa fa-user-plus"
+                <button id="update-btn"type="submit" data-id={{user.user_id}}> Update <i class="fa fa-user-plus"
                         aria-hidden="true"></i></button>
                 <button> Cancel <i class="fa fa-user-times" aria-hidden="true"></i></button>
             </div>
