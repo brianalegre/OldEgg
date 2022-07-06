@@ -255,17 +255,17 @@ nav {
 
 #cart-btn::before {
   content: "5";
-  font-size: 19px;
+  font-size: 16px;
   position: absolute;
-  top: -0.65em;
-  right: .45em;
+  top: -0.35em;
+  right: .85em;
   width: 1em;
   height: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: orangered;
+  background-color: red;
   color: white;
 
 }
