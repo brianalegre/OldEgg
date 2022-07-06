@@ -11,6 +11,7 @@ router.get('/cart', async (req, res) => {
     const dbProductInfo = await Products.findAll({where: {product_id: cartProductsIds}})
     const cartProducts = dbProductInfo.map(product => product.get({plain:true}))
     const cartProdLength = cartProducts.length
+    
     res.render('cart', {
       cartProducts,
       cartProdLength,
