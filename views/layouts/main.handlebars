@@ -16,7 +16,7 @@
   <nav>
     <h1 class="nav-header">OldEgg</h1>
     <div class="search-box">
-      <i class="fa fa-search" aria-hidden="true"></i>
+      <img src="../images/icons/navbar/akar-icons_search.png" alt="search icon">
       <input type="text" id="searchText" placeholder="Search product..." name="">
     </div>
 
@@ -38,11 +38,70 @@
   </nav>
 
   {{! placeholder for where the view will be injected }}
-  <section id="section-input">
+  <div class="page-container" id="section-input">
     {{{body}}}
-  </section>
+  </div>
 
-  <footer id="footer">THIS IS A FOOTER</footer>
+  <footer class="footer-container">
+    <div class="footer-top">
+      <ul class="footer-list">
+        <li>
+          <h2>About</h2>
+        </li>
+        <li>
+          <p>Contact Us</p>
+        </li>
+        <li>
+          <p>About us</p>
+        </li>
+        <li>
+          <p>Careers</p>
+        </li>
+        <li>
+          <p>Gift Cards</p>
+        </li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <h2>Help</h2>
+        </li>
+        <li>
+          <p>Payments</p>
+        </li>
+        <li>
+          <p>Shipping</p>
+        </li>
+        <li>
+          <p>Cancellations & Returns</p>
+        </li>
+        <li>
+          <p>FAQs</p>
+        </li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <h2>Github</h2>
+        </li>
+        <li>
+          <p>Brian</p>
+        </li>
+        <li>
+          <p>Allec</p>
+        </li>
+        <li>
+          <p>Tony</p>
+        </li>
+        <li>
+          <p>Kevin</p>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <p>Copyright © 2022 Old Egg. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
   {{! placeholder for where the view will be injected }}
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
