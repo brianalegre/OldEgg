@@ -244,6 +244,32 @@ nav {
   cursor: pointer;
 }
 
+#cart-btn {
+  position: relative;
+  outline: none;
+  border: none;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+#cart-btn::before {
+  content: "5";
+  font-size: 19px;
+  position: absolute;
+  top: -0.65em;
+  right: .45em;
+  width: 1em;
+  height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: orangered;
+  color: white;
+
+}
+
 /* START NAV BAR Icon Animations */
 @-webkit-keyframes hvr-icon-up {
   0%,
