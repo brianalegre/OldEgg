@@ -4,17 +4,18 @@
         {{!-- image container --}}
         <div class="product-image-container">
             {{!-- image --}}
-            <img class= "product-image" src="{{products.product_img}}" alt="productImage" class="product-image">
+            <img class="product-image" src="{{products.product_img}}" alt="productImage" class="product-image">
         </div>
         <div class="product-details">
             <h2>{{products.product_name}}</h2>
             <hr>
-            <p class="category-title"><b>Category </b>{{products.category.category_name}}</p>
-            <p class="product-description"><b>Description </b>{{products.description}}</p>
-            <p class="product-price"><b>Price </b>${{products.price}}</p>
-            <p class="product-stock"><b>Stock </b>{{products.stock}}</p>
+            <p class="category-title"><b>Category :</b>&nbsp;{{products.category.category_name}}</p>
+            <p class="product-description"><b>Description :</b>&nbsp;{{products.description}}</p>
+            <p class="product-price"><b>Price :</b>&nbsp;${{products.price}}</p>
+            <p class="product-stock"><b>Stock :</b>&nbsp;{{products.stock}}</p>
 
-            <button data-id={{products.product_id}} class="cart-btn">Add to Cart  <img class = "add-cart-svg" src="../images/icons/productpage/addtocart-icon.png" alt="" class="cart-image"></button>
+            <button data-id={{products.product_id}} class="cart-btn">Add to Cart <img class="add-cart-svg"
+                    src="../images/icons/productpage/addtocart-icon.png" alt="" class="cart-image"></button>
         </div>
     </div>
 </div>
