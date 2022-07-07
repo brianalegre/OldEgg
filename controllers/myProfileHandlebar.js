@@ -15,7 +15,7 @@ router.get('/profile', async (req, res) => {
         message: 'This user ID does not exist. Please enter a valid user ID!',
       });
     }
-    // Render data from userData to myProfile.handlebars
+    // Render data
     const users = userData.get({ plain: true });
     res.render('myProfile', {
       users,
@@ -26,6 +26,5 @@ router.get('/profile', async (req, res) => {
   }
 }
 );
-
 
 module.exports = router;
