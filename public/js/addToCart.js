@@ -10,7 +10,10 @@ const addToCart = async targ => {
       body: JSON.stringify({ productId }),
       headers: { 'Content-Type': 'application/json' }
     });
-    console.log(response);
+    const loggedIn = await response.json();
+    if (!loggedIn) {
+      document.location.replace('/login');
+    }
   } catch (err) {
     console.log(err);
   }

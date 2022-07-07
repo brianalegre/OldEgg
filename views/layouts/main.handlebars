@@ -14,7 +14,7 @@
 <body>
   {{! this is the main html file wrapper for all your views }}
   <nav>
-    <h1 class="nav-header">OldEgg</h1>
+    <a href="/" id="logo-img" class="hvr-icon-float"><img src="../images/icons/navbar/logo.png" class="hvr-icon"></a>
     <div class="search-box">
       <img src="../images/icons/navbar/akar-icons_search.png" alt="search icon">
       <input type="text" id="searchText" placeholder="Search product..." name="">
@@ -26,8 +26,8 @@
         {{#if logged_in}}
         <a id="logout-btn" class="hvr-icon-up">Logout <img src="../images/icons/navbar/ri_logout-circle-line.png"
             alt="logout icon" class="hvr-icon"></a>
-        <a href="/cart" class="hvr-icon-float">Cart <img src="../images/icons/navbar/cart-nav-icon.png" alt="cart icon"
-            class="hvr-icon"></a>
+        <button data-cart-count="{{cartProdLength}}" id="cart-btn"><a href="/cart" class="hvr-icon-float">Cart <img
+              src="../images/icons/navbar/cart-nav-icon.png" alt="cart icon" class="hvr-icon"></a></button>
         <a href="/wishlist" class="hvr-icon-float">Wish List <img src="../images/icons/navbar/akar-icons_heart.png"
             alt="wishlist icon" class="hvr-icon"></a>
         <a href="/profile" class="hvr-icon-float">Profile <i class="fa fa-address-card-o hvr-icon"
@@ -108,6 +108,8 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   <script src="/js/myProfile.js"></script>
+  {{!--
+  <script src="../../controllers/cartHandlebar.js"></script> --}}
   {{/if}}
   <script src="/js/addToCart.js"></script>
   <script src="/js/search.js"></script>

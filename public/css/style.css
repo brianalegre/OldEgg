@@ -179,7 +179,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 3em;
+  padding: 0 3em 3em 3em;
   width: 100vw;
 }
 
@@ -188,14 +188,15 @@ nav {
 }
 
 .search-box {
-  width: 500px;
-	height: 50px;
+  width: 45vh;
+	/* height: 50px; */
 	background-color: #F0F2F4;
-	border-radius: 30px;
+	/* border-radius: 30px; */
 	display: flex;
 	align-items: center;
-	padding: 20px;
-  margin: .5em;
+	/* padding: 20px; */
+  /* margin-left: 20vh; */
+  /* margin: .5em; */
 }
 
 .search-box img {
@@ -238,10 +239,45 @@ nav {
   font-size: 1.5rem;
 }
 
+#logo-img {
+  position: relative;
+  border: 0;
+  /* margin-left: 2vh; */
+  margin-top: -5vh;
+  height: 20vh;
+  width: 25vh;
+}
+
 #logout-btn {
   border: none;
   font-family: inherit;
   cursor: pointer;
+}
+
+#cart-btn {
+  position: relative;
+  outline: none;
+  border: none;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+#cart-btn::before {
+  content: attr(data-cart-count);
+  font-size: 15px;
+  position: absolute;
+  top: -0.45em;
+  right: .75em;
+  width: 1.15em;
+  height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+
 }
 
 /* START NAV BAR Icon Animations */

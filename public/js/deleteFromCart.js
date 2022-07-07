@@ -13,6 +13,7 @@ const deleteFromCart = async targ => {
             },
         })
         if (response.ok) return document.location.replace('/cart');
+        if (response.status === 401) return document.location.replace('/login')
     } catch(err) {
         console.log(err)
     }
