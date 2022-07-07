@@ -1,0 +1,17 @@
+<div class="cart-item">
+    <a href="/products/{{product_id}}">
+        <img src="{{product_img}}" class="cart-item-image"></img>
+        <div class="cart-item-desc">
+            <h1>{{product_name}}</h1>
+            <hr>
+            <p>{{description}}</p>
+            <p>{{stock}}</p>
+            <p>{{price}}</p>
+            <p>Quantity to Buy</p>
+        </div>
+    </a>
+    <div class="cart-item-options">
+        <button id="cart-item-delete" data-id={{product_id}}>Delete</button>
+        <button>Save to Wish List</button>
+    </div>
+</div>

@@ -2,6 +2,7 @@ const paymentCheckoutBtn = document.getElementById('payment-checkout-btn')
 const btnMsgContainer = document.querySelector('.btn-msg-container')
 
 const checkoutFromCart = async () => {
+  try {
     const response = await fetch('/cart/checkout', {method: 'POST'})
     if (response.ok) {
         return document.location.replace('/cart')
@@ -11,7 +12,7 @@ const checkoutFromCart = async () => {
     if (checkMessage) {
       checkMessage.remove()
     }
-    // otherwise if the res is not ok
+    // error handling
     switch (data.error) {
       case 0:
           message = {
@@ -38,6 +39,9 @@ const checkoutFromCart = async () => {
         appendContent(message)
         break;
     }
+  } catch (err) {
+    console.log(err)
+  }
 }
 
 if (paymentCheckoutBtn) {

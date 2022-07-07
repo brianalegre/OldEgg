@@ -1,0 +1,22 @@
+<section id="cart-container">
+    {{#if hasItems}}
+    {{#each cartProducts as |products|}}
+    {{> cart-product-details}}
+    {{/each}}
+    <hr>
+    <div id="cart-checkout">
+        <p>Total Price: ${{subTotal}}</p>
+        <a href="/cart/checkout">
+            <button id="cart-checkout-btn">Checkout</button>
+        </a>
+    </div>
+
+    <script src="/js/deleteFromCart.js"></script>
+    <script src="/js/checkoutFromCart.js"></script>
+    {{else}}
+    <div id="no-cart-items">
+        <h1>Your OldEgg Cart is Empty.</h1>
+        <p>Check your wishlist above, or <a href="/">continue shopping.</a></p>
+    </div>
+    {{/if}}
+</section>

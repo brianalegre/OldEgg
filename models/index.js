@@ -3,18 +3,31 @@ const Users = require('./Users');
 const Categories = require('./Categories');
 const Products = require('./Products');
 const Carts = require('./Carts');
+const Wishlist = require('./Wishlist');
 
 Users.hasMany(Carts, {
   foreignKey: 'user_id'
 });
 
+Users.hasMany(Wishlist, {
+  foreignKey: 'user_id'
+})
+
 Carts.belongsTo(Users, {
   foreignKey: 'user_id'
 });
 
+Wishlist.belongsTo(Users, {
+  foreignKey: 'user_id'
+})
+
 Carts.hasMany(Products, {
   foreignKey: 'product_id'
 });
+
+Wishlist.hasMany(Products, {
+  foreignKey: 'product_id'
+})
 
 Categories.hasMany(Products, {
   foreignKey: 'category_id',
@@ -29,6 +42,7 @@ module.exports = {
   Categories,
   Users,
   Carts,
+  Wishlist
 };
 
 // Old Unused Code
