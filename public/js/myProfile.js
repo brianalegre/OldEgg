@@ -13,6 +13,18 @@ const updateUserInfo = async (event) => {
   const first_name = document.querySelector('#update-firstname').value.trim();
   const last_name = document.querySelector('#update-lastname').value.trim();
   const email = document.querySelector('#update-email').value.trim();
+  const checkMessage = document.querySelector('.invalid-auth');
+  const checkValidMessage = document.querySelector('.valid-auth');
+
+
+  if (checkMessage) {
+    checkMessage.remove();
+  }
+
+  if (checkValidMessage) {
+    checkValidMessage.remove();
+  }
+
 
   // Check if password and confirm password match
   if (password === confirmPassword) {
@@ -27,7 +39,7 @@ const updateUserInfo = async (event) => {
       textContent: 'Passwords do NOT match!',
       appendTo: userUpdateForm,
     };
-    appendContent(message);
+    return appendContent(message);
   }
 
   // Check if email is valid
@@ -43,7 +55,7 @@ const updateUserInfo = async (event) => {
       textContent: 'Email is invalid!',
       appendTo: userUpdateForm,
     };
-    appendContent(message);
+    return appendContent(message);
   }
 
   // Check if first_name and last_name are valid
@@ -59,7 +71,7 @@ const updateUserInfo = async (event) => {
       textContent: 'First or last name are invalid!',
       appendTo: userUpdateForm,
     };
-    appendContent(message);
+    return appendContent(message);
   }
   // Send updated data to backend
   try {
@@ -81,7 +93,7 @@ const updateUserInfo = async (event) => {
       textContent: 'User Info Updated!',
       appendTo: userUpdateForm,
     };
-    appendContent(message);
+    return appendContent(message);
   } catch (err) {
     console.log(err);
   }
