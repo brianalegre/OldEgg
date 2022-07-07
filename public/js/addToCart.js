@@ -12,8 +12,9 @@ const addToCart = async id => {
         const loggedIn = await response.json()
 
         if (!loggedIn) {
-            document.location.replace('/login')
+            return document.location.replace('/login')
         }
+        //otherwise we refresh the page
     } catch (err) {
         console.log(err)
     }
@@ -21,8 +22,9 @@ const addToCart = async id => {
 
 if (cartBtn) {
     const productId = cartBtn.dataset.id
-    cartBtn.addEventListener('click', e => {
+    cartBtn.addEventListener('click', () => {
         addToCart(productId)
         cartBtn.classList.toggle('added');
+        setTimeout(() => location.reload(), 2500)
     })
 }
