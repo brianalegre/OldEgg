@@ -14,10 +14,19 @@ const categoriesData = [
     category_name: 'Motherboards',
   },
   {
-    category_name: 'Memory',
+    category_name: 'Storage',
   },
   {
     category_name: 'CPU / Processors',
+  },
+  {
+    category_name: 'Memory',
+  },
+  {
+    category_name: 'Power Supply',
+  },
+  {
+    category_name: 'Fans & PC Cooling',
   },
 ];
 
