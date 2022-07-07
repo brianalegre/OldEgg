@@ -73,7 +73,7 @@ const updateUserInfo = async (event) => {
   try {
     const response = await fetch('/api/users', {
       method: 'PUT',
-      body: JSON.stringify({ username, first_name, last_name, email, password }),
+      body: JSON.stringify({ first_name, last_name, email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
     const loggedIn = await response.json();

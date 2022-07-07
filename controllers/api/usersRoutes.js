@@ -117,14 +117,14 @@ router.post('/logout', (req, res) => {
 // PUT Update user information
 router.put('/', async (req, res) => {
   try {
-    const userUpdate = await Users.update(
+    const singleUser = await Users.findOne({
+      where: {
+        user_id: req.session.user_id
+      }
+    });
+    const userUpdate = await singleUser.update(
       {
-        where: {
-          user_id: req.session.user_id
-        },
-      },
-      {
-        username: req.body.username,
+        // username: req.body.username,
         first_name: req.body.first_name,
         last_name: req.body.last_name,
         email: req.body.email,
