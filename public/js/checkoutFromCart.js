@@ -6,17 +6,35 @@ const checkoutFromCart = async () => {
     if (response.ok) {
         return document.location.replace('/cart')
     }
+    const data = await response.json()
+
     // otherwise if the res is not ok
-    const message = {
-        tag: 'p',
-        setAttr: {
-          class: 'invalid-auth',
-        },
-        // set this to backend message
-        textContent: 'Insufficient balance',
-        appendTo: btnMsgContainer,
-      };
-    appendContent(message)
+    switch (data.error) {
+      case 0:
+          message = {
+            tag: 'p',
+            setAttr: {
+              class: 'invalid-auth',
+            },
+            // set this to backend message
+            textContent: data.message,
+            appendTo: btnMsgContainer,
+          };
+          appendContent(message)
+        break;
+      case 1:
+        message = {
+          tag: 'p',
+          setAttr: {
+            class: 'invalid-auth',
+          },
+          // set this to backend message
+          textContent: data.message,
+          appendTo: btnMsgContainer,
+        };
+        appendContent(message)
+        break;
+    }
 }
 
 if (paymentCheckoutBtn) {

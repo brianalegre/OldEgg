@@ -53,11 +53,13 @@ router.post('/checkout', loggedIn, async (req, res) => {
         const resultingUserBalance = parseInt(userBalance) - parseInt(subTotal);
         const checkPayment = resultingUserBalance < 0 ? false : true
 
+        // Error 1 = insufficient bal, Error 2 = stock is empty for item
         if (!checkPayment) {
-            return res.status(400).json('Insufficient balance amount.')
+            return res.status(400).json({error: 0, message: 'Insufficient balance amount.'})
         // If there are empty stocks we res.send the array of empty stocked items
         } else if (checkEmptyStock.length > 0) {
-            return res.status(400).json(checkEmptyStock)
+            const emptyStockNames = checkEmptyStock.map(product=> product.product_name).join(', ')
+            return res.status(400).json({error: 1, message: `Empty stock for items: ${emptyStockNames}`})
         }
         await Users.update(
             { balance: resultingUserBalance },
