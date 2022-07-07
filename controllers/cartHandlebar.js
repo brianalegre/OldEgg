@@ -41,15 +41,13 @@ router.post('/cart', async (req, res) => {
     if (!loggedIn) {
       return res.status(401).json(loggedIn);
     }
-
-    const checkProduct = await Carts.findAll(
-      {
+    
+    const checkProduct = await Carts.findAll({
         where: { 
           user_id: req.session.user_id,
           product_id: req.body.productId
         }
-      }
-    )
+      })
 
     if (!!checkProduct) {
       const cartData = await Carts.create({

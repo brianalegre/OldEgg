@@ -14,8 +14,17 @@
             <p class="product-price"><b>Price :</b>&nbsp;${{products.price}}</p>
             <p class="product-stock"><b>Stock :</b>&nbsp;{{products.stock}}</p>
 
-            <button data-id={{products.product_id}} class="cart-btn">Add to Cart <img class="add-cart-svg"
-                    src="../images/icons/productpage/addtocart-icon.png" alt="" class="cart-image"></button>
+            <button data-id="{{products.product_id}}" class="add-to-cart">
+                <div class="default">Add to cart</div>
+                <div class="success">Added</div>
+                <div class="cart">
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="dots"></div>
+            </button>
         </div>
     </div>
 </div>
