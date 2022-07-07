@@ -17,7 +17,7 @@ const addToCart = async id => {
     } catch (err) {
         console.log(err)
     }
-}
+};
 
 if (cartBtn) {
     const productId = cartBtn.dataset.id
