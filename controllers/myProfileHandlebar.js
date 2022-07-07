@@ -26,23 +26,30 @@ const { Users } = require('../models');
 
 router.get('/profile', async (req, res) => {
   try {
-    const userData = await Users.findAll({ where: { user_id: req.session.user_id } });
+    const userData = await Users.findOne({
+      where: {
+        user_id: req.session.user_id
+      }
+      // , include: [{ all: true, nested: true }]
+    });
 
     if (!userData) {
       return res.status(404).json({
         message: 'This user ID does not exist. Please enter a valid user ID!',
       });
     }
-    // res.status(200).json(user);
+    // Render data from userData to myProfile.handlebars
     const users = userData.get({ plain: true });
-    res.render('myprofile', {
+    res.render('myProfile', {
       users,
-      logged_in: req.session.logged_in
+      // logged_in: req.session.logged_in
     });
   } catch (err) {
     return res.status(500).json(err);
   }
 }
 );
+
+
 
 module.exports = router;

@@ -7,26 +7,26 @@
         <form id="userUpdate-form">
             {{!-- Username --}}
             <div class="form-group">
-                <label for="username-signup">Username: {{username}}</label>
+                <label for="username-signup">Username: {{users.username}}</label>
             </div>
             {{!-- User Balance --}}
             <div class="form-group">
-                <label for="email-signup">Balance: ${{balance}}</label>
+                <label for="email-signup">Balance: ${{users.balance}}</label>
             </div>
             {{!-- First Name --}}
             <div class="form-group">
                 <label for="firstname-signup">First Name</label>
-                <input type="text" class="form-control" id="update-firstname" value="{{user.first_name}}">
+                <input type="text" class="form-control" id="update-firstname" value="{{users.first_name}}">
             </div>
             {{!-- Last Name --}}
             <div class="form-group">
                 <label for="lastname-signup">Last Name</label>
-                <input type="text" class="form-control" id="update-lastname" value="{{user.last_name}}">
+                <input type="text" class="form-control" id="update-lastname" value="{{users.last_name}}">
             </div>
             {{!-- Email --}}
             <div class="form-group">
                 <label for="email-signup">Email</label>
-                <input type="text" class="form-control" id="update-email" value="{{user.email}}">
+                <input type="text" class="form-control" id="update-email" value="{{users.email}}">
             </div>
             {{!-- Change Password --}}
             <div class="form-group">
