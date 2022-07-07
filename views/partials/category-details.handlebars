@@ -1,11 +1,16 @@
-<div class="product-card">
-    <a style="text-decoration: none" href="/products/{{product_id}}">
-        <img src="{{product_img}}" alt="" class="card-image">
-        <div class="card-product-details">
-            <div class="product-title">
-                <h4>{{product_name}}</h4>
+<div class="sr-item-container">
+    <a style="text-decoration: none" href="/products/{{product_id}}" class="sr-item">
+        <div class="search-results-card">
+            <div class="sr-img-container" id="hvr-ripple-out">
+                <img src="{{product_img}}" alt="" class="sr-image">
             </div>
-            <p class="card-price">${{price}}</p>
+            <button class="view-details">View Details</button>
+        </div>
+        <div class="sr-item-details">
+            <h2 class="sr-item-title">{{product_name}}</h2>
+            <h3 class="item-stock">{{stock}} available! Buy now </h3>
+            <p class="sr-item-price">${{price}}</Sp>
         </div>
     </a>
 </div>
+<hr>
