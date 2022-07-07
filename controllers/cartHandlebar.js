@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const { Carts, Products } = require('../models');
+const loggedIn = require('../utils/auth');
 
-router.get('/cart', async (req, res) => {
+router.get('/cart', loggedIn, async (req, res) => {
   try {
     // Grabbing cart data and mapping it into an array of product ids
     const dbCartData = await Carts.findAll({
@@ -12,18 +13,15 @@ router.get('/cart', async (req, res) => {
     );
 
     // Grabbing product information for each product in the cart product ids
-    const dbProductInfo = await Products.findAll({
-      where: { product_id: cartProductsIds },
-    });
-    const cartProducts = dbProductInfo.map((product) =>
-      product.get({ plain: true })
-    );
-    const cartProdLength = cartProducts.length;
+    const dbProductInfo = await Products.findAll({where: {product_id: cartProductsIds}})
+    const cartProducts = dbProductInfo.map(product => product.get({plain:true}))
+    const cartProdLength = cartProducts.length
+    
     res.render('cart', {
       cartProducts,
       cartProdLength,
-      logged_in: req.session.logged_in,
-    });
+      logged_in: req.session.logged_in
+    })
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -32,13 +30,19 @@ router.get('/cart', async (req, res) => {
 
 router.post('/cart', async (req, res) => {
   try {
-    const checkProduct = await Carts.findAll({
-      where: {
-        user_id: req.session.user_id,
-        product_id: req.body.productId,
-      },
-    });
+    const loggedIn = !!req.session.logged_in
+    if (!loggedIn) {
+      return res.status(401).json(loggedIn);
+    }
 
+    const checkProduct = await Carts.findAll(
+      {
+        where: { 
+          user_id: req.session.user_id,
+          product_id: req.body.productId
+        }
+      }
+    )
     if (!!checkProduct) {
       const cartData = await Carts.create({
         user_id: req.session.user_id,
@@ -51,7 +55,7 @@ router.post('/cart', async (req, res) => {
   }
 });
 
-router.delete('/cart', async (req, res) => {
+router.delete('/cart', loggedIn, async (req, res) => {
   try {
     const delData = await Carts.destroy({
       where: {

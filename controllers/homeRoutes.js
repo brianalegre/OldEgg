@@ -16,7 +16,7 @@ router.get('/signup', (req, res) => {
 });
 
 router.get('/portal', (req, res) => {
-  res.render('portal');
+  res.render('portal', {logged_in: req.session.logged_in});
 });
 
 router.get('/wishlist', (req, res) => {
