@@ -26,8 +26,3 @@ if (cartBtn) {
         cartBtn.classList.toggle('added');
     })
 }
-
-
-
-
-
