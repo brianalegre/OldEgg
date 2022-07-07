@@ -97,7 +97,7 @@ router.post('/login', async (req, res) => {
       req.session.user_id = userData.user_id;
       req.session.logged_in = true;
 
-      res.json({ user: userData, message: 'You are now logged in!'});
+      res.json({ user: userData, message: 'You are now logged in!' });
     });
   } catch (err) {
     res.status(400).json(err);
@@ -111,6 +111,28 @@ router.post('/logout', (req, res) => {
     });
   } else {
     res.status(404).end();
+  }
+});
+
+// PUT Update user information
+router.put('/', async (req, res) => {
+  try {
+    const singleUser = await Users.findOne({
+      where: {
+        user_id: req.session.user_id
+      }
+    });
+    const userUpdate = await singleUser.update(
+      {
+        // username: req.body.username,
+        first_name: req.body.first_name,
+        last_name: req.body.last_name,
+        email: req.body.email,
+        password: req.body.password,
+      });
+    res.status(200).json(userUpdate);
+  } catch (err) {
+    return res.status(500).json(err);
   }
 });
 
