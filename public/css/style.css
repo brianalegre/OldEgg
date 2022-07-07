@@ -135,6 +135,7 @@ body {
 /* Home Page */
 .home-container {
   height: 100vh;
+  padding-bottom: 45vh;
 }
 
 .home-container h1 {

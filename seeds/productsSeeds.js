@@ -822,6 +822,376 @@ const productsData = [
       'https://c1.neweggimages.com/ProductImageCompressAll1280/20-147-794-V01.jpg',
     category_id: 5,
   },
+  {
+    product_name: 'OLOy OWL RGB 16GB (2 x 8GB)',
+    description: '288-Pin DDR4 3600 (PC4 28800) Intel/AMD Optimized Desktop Memory Model ND4U0836181BHVDA',
+    price: 64.99,
+    stock: 22,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/20-821-464-V02.jpg',
+    category_id: 7,
+  },
+  {
+    product_name: 'CORSAIR Vengeance RGB Pro SL 16GB (2 x 8GB)',
+    description: '288-Pin PC RAM DDR4 3600 (PC4 28800) Intel XMP 2.0 Desktop Memory Model CMH16GX4M2D3600C18W',
+    price: 82.99,
+    stock: 14,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/20-236-703-V02.jpg',
+    category_id: 7,
+  },
+  {
+    product_name: 'CORSAIR Vengeance RGB Pro 16GB (2 x 8GB)',
+    description: '288-Pin DDR4 DRAM DDR4 3000 (PC4 24000) Desktop Memory Model CMW16GX4M2D3000C16',
+    price: 72.99,
+    stock: 5,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://www.corsair.com/medias/sys_master/images/images/hc5/hd2/9420610502686/-CMW16GX4M2C3200C16-Gallery-Vengeance-RGB-Pro-01.png',
+    category_id: 7,
+  },
+  {
+    product_name: 'CORSAIR Vengeance LPX 32GB (2 x 16GB)',
+    description: '288-Pin PC RAM DDR4 3200 (PC4 25600) Intel XMP 2.0 Desktop Memory Model CMK32GX4M2E3200C16',
+    price: 99.99,
+    stock: 7,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/20-236-541-V01.jpg',
+    category_id: 7,
+  },
+  {
+    product_name: 'OLOy WarHawk RGB 64GB (2 x 32GB)',
+    description: '288-Pin PC RAM DDR4 3200 (PC4 25600) Desktop Memory Model MD4U323216DEDA',
+    price: 202.99,
+    stock: 2,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/20-821-217-S01.jpg',
+    category_id: 7,
+  },
+  {
+    product_name: 'GeIL ORION AMD Edition 16GB (2 x 8GB)',
+    description: '288-Pin PC RAM DDR4 3200 (PC4 25600) Intel XMP 2.0 Desktop Memory Model GAOR416GB3200C16BDC',
+    price: 57.99,
+    stock: 13,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://m.media-amazon.com/images/I/51A-GbMQDiL._AC_SX679_PIbundle-2,TopRight,0,0_SH20_.jpg',
+    category_id: 7,
+  },
+  {
+    product_name: 'G.SKILL Ripjaws V Series 16GB (2 x 8GB)',
+    description: '288-Pin DDR4 SDRAM DDR4 3200 (PC4 25600) Desktop Memory Model F4-3200C16D-16GVGB',
+    price: 59.99,
+    stock: 33,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://i5.walmartimages.com/asr/e472dbb7-bb0a-40af-9a05-70c3c5a2be30.e8c3d474c7f90e4b497b9041db2c75ac.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF',
+    category_id: 7,
+  },
+  {
+    product_name: 'G.SKILL Trident Z Neo RGB (For AMD) 16GB (2 x 8GB)',
+    description: '288-Pin PC RAM DDR4 3600 (PC4 28800) Intel XMP 2.0 Desktop Memory Model F4-3600C18D-16GTZRX',
+    price: 79.99,
+    stock: 15,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://cdn.mwave.com.au/images/400/AC25714.jpg',
+    category_id: 7,
+  },
+  {
+    product_name: 'Team T-Force Delta RGB 16GB (2 x 8GB)',
+    description: '288-Pin PC RAM DDR4 3600 (PC4 28800) Intel XMP 2.0 Desktop Memory Model TF4D416G3600HC18JDC01',
+    price: 66.99,
+    stock: 13,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://www.tradeinn.com/f/13806/138060589/team-group-delta-t-force-16gb-2x8gb-ddr4-3200mhz-rgb-ram-memory.jpg',
+    category_id: 7,
+  },
+  {
+    product_name: 'OLOy 64GB (2 x 32GB)',
+    description: '288-Pin PC RAM DDR4 3200 (PC4 25600) Desktop Memory Model MD4U323216DJDA',
+    price: 164.99,
+    stock: 5,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/20-821-212-S01.jpg',
+    category_id: 7,
+  },
+  {
+    product_name: 'CORSAIR Vengeance RGB RT 64GB (2 x 32GB)',
+    description: '288-Pin DDR4 SDRAM DDR4 3200 (PC4 25600) AMD Optimized Desktop Memory Model CMN64GX4M2Z3200C16W',
+    price: 239.99,
+    stock: 13,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://www.corsair.com/us/en/medias/sys_master/images/images/hf3/h73/9838413283358/CMN64GX4M2Z3200C16W/Gallery/VENGEANCE_RGB_RT_WHITE_01/-CMN64GX4M2Z3200C16W-Gallery-VENGEANCE-RGB-RT-WHITE-01.png_515Wx515H',
+    category_id: 7,
+  },
+  {
+    product_name: 'OLOy Blade RGB 32GB (2 x 16GB)',
+    description: '288-Pin PC RAM DDR5 5200 (PC5 41600) Intel XMP 3.0 Desktop Memory Model ND5U1652361BRKDE',
+    price: 279.99,
+    stock: 7,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/20-821-488-01.jpg',
+    category_id: 7,
+  },
+  {
+    product_name: 'Super Flower Leadex Platinum SE 1000W',
+    description: '80+ Platinum, 10 Years Warranty, ECO Fanless & Silent Mode, Full Flat Ribbon Modular Power Supply, Dual Ball Bearing Fan, SF-1000F14MP V2',
+    price: 189.99,
+    stock: 5,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://m.media-amazon.com/images/I/81t5qCFDLYL._AC_SL1500_.jpg',
+    category_id: 8,
+  },
+  {
+    product_name: 'EVGA SuperNOVA 1000 G6, 80 Plus Gold 1000W',
+    description: 'Fully Modular, Eco Mode with FDB Fan, 10 Year Warranty, Includes Power ON Self Tester, Compact 140mm Size, Power Supply 220-G6-1000-X1',
+    price: 138.99,
+    stock: 6,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://images.evga.com/products/gallery/png/220-G6-1000-X1_XL_4.png',
+    category_id: 8,
+  },
+  {
+    product_name: 'Rosewill Glacier Series Glacier 600M 600W',
+    description: '600W Semi-Modular Power Supply, 80 PLUS BRONZE Certified, Silent Aero-Diversion Fan with Auto Fan Speed Control, Single +12V Rail, SLI & CrossFire Ready, Black',
+    price: 69.99,
+    stock: 13,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/17-182-340-V81.jpg',
+    category_id: 8,
+  },
+  {
+    product_name: 'Rosewill PMG Series, PMG1200, 1200W',
+    description: 'Fully Modular Power Supply, 80 PLUS GOLD Certified, Low Noise, Single +12V Rail, SLI & CrossFire Ready, Black',
+    price: 159.99,
+    stock: 21,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/17-182-448-V81.jpg',
+    category_id: 8,
+  },
+  {
+    product_name: 'Rosewill ARC Series, ARC 750, 750W',
+    description: 'Non-Modular Power Supply, 80 PLUS BRONZE Certified, Single +12V Rail, SLI & CrossFire Ready, Black',
+    price: 79.99,
+    stock: 8,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/17-182-294_R17.jpg',
+    category_id: 8,
+  },
+  {
+    product_name: 'CORSAIR RM850 CP-9020232-NA 850W',
+    description: 'ATX 80 PLUS GOLD Certified Full Modular Power Supply',
+    price: 139.99,
+    stock: 12,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/17-139-278-01.jpg',
+    category_id: 8,
+  },
+  {
+    product_name: 'Rosewill HIVE Series, HIVE-850S, 850W',
+    description: 'Fully Modular Power Supply, 80 PLUS BRONZE Certified, Single +12V Rail, SLI & CrossFire Ready, Black',
+    price: 99.99,
+    stock: 5,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/17-182-314_R18.jpg',
+    category_id: 8,
+  },
+  {
+    product_name: 'CORSAIR HX Series HX1200 CP-9020140-NA 1200W',
+    description: 'ATX12V v2.4 / EPS12V 2.92 80 PLUS PLATINUM Certified Full Modular Power Supply',
+    price: 210.97,
+    stock: 12,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/17-139-205-V01.jpg',
+    category_id: 8,
+  },
+  {
+    product_name: 'EVGA SuperNOVA 850 G6 220-G6-0850-X1 850W',
+    description: 'ATX12V / EPS12V 80 PLUS GOLD Certified Full Modular Active PFC Power Supply',
+    price: 126.51,
+    stock: 4,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/17-438-212-V01.jpg',
+    category_id: 8,
+  },
+  {
+    product_name: 'EVGA 550 N1 100-N1-0550-L1 550W',
+    description: 'ATX12V / EPS12V Power Supply',
+    price: 44.99,
+    stock: 25,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://images.evga.com/products/gallery/png/100-N1-0550-L1_XL_1.png',
+    category_id: 8,
+  },
+  {
+    product_name: 'CORSAIR RMx Series (2021) RM850x CP-9020200-NA 850W',
+    description: 'ATX12V / EPS12V 80 PLUS GOLD Certified Full Modular Power Supply',
+    price: 149.99,
+    stock: 18,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://m.media-amazon.com/images/I/71dj+5GQwEL._AC_SY450_.jpg',
+    category_id: 8,
+  },
+  {
+    product_name: 'Phanteks Revolt PH-P650GSF_US01 650W',
+    description: 'SFX 80 PLUS GOLD Certified Full Modular Power Supply',
+    price: 139.99,
+    stock: 11,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/17-987-015-V08.jpg',
+    category_id: 8,
+  },
+  {
+    product_name: 'EVGA SuperNOVA 750 G6, 80 Plus Gold 750W',
+    description: 'Fully Modular, Eco Mode with FDB Fan, 10 Year Warranty, Includes Power ON Self Tester, Compact 140mm Size, Power Supply 220-G6-0750-X1',
+    price: 109.99,
+    stock: 2,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://images.evga.com/products/gallery/png/220-G6-0750-X1_XL_8.png',
+    category_id: 8,
+  },
+  {
+    product_name: 'Enermax AQUAFUSION 240 ARGB All-in-one CPU Liquid Cooler for AM4',
+    description: 'LGA 1700/1200/1151, 240mm Radiator, Dual-Chamber Water Block, SquaA RGB Fan LGA 1700 Compatible',
+    price: 89.99,
+    stock: 15,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/35-214-099-S01.jpg',
+    category_id: 9,
+  },
+  {
+    product_name: 'MasterLiquid ML280 Mirror ARGB Close-Loop AIO CPU Liquid Cooler',
+    description: 'Mirror ARGB Pump, 280 Radiator, Dual SickleFlow 140mm, 3rd Gen Dual Chamber Pump for AMD Ryzen/Intel 1200, 1151, LGA 1700 Compatible',
+    price: 69.99,
+    stock: 7,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/35-103-312-01.jpg',
+    category_id: 9,
+  },
+  {
+    product_name: 'CORSAIR iCUE H150i ELITE CAPELLIX Liquid CPU Cooler',
+    description: 'LGA 1700 Compatible - White',
+    price: 184.99,
+    stock: 12,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/35-181-216-V01.jpg',
+    category_id: 9,
+  },
+  {
+    product_name: 'Corsair LL Series CO-9050072-WW LL120 RGB',
+    description: '120mm Dual Light Loop RGB LED PWM Fan, 3 Fan Pack with Lighting Node PRO',
+    price: 98.99,
+    stock: 6,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/35-181-130-01.jpg',
+    category_id: 9,
+  },
+  {
+    product_name: 'Fractal Design Silent Series R3 Case Fan',
+    description: 'Black/White Silence-Optimized 50mm',
+    price: 12.99,
+    stock: 32,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://m.media-amazon.com/images/I/71FrDcQjSmL.jpg',
+    category_id: 9,
+  },
+  {
+    product_name: 'Cooler Master Hyper 212 RGB Black Edition CPU Air Cooler',
+    description: 'SF120R RGB Fan, Anodized Gun-Metal Black, Brushed Nickel Fins, 4 Copper Direct Contact Heat Pipes for AMD Ryzen/Intel LGA1700/1200/1151',
+    price: 59.99,
+    stock: 17,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://m.media-amazon.com/images/I/81gIOOqmS7L._AC_SL1500_.jpg',
+    category_id: 9,
+  },
+  {
+    product_name: 'ASUS TUF Gaming LC 240 RGB All-in-one Liquid CPU Cooler',
+    description: 'Aura Sync, TUF 120mm RGB Radiator Fans with Fan Blade Groove Design LGA 1700 Compatible',
+    price: 110.99,
+    stock: 5,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/35-101-051-07.jpg',
+    category_id: 9,
+  },
+  {
+    product_name: 'Corsair Hydro Series H100x',
+    description: 'Extreme Performance Liquid / Water 240mm CPU Cooler (CW-9060040-WW) LGA 1700 Compatible',
+    price: 84.99,
+    stock: 22,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://xbit.com.bd/wp-content/uploads/2021/06/h100x-500x500-1.jpg',
+    category_id: 9,
+  },
+  {
+    product_name: 'LIAN LI GA-360B-LGA 360mm Water Cooler',
+    description: 'AIO360 RGB Black-Triple Addressable RGB Fans AIO CPU Liquid Cooler - GA360B Galahad AIO 360 Black 360mm',
+    price: 159.99,
+    stock: 4,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://m.media-amazon.com/images/I/71OreGhgjtL._AC_SL1500_.jpg',
+    category_id: 9,
+  },
+  {
+    product_name: 'NZXT Kraken Z73',
+    description: '360mm Liquid Cooler with LCD Display - Black',
+    price: 272.00,
+    stock: 15,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/35-146-084-07.jpg',
+    category_id: 9,
+  },
+  {
+    product_name: 'ARCTIC Liquid Freezer II 360 RGB (incl. Controller)',
+    description: 'Multi-Compatible All-in-one CPU AIO Water Cooler with RGB, Compatible with Intel & AMD, efficient PWM-Controlled Pump, 200-1800 RPM',
+    price: 139.99,
+    stock: 12,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/A73MS210725ryfxC.jpg',
+    category_id: 9,
+  },
+  {
+    product_name: 'EK 240mm AIO D-RGB All-in-One Liquid CPU Cooler',
+    description: 'EK-Vardar High-Performance PMW Fans, Water Cooling Computer Parts, 120mm Fan, Intel 115X/1200/2066, AMD AM4, (240mm AIO) LGA 1700 Compatible',
+    price: 94.49,
+    stock: 5,
+    date_posted: '2021-04-20',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/37B-000B-003G2-S01.jpg',
+    category_id: 9,
+  },
 ];
 
 const seedProducts = () => Products.bulkCreate(productsData);
