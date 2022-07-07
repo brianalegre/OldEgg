@@ -612,6 +612,116 @@ const productsData = [
       'https://m.media-amazon.com/images/I/71x1PhCp6iL._AC_SS450_.jpg',
     category_id: 2,
   },
+  {
+    product_name: 'LIAN LI LANCOOL 215 W White Steel',
+    description:
+      'Tempered Glass ATX Mid Tower Computer Case, Lancool 215 W',
+    price: 99.99,
+    stock: 5,
+    date_posted: '2021-03-21',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/AFSTS211209cunwR.jpg',
+    category_id: 3,
+  },
+  {
+    product_name: 'Corsair 4000D Airflow CC-9011200-WW Black Steel',
+    description:
+      'Plastic / Tempered Glass ATX Mid Tower Computer Case',
+    price: 104.99,
+    stock: 5,
+    date_posted: '2021-03-21',
+    product_img:
+      'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6424/6424213_sd.jpg;maxHeight=640;maxWidth=550',
+    category_id: 3,
+  },
+  {
+    product_name: 'Fractal Design Meshify C White - White Steel',
+    description:
+      'Tempered Glass ATX Mid Tower High-Airflow Compact Clear Tempered Glass Computer Case',
+    price: 99.99,
+    stock: 9,
+    date_posted: '2020-09-22',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/11-352-087-V01.jpg',
+    category_id: 3,
+  },
+  {
+    product_name: 'CORSAIR iCUE 5000X RGB Tempered Glass Mid-Tower ATX',
+    description:
+      'PC Smart Case, White, CC-9011213-WW',
+    price: 184.99,
+    stock: 2,
+    date_posted: '2021-03-21',
+    product_img:
+      'https://www.tejar.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/c/o/corsair_icue_5000x_rgb_tempered_glass_mid-tower_atx_pc_smart_case_-_white1_-_tejar.jpg',
+    category_id: 3,
+  },
+  {
+    product_name: 'CORSAIR 5000D Tempered Glass Mid-Tower ATX PC Case',
+    description:
+      'White, CC-9011209-WW',
+    price: 129.99,
+    stock: 11,
+    date_posted: '2021-03-21',
+    product_img:
+      'https://cwsmgmt.corsair.com/pdp/5000-series/images/2-5000d-clean-and-cool.png',
+    category_id: 3,
+  },
+  {
+    product_name: 'Fractal Design Meshify C Black ATX',
+    description:
+      'High-Airflow Compact Dark Tint Tempered Glass Window Mid Tower Computer Case',
+    price: 99.99,
+    stock: 7,
+    date_posted: '2021-03-21',
+    product_img:
+      'https://www.fractal-design.com/wp-content/uploads/2019/06/Meshify-C-TGL_1.jpg',
+    category_id: 3,
+  },
+  {
+    product_name: 'Cooler Master MasterBox MB530P Black ATX Mid-Tower',
+    description:
+      'Three Tempered Glass Panels, Front Side Mesh Intakes, Three 120mm ARGB Lighting Fans',
+    price: 139.99,
+    stock: 9,
+    date_posted: '2021-03-21',
+    product_img:
+      'https://files.coolermaster.com/og-image/masterbox-mb530p-argb-1200x630.jpg',
+    category_id: 3,
+  },
+  {
+    product_name: 'Phanteks Eclipse P300A High Airflow Full-Metal Mesh Design',
+    description:
+      'Compact ATX Mid-Tower, 120mm Black Case Fan, Black, PH-EC300ATG_BK01',
+    price: 79.99,
+    stock: 24,
+    date_posted: '2021-03-21',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/11-854-097-V12.jpg',
+    category_id: 3,
+  },
+  {
+    product_name: 'Fractal Design Torrent RGB Black E-ATX',
+    description:
+      'Tempered Glass Window High-Airflow Mid Tower Computer Case',
+    price: 229.99,
+    stock: 4,
+    date_posted: '2021-03-21',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/11-352-146-01.jpg',
+    category_id: 3,
+  },
+  {
+    product_name: 'Antec Dark League DF800 FLUX',
+    description:
+      'FLUX Platform, 5 x 120 mm Fans Included, ARGB & PWM Fan Controller, Tempered Glass Side Panel, Geometrical Mesh Front, Mid-Tower ATX Gaming Case',
+    price: 124.99,
+    stock: 10,
+    date_posted: '2021-03-21',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/11-129-280-10.jpg',
+    category_id: 3,
+  },
 ];
 
 const seedProducts = () => Products.bulkCreate(productsData);
