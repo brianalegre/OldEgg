@@ -1,0 +1,53 @@
+{{!-- Display Logged In User's Info --}}
+<div class="sign-up-container">
+    <div id="signup-container">
+        <div class="login-header">
+            <h1>My Profile</h1>
+        </div>
+        <form id="userUpdate-form">
+            {{!-- Username --}}
+            <div class="form-group">
+                <label for="username-signup">Username: {{users.username}}</label>
+            </div>
+            {{!-- User Balance --}}
+            <div class="form-group">
+                <label for="email-signup">Balance: ${{users.balance}}</label>
+            </div>
+            {{!-- First Name --}}
+            <div class="form-group">
+                <label for="firstname-signup">First Name</label>
+                <input type="text" class="form-control" id="update-firstname" value="{{users.first_name}}">
+            </div>
+            {{!-- Last Name --}}
+            <div class="form-group">
+                <label for="lastname-signup">Last Name</label>
+                <input type="text" class="form-control" id="update-lastname" value="{{users.last_name}}">
+            </div>
+            {{!-- Email --}}
+            <div class="form-group">
+                <label for="email-signup">Email</label>
+                <input type="text" class="form-control" id="update-email" value="{{users.email}}">
+            </div>
+            {{!-- Change Password --}}
+            <div class="form-group">
+                <label for="password-signup">New Password</label>
+                <input class="form-input" type="password" id="password-login" placeholder="Enter New Password..." />
+            </div>
+            <div class="form-group">
+                {{!-- Confirm Password --}}
+                <label for="password-signup">Confirm New Password</label>
+                <input class="form-input" type="password" id="password-confirm" placeholder="Confirm New Password..." />
+            </div>
+            {{!-- Submit Button --}}
+            <div class="form-group">
+                <button id="update-btn" type="submit" data-id={{users.user_id}}> Update <i class="fa fa-user-plus"
+                        aria-hidden="true"></i></button>
+                <button id="cancel-btn"> Cancel <i class="fa fa-user-times" aria-hidden="true"></i></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{{!-- Scripts --}}
+<script src="/js/myProfile.js"></script>
+<script src="./js/appendContent.js"></script>
