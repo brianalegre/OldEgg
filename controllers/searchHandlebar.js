@@ -32,7 +32,7 @@ router.get('/search/:product_searched', async (req, res) => {
     }
     res.render('searchPage', {
       products,
-      // loggedIn: req.session.loggedIn,
+      logged_in: req.session.logged_in
     });
   } catch (err) {
     console.log(err);
