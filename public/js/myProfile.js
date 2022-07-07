@@ -1,16 +1,8 @@
 // HTML Targeting Elements
 const userUpdateForm = document.querySelector('#userUpdate-form');
 const updateBtn = document.querySelector('#update-btn');
+const cancelBtn = document.querySelector('#cancel-btn');
 
-
-// const updateUserInfo = async (event) => {
-//   event.preventDefault();
-
-// Check if password and confirm password match
-
-
-
-// function checkPassword() {
 
 const updateUserInfo = async (event) => {
   event.preventDefault();
@@ -80,19 +72,24 @@ const updateUserInfo = async (event) => {
     if (!loggedIn) {
       console.log('something went wrong');
     }
+    const message = {
+      tag: 'p',
+      setAttr: {
+        class: 'valid-auth',
+      },
+      // Display message on page
+      textContent: 'User Info Updated!',
+      appendTo: userUpdateForm,
+    };
+    appendContent(message);
   } catch (err) {
     console.log(err);
   }
 };
 
-
-
-
-
-// Listen for submit event on update button
-// updateBtn.addEventListener('click', function (event) {
-//   event.preventDefault();
-//   checkPassword();
-// });
-
+// Event Listeners
 updateBtn.addEventListener('click', updateUserInfo);
+cancelBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  return document.location.replace('/');
+});
