@@ -7,7 +7,10 @@ const checkoutFromCart = async () => {
         return document.location.replace('/cart')
     }
     const data = await response.json()
-
+    const checkMessage = document.querySelector('.invalid-auth')
+    if (checkMessage) {
+      checkMessage.remove()
+    }
     // otherwise if the res is not ok
     switch (data.error) {
       case 0:
