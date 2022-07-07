@@ -686,7 +686,7 @@ const productsData = [
     stock: 9,
     date_posted: '2021-03-21',
     product_img:
-      'https://files.coolermaster.com/og-image/masterbox-mb530p-argb-1200x630.jpg',
+      'https://c1.neweggimages.com/ProductImage/11-119-354-V93.jpg',
     category_id: 3,
   },
   {
@@ -721,6 +721,106 @@ const productsData = [
     product_img:
       'https://c1.neweggimages.com/ProductImageCompressAll1280/11-129-280-10.jpg',
     category_id: 3,
+  },
+  {
+    product_name: 'Seagate SkyHawk ST6000VX001 6TB 3.5" Internal Hard Drive',
+    description: 'SATA 6.0Gb/s- 256MB Buffer - OEM',
+    price: 129.99,
+    stock: 18,
+    date_posted: '2020-01-21',
+    product_img:
+      'https://www.bhphotovideo.com/images/images2000x2000/seagate_st6000vx001_6tb_skyhawak_7200_rpm_1666826.jpg',
+    category_id: 5,
+  },
+  {
+    product_name: 'TOSHIBA 4TB Canvio Advance Portable External Hard Drive',
+    description: 'USB 3.0 Model HDTCA40XR3CA Red',
+    price: 93.99,
+    stock: 5,
+    date_posted: '2020-01-21',
+    product_img:
+      'https://media.officedepot.com/images/f_auto,q_auto,e_sharpen,h_450/products/7986019/7986019_o04_081821/7986019',
+    category_id: 5,
+  },
+  {
+    product_name: 'Seagate 4TB One Touch Portable Hard Drive',
+    description: 'USB 3.2 Gen 1 (USB 3.0) Model STKC4000403 Red',
+    price: 99.99,
+    stock: 6,
+    date_posted: '2020-01-21',
+    product_img:
+      'https://www.bhphotovideo.com/images/images2500x2500/seagate_stkc4000403_4tb_one_touch_portable_1595201.jpg',
+    category_id: 5,
+  },
+  {
+    product_name: 'TOSHIBA X300 HDWR460XZSTA 6TB',
+    description: '7200 RPM 256MB Cache SATA 6.0Gb/s 3.5" Desktop Internal Hard Drive',
+    price: 145.99,
+    stock: 10,
+    date_posted: '2020-01-21',
+    product_img:
+      'https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com//640245_308643_03_package_zoom.jpg',
+    category_id: 5,
+  },
+  {
+    product_name: 'WD Elements 18TB External Hard Drive',
+    description: 'USB 3.0, Micro-B Desktop External Hard Drive WDBWLG0180HBK-NESN Black',
+    price: 479.99,
+    stock: 4,
+    date_posted: '2020-01-21',
+    product_img:
+      'https://www.bhphotovideo.com/images/images2500x2500/wd_wdbwlg0180hbk_nesn_wd_elements_desktop_18tb_1604997.jpg',
+    category_id: 5,
+  },
+  {
+    product_name: 'Seagate IronWolf 8TB NAS Hard Drive',
+    description: '7200 RPM 256MB Cache SATA 6.0Gb/s CMR 3.5" Internal HDD for RAID Network Attached Storage ST8000VN004 - OEM',
+    price: 184.99,
+    stock: 19,
+    date_posted: '2020-01-21',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/22-184-796-V08.jpg',
+    category_id: 5,
+  },
+  {
+    product_name: 'Western Digital Blue 2TB Desktop Hard Disk Drive',
+    description: '7200 RPM SATA 6Gb/s 256MB Cache 3.5 Inch - WD20EZBX - OEM',
+    price: 49.99,
+    stock: 31,
+    date_posted: '2020-01-21',
+    product_img:
+      'https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-blue-desktop-sata-hdd/gallery/wd-blue-pc-desktop-hard-drive-2tb.png',
+    category_id: 5,
+  },
+  {
+    product_name: 'Western Digital Blue 2.5" 4TB SATA III 3D NAND Internal Solid State Drive',
+    description: 'SATA III 6 Gb/s, 2.5"/7mm, Up to 560 MB/s - WDS400T2B0A',
+    price: 399.77,
+    stock: 5,
+    date_posted: '2021-02-21',
+    product_img:
+      'https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-blue-3d-nand-sata-ssd/gallery/4tb/wd-blue-3d-nand-sata-ssd-4tb-front.png',
+    category_id: 5,
+  },
+  {
+    product_name: 'Crucial MX500 2TB Internal Solid State Drive',
+    description: '3D NAND SATA 2.5 Inch Internal SSD, up to 560 MB/s - CT2000MX500SSD1',
+    price: 199.99,
+    stock: 9,
+    date_posted: '2021-05-24',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/20-156-175-V01.jpg',
+    category_id: 5,
+  },
+  {
+    product_name: 'SAMSUNG 870 EVO Series 2.5" 2TB',
+    description: 'SATA III V-NAND Internal Solid State Drive (SSD) MZ-77E2T0B/AM',
+    price: 189.99,
+    stock: 13,
+    date_posted: '2019-08-30',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/20-147-794-V01.jpg',
+    category_id: 5,
   },
 ];
 
