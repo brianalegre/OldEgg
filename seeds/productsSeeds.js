@@ -469,6 +469,149 @@ const productsData = [
       'https://c1.neweggimages.com/ProductImageCompressAll1280/13-145-364-V01.jpg',
     category_id: 4,
   },
+  {
+    product_name: 'GIGABYTE Gaming GeForce RTX 3070 Ti 8GB',
+    description:
+      'GDDR6X PCI Express 4.0 ATX Video Card GV-N307TGAMING OC-8GD',
+    price: 719.99,
+    stock: 6,
+    date_posted: '2022-01-11',
+    product_img:
+      'https://c1.neweggimages.com/ProductImageCompressAll1280/14-932-443-09.jpg',
+    category_id: 2,
+  },
+  {
+    product_name: 'ASUS Dual Radeon RX 6500 XT 4GB',
+    description:
+      'GDDR6 PCI Express 4.0 CrossFireX Support Video Card DUAL-RX6500XT-O4G',
+    price: 229.99,
+    stock: 18,
+    date_posted: '2020-02-20',
+    product_img:
+      'https://dlcdnwebimgs.asus.com/gain/061aa483-f00a-4fd9-bed4-056123a546d1/',
+    category_id: 2,
+  },
+  {
+    product_name: 'GIGABYTE Gaming GeForce RTX 3090 Ti 24GB',
+    description:
+      'GDDR6X PCI Express 4.0 ATX Video Card GV-N309TGAMING OC-24GD',
+    price: 2149.99,
+    stock: 2,
+    date_posted: '2022-06-11',
+    product_img:
+      'https://img.computerunivers.net/images/1000/9089279436AAAFC6B8F648D58230F5D9.jpg',
+    category_id: 2,
+  },
+  {
+    product_name: 'ASRock Radeon RX 6900 XT PHANTOM GAMING D 16GB',
+    description:
+      'GDDR6 AMD RDNA2 (RX6900XT PGD 16GO)',
+    price: 798.99,
+    stock: 24,
+    date_posted: '2021-01-19',
+    product_img:
+      'https://www.asrock.com/Graphics-Card/photo/Radeon%20RX%206900%20XT%2016G(M1).png',
+    category_id: 2,
+  },
+  {
+    product_name: 'GIGABYTE Vision OC GeForce RTX 3070 8GB',
+    description:
+      'GDDR6 PCI Express 4.0 ATX Video Card GV-N3070VISION OC-8GD (rev. 2.0) (LHR)',
+    price: 609.99,
+    stock: 5,
+    date_posted: '2021-08-21',
+    product_img:
+      'https://m.media-amazon.com/images/I/81CF1ZOc5oL._AC_SL1500_.jpg',
+    category_id: 2,
+  },
+  {
+    product_name: 'MSI Mech Radeon RX 6600 XT 8GB',
+    description:
+      'GDDR6 PCI Express 4.0 ATX Video Card RX 6600 XT MECH 2X 8G OC',
+    price: 354.99,
+    stock: 15,
+    date_posted: '2020-12-12',
+    product_img:
+      'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476228_sd.jpg',
+    category_id: 2,
+  },
+  {
+    product_name: 'MSI Gaming GeForce RTX 3090 Ti 24GB',
+    description:
+      'GDDR6X PCI Express 4.0 SLI Support ATX Video Card RTX 3090 TI GAMING X TRIO 24G',
+    price: 1849.99,
+    stock: 6,
+    date_posted: '2022-05-11',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/14-137-728-20.jpg',
+    category_id: 2,
+  },
+  {
+    product_name: 'GIGABYTE AORUS GeForce RTX 3070 Ti 8GB',
+    description:
+      'GDDR6X PCI Express 4.0 ATX Video Card GV-N307TAORUS M-8GD',
+    price: 799.99,
+    stock: 2,
+    date_posted: '2021-12-22',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/14-932-441-01.jpg',
+    category_id: 2,
+  },
+  {
+    product_name: 'ASUS ROG Strix NVIDIA GeForce RTX 3080 OC Edition',
+    description:
+      'PCIe 4.0, 12GB GDDR6X, LHR, HDMI 2.1, DisplayPort 1.4a, Axial-tech Fan Design, 2.9-slot, Super Alloy Power II, GPU Tweak II, Intel WiFi 6E, Intel 2.5 GbE LAN',
+    price: 1139.00,
+    stock: 3,
+    date_posted: '2022-05-11',
+    product_img:
+      'https://dlcdnwebimgs.asus.com/gain/18306F07-8796-408A-94DF-316149D3E5B9/w717/h525',
+    category_id: 2,
+  },
+  {
+    product_name: 'GIGABYTE Vision OC GeForce RTX 3080 10GB',
+    description:
+      '10GB GDDR6X PCI Express 4.0 ATX Video Card GV-N3080VISION OC-10GD (rev. 2.0) (LHR)',
+    price: 839.99,
+    stock: 7,
+    date_posted: '2022-03-01',
+    product_img:
+      'https://m.media-amazon.com/images/I/71Nvq5PRo8S._AC_SL1500_.jpg',
+    category_id: 2,
+  },
+  {
+    product_name: 'EVGA GeForce RTX 3080 FTW3 ULTRA GAMING Video Card',
+    description:
+      '10GB GDDR6X, iCX3 Technology, ARGB LED, Metal Backplate, LHR',
+    price: 869.99,
+    stock: 2,
+    date_posted: '2022-03-12',
+    product_img:
+      'https://c1.neweggimages.com/ProductImage/14-487-541-V01.jpg',
+    category_id: 2,
+  },
+  {
+    product_name: 'GIGABYTE GAMING OC Radeon RX 6500 XT 4GB',
+    description:
+      'GDDR6 PCI Express 4.0 ATX Video Card GV-R65XTGAMING OC-4GD',
+    price: 249.99,
+    stock: 10,
+    date_posted: '2019-05-11',
+    product_img:
+      'https://m.media-amazon.com/images/I/71xoI1ZHjtL._AC_SS450_.jpg',
+    category_id: 2,
+  },
+  {
+    product_name: 'MSI Ventus GeForce RTX 3080 12GB',
+    description:
+      'GDDR6X PCI Express 4.0 Video Card RTX 3080 VENTUS 3X PLUS 12G OC LHR',
+    price: 799.99,
+    stock: 2,
+    date_posted: '2021-11-15',
+    product_img:
+      'https://m.media-amazon.com/images/I/71x1PhCp6iL._AC_SS450_.jpg',
+    category_id: 2,
+  },
 ];
 
 const seedProducts = () => Products.bulkCreate(productsData);
