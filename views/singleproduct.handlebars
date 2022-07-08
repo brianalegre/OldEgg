@@ -14,17 +14,23 @@
             <p class="product-price"><b>Price :</b>&nbsp;${{products.price}}</p>
             <p class="product-stock"><b>Stock :</b>&nbsp;{{products.stock}}</p>
 
-            <button data-id="{{products.product_id}}" class="add-to-cart">
-                <div class="default">Add to cart</div>
-                <div class="success">Added</div>
-                <div class="cart">
-                    <div>
-                        <div></div>
-                        <div></div>
+            <div id="spp-btns">
+                <button data-id="{{products.product_id}}" class="add-to-cart">
+                    <div class="default">Add to cart</div>
+                    <div class="success">Added</div>
+                    <div class="cart">
+                        <div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
-                </div>
-                <div class="dots"></div>
-            </button>
+                    <div class="dots"></div>
+                </button>
+
+                <button data-id="{{products.product_id}}" class="heart">
+                    <div class="heart-flip"></div>
+                </button>
+            </div>
         </div>
     </div>
 </div>

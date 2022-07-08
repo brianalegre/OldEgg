@@ -1,0 +1,15 @@
+<section id="cart-container">
+    {{#if hasItems}}
+    {{#each wishlistProducts as |products|}}
+    {{> wishlist-product-details}}
+    {{/each}}
+    <hr>
+    <script src="/js/deleteFromCart.js"></script>
+    <script src="/js/checkoutFromCart.js"></script>
+    {{else}}
+    <div id="no-cart-items">
+        <h1>Your OldEgg Wishlist is Empty.</h1>
+        <p>Add products <a href="/">here.</a></p>
+    </div>
+    {{/if}}
+</section>

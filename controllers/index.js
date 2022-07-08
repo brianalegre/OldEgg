@@ -7,6 +7,7 @@ const productHandlebar = require('./productHandlebar');
 const cartHandlebar = require('./cartHandlebar');
 const searchHandlebar = require('./searchHandlebar');
 const myProfileHandlebar = require('./myProfileHandlebar');
+const wishlistHandlebar = require('./wishlistHandlebar')
 
 const handleBars = [
   homeRoutes,
@@ -15,6 +16,7 @@ const handleBars = [
   cartHandlebar,
   searchHandlebar,
   myProfileHandlebar,
+  wishlistHandlebar,
 ];
 router.use('/', handleBars);
 

@@ -41,7 +41,8 @@ router.post('/checkout', loggedIn, async (req, res) => {
         // Grabbing product information for each product in the cart product ids
         const dbProductInfo = await Products.findAll({where: {product_id: cartProductsIds}})
         const cartProducts = dbProductInfo.map(product => product.get({plain:true}))
-
+        const checkEmptyStock = cartProducts.filter(product => product.stock === 0)
+        
         const subTotal = cartProducts.map(product=> {
         return parseInt(product.price)
         }).reduce((a,b) => a+b, 0)
@@ -51,14 +52,27 @@ router.post('/checkout', loggedIn, async (req, res) => {
 
         const resultingUserBalance = parseInt(userBalance) - parseInt(subTotal);
         const checkPayment = resultingUserBalance < 0 ? false : true
-        console.log(resultingUserBalance, 'THIS IS CURRENT BALANCE')
+
+        // Error 1 = insufficient bal, Error 2 = stock is empty for item
         if (!checkPayment) {
-            return res.status(400).json('Insufficient balance amount.')
+            return res.status(400).json({error: 0, message: 'Insufficient balance amount.'})
+        // If there are empty stocks we res.send the array of empty stocked items
+        } else if (checkEmptyStock.length > 0) {
+            const emptyStockNames = checkEmptyStock.map(product=> product.product_name).join(', ')
+            return res.status(400).json({error: 1, message: `Empty stock for items: ${emptyStockNames}`})
         }
         await Users.update(
             { balance: resultingUserBalance },
             { where: {user_id: req.session.user_id} }
         )
+        // Decrementing the stock
+        cartProducts.forEach(async product => {
+            await Products.update(
+                { stock: product.stock-1 }, 
+                { where: {product_id:product.product_id} }
+            )
+        })
+        //destroying current cart items for the user
         await Carts.destroy({where: {user_id: req.session.user_id}})
         res.status(200).json(resultingUserBalance)
     } catch(err) {

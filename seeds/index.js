@@ -3,6 +3,7 @@ const seedCategories = require('./categoriesSeeds');
 const seedProducts = require('./productsSeeds');
 const seedUsers = require('./usersSeeds');
 const seedCarts = require('./cartsSeeds');
+const seedWishlist = require('./wishlistSeeds');
 
 const seedAll = async () => {
   try {
@@ -19,6 +20,9 @@ const seedAll = async () => {
 
     await seedCarts();
     console.log('--- CARTS SEEDED! ---');
+
+    await seedWishlist()
+    console.log('--- WISHLIST SEEDED! ---')
   } catch (err) {
     console.log(err);
   }
