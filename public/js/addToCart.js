@@ -14,7 +14,6 @@ const addToCart = async id => {
         if (!loggedIn) {
             return document.location.replace('/login')
         }
-        //otherwise we refresh the page
     } catch (err) {
         console.log(err)
     }
