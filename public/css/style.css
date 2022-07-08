@@ -1251,6 +1251,10 @@ form .form-group .material-icons {
   }
 } 
 
+.cart-preview {
+  padding-top: 1rem;
+}
+
 /* wishlistbtn codepen */
 
 .heart,
