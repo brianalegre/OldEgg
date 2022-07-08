@@ -281,8 +281,8 @@ button {
 #logo-img {
   position: relative;
   border: 0;
-  margin-left: 5vh;
-  margin-top: -5vh;
+  /* margin-left: 5vh;
+  margin-top: -5vh; */
   height: 15vh;
   width: 20vh;
 }
@@ -1403,7 +1403,7 @@ form {
     padding: 13px;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(0, 0, 0, 0.3); */
   }
   .nav > .nav-btn > label > span {
     display: block;
@@ -1415,7 +1415,7 @@ form {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #333;
+    /* background-color: #333; */
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
