@@ -1,30 +1,30 @@
-const paymentCheckoutBtn = document.getElementById('payment-checkout-btn')
-const btnMsgContainer = document.querySelector('.btn-msg-container')
+const paymentCheckoutBtn = document.getElementById('payment-checkout-btn');
+const btnMsgContainer = document.querySelector('.btn-msg-container');
 
 const checkoutFromCart = async () => {
   try {
-    const response = await fetch('/cart/checkout', {method: 'POST'})
+    const response = await fetch('/cart/checkout', { method: 'POST' });
     if (response.ok) {
-        return document.location.replace('/cart')
+      return document.location.replace('/cart');
     }
-    const data = await response.json()
-    const checkMessage = document.querySelector('.invalid-auth')
+    const data = await response.json();
+    const checkMessage = document.querySelector('.invalid-auth');
     if (checkMessage) {
-      checkMessage.remove()
+      checkMessage.remove();
     }
     // error handling
     switch (data.error) {
       case 0:
-          message = {
-            tag: 'p',
-            setAttr: {
-              class: 'invalid-auth',
-            },
-            // set this to backend message
-            textContent: data.message,
-            appendTo: btnMsgContainer,
-          };
-          appendContent(message)
+        message = {
+          tag: 'p',
+          setAttr: {
+            class: 'invalid-auth',
+          },
+          // set this to backend message
+          textContent: data.message,
+          appendTo: btnMsgContainer,
+        };
+        appendContent(message);
         break;
       case 1:
         message = {
@@ -36,14 +36,16 @@ const checkoutFromCart = async () => {
           textContent: data.message,
           appendTo: btnMsgContainer,
         };
-        appendContent(message)
+        appendContent(message);
+        break;
+      default:
         break;
     }
   } catch (err) {
-    console.log(err)
+    console.log(err);
   }
-}
+};
 
 if (paymentCheckoutBtn) {
-    paymentCheckoutBtn.addEventListener('click', checkoutFromCart)
+  paymentCheckoutBtn.addEventListener('click', checkoutFromCart);
 }
