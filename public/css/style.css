@@ -1388,7 +1388,8 @@ form {
   display: none;
 }
 
-@media (max-width:1500px) {
+/* MEDIA QUERIES */
+@media (max-width:1300px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -1402,9 +1403,7 @@ form {
     height: 50px;
     padding: 13px;
   }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    /* background-color: rgba(0, 0, 0, 0.3); */
-  }
+
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
@@ -1433,4 +1432,23 @@ form {
     height: calc(30vh);
     overflow-y: auto;
   }
+  .category-container {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 5rem;
+    height: fit-content;
+    padding: 1rem;
+  }
+
+}
+
+/* MEDIA QUERIES */
+@media (max-width:900px) {
+.category-container {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 5rem;
+  height: fit-content;
+  padding: 1rem;
+}
 }
