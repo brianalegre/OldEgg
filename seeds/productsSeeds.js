@@ -158,7 +158,7 @@ const productsData = [
     stock: 11,
     date_posted: '2021-05-13',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll300/19-118-128-01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_15/image.jpg',
     category_id: 6,
   },
   {
@@ -169,7 +169,7 @@ const productsData = [
     stock: 5,
     date_posted: '2021-05-13',
     product_img:
-      'https://cdn11.bigcommerce.com/s-3kliogr9m/images/stencil/1280x1280/products/382/1415/Box_T4_i5F_11th_H93494_Ang03_Left_V01_HIGHRES_SIMPLIF__91936.1635983492.jpg?c=1',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_16/image.jpg',
     category_id: 6,
   },
   {
@@ -180,7 +180,7 @@ const productsData = [
     stock: 16,
     date_posted: '2021-05-13',
     product_img:
-      'https://media.ldlc.com/r1600/ld/products/00/05/90/01/LD0005900180_1.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_17/image.jpg',
     category_id: 6,
   },
   {
@@ -191,7 +191,7 @@ const productsData = [
     stock: 9,
     date_posted: '2021-05-13',
     product_img:
-      'https://www.tradeinn.com/f/13845/138457079/intel-i7-12700kf-box-processor.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_18/image.jpg',
     category_id: 6,
   },
   {
@@ -202,7 +202,7 @@ const productsData = [
     stock: 4,
     date_posted: '2021-05-13',
     product_img:
-      'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6411/6411492cv11d.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_19/image.jpg',
     category_id: 6,
   },
   {
@@ -213,7 +213,7 @@ const productsData = [
     stock: 22,
     date_posted: '2021-05-13',
     product_img:
-      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_13/image.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_20/image.jpg',
     category_id: 6,
   },
   {
@@ -224,7 +224,7 @@ const productsData = [
     stock: 7,
     date_posted: '2020-04-20',
     product_img:
-      'https://m.media-amazon.com/images/I/713JEi+CQDL.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_21/image.jpg',
     category_id: 1,
   },
   {
@@ -235,7 +235,7 @@ const productsData = [
     stock: 11,
     date_posted: '2020-04-20',
     product_img:
-      'https://media.officedepot.com/images/f_auto,q_auto,e_sharpen,h_450/products/7032186/7032186_o51_et_8060279/7032186',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_22/image.jpg',
     category_id: 1,
   },
   {
@@ -246,7 +246,7 @@ const productsData = [
     stock: 19,
     date_posted: '2020-04-20',
     product_img:
-      'https://m.media-amazon.com/images/I/81CYz-i1nML._AC_SL1500_.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_23/image.jpg',
     category_id: 1,
   },
   {
@@ -257,7 +257,7 @@ const productsData = [
     stock: 5,
     date_posted: '2020-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/24-012-012-V07.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_24/image.jpg',
     category_id: 1,
   },
   {
@@ -268,7 +268,7 @@ const productsData = [
     stock: 2,
     date_posted: '2020-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/24-012-040-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_25/image.jpg',
     category_id: 1,
   },
   {
@@ -279,7 +279,7 @@ const productsData = [
     stock: 19,
     date_posted: '2020-04-20',
     product_img:
-      'https://www.lenovo.com/medias/66A8GAC6-500-1.png?context=bWFzdGVyfHJvb3R8MzU5NzR8aW1hZ2UvcG5nfGgxOS9oNzMvMTA4NTc5MDg1NjgwOTQucG5nfDk5Njg5Y2ZhNzFkODBkNzdmN2Q1M2QzMGUyN2MyOGNjZmE5NGQ5NWMyYTRkNjM0OWVhMjY1MjIyYjJkOTNmMDU',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_26/image.jpg',
     category_id: 1,
   },
   {
@@ -290,7 +290,7 @@ const productsData = [
     stock: 4,
     date_posted: '2020-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/24-716-002-V09.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_27/image.jpg',
     category_id: 1,
   },
   {
@@ -301,7 +301,7 @@ const productsData = [
     stock: 28,
     date_posted: '2020-04-20',
     product_img:
-      'https://www.lg.com/us/images/monitors/md08000261/gallery/medium01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_28/image.jpg',
     category_id: 1,
   },
   {
@@ -312,7 +312,7 @@ const productsData = [
     stock: 12,
     date_posted: '2020-04-20',
     product_img:
-      'https://www.bhphotovideo.com/cdn-cgi/image/format=auto,fit=scale-down,width=500,quality=95/https://www.bhphotovideo.com/images/images500x500/acer_um_hx2aa_s03_kg272_27_lcd_ips_1627382126_1651388.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_29/image.jpg',
     category_id: 1,
   },
   {
@@ -323,7 +323,7 @@ const productsData = [
     stock: 9,
     date_posted: '2020-04-20',
     product_img:
-      'https://dlcdnwebimgs.asus.com/gain/62aff790-1601-407c-9bc7-88f1b595a257/w692',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_30/image.jpg',
     category_id: 1,
   },
   {
@@ -334,7 +334,7 @@ const productsData = [
     stock: 10,
     date_posted: '2021-03-11',
     product_img:
-      'https://www.asrock.com/mb/photo/Z690%20Phantom%20Gaming%204D5(M1).png',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_31/image.jpg',
     category_id: 4,
   },
   {
@@ -345,7 +345,7 @@ const productsData = [
     stock: 6,
     date_posted: '2021-03-11',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/13-119-506-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_32/image.jpg',
     category_id: 4,
   },
   {
@@ -356,7 +356,7 @@ const productsData = [
     stock: 12,
     date_posted: '2021-03-11',
     product_img:
-      'https://m.media-amazon.com/images/I/81zmlBWaCbL._AC_SL1500_.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_33/image.jpg',
     category_id: 4,
   },
   {
@@ -367,7 +367,7 @@ const productsData = [
     stock: 19,
     date_posted: '2021-03-11',
     product_img:
-      'https://storage-asset.msi.com/global/picture/image/feature/mb/PRO-Z690-A-DDR4/board02.png',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_34/image.jpg',
     category_id: 4,
   },
   {
@@ -378,7 +378,7 @@ const productsData = [
     stock: 5,
     date_posted: '2021-03-11',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-326-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_35/image.jpg',
     category_id: 4,
   },
   {
@@ -389,7 +389,7 @@ const productsData = [
     stock: 24,
     date_posted: '2018-02-22',
     product_img:
-      'https://www.awd-it.co.uk/media/catalog/product/1/_/1_2_1_1.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_36/image.jpg',
     category_id: 4,
   },
   {
@@ -400,7 +400,7 @@ const productsData = [
     stock: 17,
     date_posted: '2018-02-22',
     product_img:
-      'https://www.awd-it.co.uk/media/catalog/product/1/_/1_2_1_1.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_37/image.jpg',
     category_id: 4,
   },
   {
@@ -411,7 +411,7 @@ const productsData = [
     stock: 11,
     date_posted: '2021-02-22',
     product_img:
-      'https://storage-asset.msi.com/global/picture/image/feature/mb/Z490/MPG/box8.png',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_38/image.jpg',
     category_id: 4,
   },
   {
@@ -422,7 +422,7 @@ const productsData = [
     stock: 16,
     date_posted: '2022-01-21',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/13-145-396-04.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_39/image.jpg',
     category_id: 4,
   },
   {
@@ -433,7 +433,7 @@ const productsData = [
     stock: 13,
     date_posted: '2022-01-27',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/13-119-196-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_40/image.jpg',
     category_id: 4,
   },
   {
@@ -444,7 +444,7 @@ const productsData = [
     stock: 8,
     date_posted: '2021-02-12',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/B601S220101JqxcG.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_41/image.jpg',
     category_id: 4,
   },
   {
@@ -455,7 +455,7 @@ const productsData = [
     stock: 6,
     date_posted: '2022-01-11',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/B601S220429aaJEV.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_42/image.jpg',
     category_id: 4,
   },
   {
@@ -466,7 +466,7 @@ const productsData = [
     stock: 17,
     date_posted: '2022-01-11',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/13-145-364-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_43/image.jpg',
     category_id: 4,
   },
   {
@@ -477,7 +477,7 @@ const productsData = [
     stock: 6,
     date_posted: '2022-01-11',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/14-932-443-09.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_44/image.jpg',
     category_id: 2,
   },
   {
@@ -488,7 +488,7 @@ const productsData = [
     stock: 18,
     date_posted: '2020-02-20',
     product_img:
-      'https://dlcdnwebimgs.asus.com/gain/061aa483-f00a-4fd9-bed4-056123a546d1/',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_45/image.jpg',
     category_id: 2,
   },
   {
@@ -499,7 +499,7 @@ const productsData = [
     stock: 2,
     date_posted: '2022-06-11',
     product_img:
-      'https://img.computerunivers.net/images/1000/9089279436AAAFC6B8F648D58230F5D9.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_46/image.jpg',
     category_id: 2,
   },
   {
@@ -510,7 +510,7 @@ const productsData = [
     stock: 24,
     date_posted: '2021-01-19',
     product_img:
-      'https://www.asrock.com/Graphics-Card/photo/Radeon%20RX%206900%20XT%2016G(M1).png',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_47/image.jpg',
     category_id: 2,
   },
   {
@@ -521,7 +521,7 @@ const productsData = [
     stock: 5,
     date_posted: '2021-08-21',
     product_img:
-      'https://m.media-amazon.com/images/I/81CF1ZOc5oL._AC_SL1500_.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_48/image.jpg',
     category_id: 2,
   },
   {
@@ -532,7 +532,7 @@ const productsData = [
     stock: 15,
     date_posted: '2020-12-12',
     product_img:
-      'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476228_sd.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_49/image.jpg',
     category_id: 2,
   },
   {
@@ -543,7 +543,7 @@ const productsData = [
     stock: 6,
     date_posted: '2022-05-11',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/14-137-728-20.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_50/image.jpg',
     category_id: 2,
   },
   {
@@ -554,7 +554,7 @@ const productsData = [
     stock: 2,
     date_posted: '2021-12-22',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/14-932-441-01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_51/image.jpg',
     category_id: 2,
   },
   {
@@ -565,7 +565,7 @@ const productsData = [
     stock: 3,
     date_posted: '2022-05-11',
     product_img:
-      'https://dlcdnwebimgs.asus.com/gain/18306F07-8796-408A-94DF-316149D3E5B9/w717/h525',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_52/image.jpg',
     category_id: 2,
   },
   {
@@ -576,7 +576,7 @@ const productsData = [
     stock: 7,
     date_posted: '2022-03-01',
     product_img:
-      'https://m.media-amazon.com/images/I/71Nvq5PRo8S._AC_SL1500_.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_53/image.jpg',
     category_id: 2,
   },
   {
@@ -587,7 +587,7 @@ const productsData = [
     stock: 2,
     date_posted: '2022-03-12',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/14-487-541-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_54/image.jpg',
     category_id: 2,
   },
   {
@@ -598,7 +598,7 @@ const productsData = [
     stock: 10,
     date_posted: '2019-05-11',
     product_img:
-      'https://m.media-amazon.com/images/I/71xoI1ZHjtL._AC_SS450_.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_55/image.jpg',
     category_id: 2,
   },
   {
@@ -609,7 +609,7 @@ const productsData = [
     stock: 2,
     date_posted: '2021-11-15',
     product_img:
-      'https://m.media-amazon.com/images/I/71x1PhCp6iL._AC_SS450_.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_56/image.jpg',
     category_id: 2,
   },
   {
@@ -620,7 +620,7 @@ const productsData = [
     stock: 5,
     date_posted: '2021-03-21',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/AFSTS211209cunwR.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_57/image.jpg',
     category_id: 3,
   },
   {
@@ -631,7 +631,7 @@ const productsData = [
     stock: 5,
     date_posted: '2021-03-21',
     product_img:
-      'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6424/6424213_sd.jpg;maxHeight=640;maxWidth=550',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_58/image.jpg',
     category_id: 3,
   },
   {
@@ -642,7 +642,7 @@ const productsData = [
     stock: 9,
     date_posted: '2020-09-22',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/11-352-087-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_59/image.jpg',
     category_id: 3,
   },
   {
@@ -653,7 +653,7 @@ const productsData = [
     stock: 2,
     date_posted: '2021-03-21',
     product_img:
-      'https://www.tejar.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/c/o/corsair_icue_5000x_rgb_tempered_glass_mid-tower_atx_pc_smart_case_-_white1_-_tejar.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_60/image.jpg',
     category_id: 3,
   },
   {
@@ -664,7 +664,7 @@ const productsData = [
     stock: 11,
     date_posted: '2021-03-21',
     product_img:
-      'https://cwsmgmt.corsair.com/pdp/5000-series/images/2-5000d-clean-and-cool.png',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_61/image.jpg',
     category_id: 3,
   },
   {
@@ -675,7 +675,7 @@ const productsData = [
     stock: 7,
     date_posted: '2021-03-21',
     product_img:
-      'https://www.fractal-design.com/wp-content/uploads/2019/06/Meshify-C-TGL_1.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_62/image.jpg',
     category_id: 3,
   },
   {
@@ -686,7 +686,7 @@ const productsData = [
     stock: 9,
     date_posted: '2021-03-21',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/11-119-354-V93.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_63/image.jpg',
     category_id: 3,
   },
   {
@@ -697,7 +697,7 @@ const productsData = [
     stock: 24,
     date_posted: '2021-03-21',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/11-854-097-V12.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_64/image.jpg',
     category_id: 3,
   },
   {
@@ -708,7 +708,7 @@ const productsData = [
     stock: 4,
     date_posted: '2021-03-21',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/11-352-146-01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_65/image.jpg',
     category_id: 3,
   },
   {
@@ -719,7 +719,7 @@ const productsData = [
     stock: 10,
     date_posted: '2021-03-21',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/11-129-280-10.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_66/image.jpg',
     category_id: 3,
   },
   {
@@ -729,7 +729,7 @@ const productsData = [
     stock: 18,
     date_posted: '2020-01-21',
     product_img:
-      'https://www.bhphotovideo.com/images/images2000x2000/seagate_st6000vx001_6tb_skyhawak_7200_rpm_1666826.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_67/image.jpg',
     category_id: 5,
   },
   {
@@ -739,7 +739,7 @@ const productsData = [
     stock: 5,
     date_posted: '2020-01-21',
     product_img:
-      'https://media.officedepot.com/images/f_auto,q_auto,e_sharpen,h_450/products/7986019/7986019_o04_081821/7986019',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_68/image.jpg',
     category_id: 5,
   },
   {
@@ -749,7 +749,7 @@ const productsData = [
     stock: 6,
     date_posted: '2020-01-21',
     product_img:
-      'https://www.bhphotovideo.com/images/images2500x2500/seagate_stkc4000403_4tb_one_touch_portable_1595201.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_69/image.jpg',
     category_id: 5,
   },
   {
@@ -759,7 +759,7 @@ const productsData = [
     stock: 10,
     date_posted: '2020-01-21',
     product_img:
-      'https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com//640245_308643_03_package_zoom.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_70/image.jpg',
     category_id: 5,
   },
   {
@@ -769,7 +769,7 @@ const productsData = [
     stock: 4,
     date_posted: '2020-01-21',
     product_img:
-      'https://www.bhphotovideo.com/images/images2500x2500/wd_wdbwlg0180hbk_nesn_wd_elements_desktop_18tb_1604997.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_71/image.jpg',
     category_id: 5,
   },
   {
@@ -779,7 +779,7 @@ const productsData = [
     stock: 19,
     date_posted: '2020-01-21',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/22-184-796-V08.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_72/image.jpg',
     category_id: 5,
   },
   {
@@ -789,7 +789,7 @@ const productsData = [
     stock: 31,
     date_posted: '2020-01-21',
     product_img:
-      'https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-blue-desktop-sata-hdd/gallery/wd-blue-pc-desktop-hard-drive-2tb.png',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_73/image.jpg',
     category_id: 5,
   },
   {
@@ -799,7 +799,7 @@ const productsData = [
     stock: 5,
     date_posted: '2021-02-21',
     product_img:
-      'https://www.westerndigital.com/content/dam/store/en-us/assets/products/internal-storage/wd-blue-3d-nand-sata-ssd/gallery/4tb/wd-blue-3d-nand-sata-ssd-4tb-front.png',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_74/image.jpg',
     category_id: 5,
   },
   {
@@ -809,7 +809,7 @@ const productsData = [
     stock: 9,
     date_posted: '2021-05-24',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/20-156-175-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_75/image.jpg',
     category_id: 5,
   },
   {
@@ -819,7 +819,7 @@ const productsData = [
     stock: 13,
     date_posted: '2019-08-30',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/20-147-794-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_76/image.jpg',
     category_id: 5,
   },
   {
@@ -829,7 +829,7 @@ const productsData = [
     stock: 22,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/20-821-464-V02.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_77/image.jpg',
     category_id: 7,
   },
   {
@@ -839,7 +839,7 @@ const productsData = [
     stock: 14,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/20-236-703-V02.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_78/image.jpg',
     category_id: 7,
   },
   {
@@ -849,7 +849,7 @@ const productsData = [
     stock: 5,
     date_posted: '2021-04-20',
     product_img:
-      'https://www.corsair.com/medias/sys_master/images/images/hc5/hd2/9420610502686/-CMW16GX4M2C3200C16-Gallery-Vengeance-RGB-Pro-01.png',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_79/image.jpg',
     category_id: 7,
   },
   {
@@ -859,7 +859,7 @@ const productsData = [
     stock: 7,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/20-236-541-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_80/image.jpg',
     category_id: 7,
   },
   {
@@ -869,7 +869,7 @@ const productsData = [
     stock: 2,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/20-821-217-S01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_81/image.jpg',
     category_id: 7,
   },
   {
@@ -879,7 +879,7 @@ const productsData = [
     stock: 13,
     date_posted: '2021-04-20',
     product_img:
-      'https://m.media-amazon.com/images/I/51A-GbMQDiL._AC_SX679_PIbundle-2,TopRight,0,0_SH20_.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_82/image.jpg',
     category_id: 7,
   },
   {
@@ -889,7 +889,7 @@ const productsData = [
     stock: 33,
     date_posted: '2021-04-20',
     product_img:
-      'https://i5.walmartimages.com/asr/e472dbb7-bb0a-40af-9a05-70c3c5a2be30.e8c3d474c7f90e4b497b9041db2c75ac.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_83/image.jpg',
     category_id: 7,
   },
   {
@@ -899,7 +899,7 @@ const productsData = [
     stock: 15,
     date_posted: '2021-04-20',
     product_img:
-      'https://cdn.mwave.com.au/images/400/AC25714.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_84/image.jpg',
     category_id: 7,
   },
   {
@@ -909,7 +909,7 @@ const productsData = [
     stock: 13,
     date_posted: '2021-04-20',
     product_img:
-      'https://www.tradeinn.com/f/13806/138060589/team-group-delta-t-force-16gb-2x8gb-ddr4-3200mhz-rgb-ram-memory.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_85/image.jpg',
     category_id: 7,
   },
   {
@@ -919,7 +919,7 @@ const productsData = [
     stock: 5,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/20-821-212-S01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_86/image.jpg',
     category_id: 7,
   },
   {
@@ -929,7 +929,7 @@ const productsData = [
     stock: 13,
     date_posted: '2021-04-20',
     product_img:
-      'https://www.corsair.com/us/en/medias/sys_master/images/images/hf3/h73/9838413283358/CMN64GX4M2Z3200C16W/Gallery/VENGEANCE_RGB_RT_WHITE_01/-CMN64GX4M2Z3200C16W-Gallery-VENGEANCE-RGB-RT-WHITE-01.png_515Wx515H',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_87/image.jpg',
     category_id: 7,
   },
   {
@@ -939,7 +939,7 @@ const productsData = [
     stock: 7,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/20-821-488-01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_88/image.jpg',
     category_id: 7,
   },
   {
@@ -949,7 +949,7 @@ const productsData = [
     stock: 5,
     date_posted: '2021-04-20',
     product_img:
-      'https://m.media-amazon.com/images/I/81t5qCFDLYL._AC_SL1500_.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_89/image.jpg',
     category_id: 8,
   },
   {
@@ -959,7 +959,7 @@ const productsData = [
     stock: 6,
     date_posted: '2021-04-20',
     product_img:
-      'https://images.evga.com/products/gallery/png/220-G6-1000-X1_XL_4.png',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_90/image.jpg',
     category_id: 8,
   },
   {
@@ -969,7 +969,7 @@ const productsData = [
     stock: 13,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/17-182-340-V81.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_91/image.jpg',
     category_id: 8,
   },
   {
@@ -979,7 +979,7 @@ const productsData = [
     stock: 21,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/17-182-448-V81.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_92/image.jpg',
     category_id: 8,
   },
   {
@@ -989,7 +989,7 @@ const productsData = [
     stock: 8,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/17-182-294_R17.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_93/image.jpg',
     category_id: 8,
   },
   {
@@ -999,7 +999,7 @@ const productsData = [
     stock: 12,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/17-139-278-01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_94/image.jpg',
     category_id: 8,
   },
   {
@@ -1009,7 +1009,7 @@ const productsData = [
     stock: 5,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/17-182-314_R18.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_95/image.jpg',
     category_id: 8,
   },
   {
@@ -1019,7 +1019,7 @@ const productsData = [
     stock: 12,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/17-139-205-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_96/image.jpg',
     category_id: 8,
   },
   {
@@ -1029,7 +1029,7 @@ const productsData = [
     stock: 4,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/17-438-212-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_97/image.jpg',
     category_id: 8,
   },
   {
@@ -1039,7 +1039,7 @@ const productsData = [
     stock: 25,
     date_posted: '2021-04-20',
     product_img:
-      'https://images.evga.com/products/gallery/png/100-N1-0550-L1_XL_1.png',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_98/image.jpg',
     category_id: 8,
   },
   {
@@ -1049,7 +1049,7 @@ const productsData = [
     stock: 18,
     date_posted: '2021-04-20',
     product_img:
-      'https://m.media-amazon.com/images/I/71dj+5GQwEL._AC_SY450_.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_99/image.jpg',
     category_id: 8,
   },
   {
@@ -1059,7 +1059,7 @@ const productsData = [
     stock: 11,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/17-987-015-V08.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_100/image.jpg',
     category_id: 8,
   },
   {
@@ -1069,7 +1069,7 @@ const productsData = [
     stock: 2,
     date_posted: '2021-04-20',
     product_img:
-      'https://images.evga.com/products/gallery/png/220-G6-0750-X1_XL_8.png',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_101/image.jpg',
     category_id: 8,
   },
   {
@@ -1079,7 +1079,7 @@ const productsData = [
     stock: 15,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/35-214-099-S01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_102/image.jpg',
     category_id: 9,
   },
   {
@@ -1089,7 +1089,7 @@ const productsData = [
     stock: 7,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/35-103-312-01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_103/image.jpg',
     category_id: 9,
   },
   {
@@ -1099,7 +1099,7 @@ const productsData = [
     stock: 12,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/35-181-216-V01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_104/image.jpg',
     category_id: 9,
   },
   {
@@ -1109,7 +1109,7 @@ const productsData = [
     stock: 6,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/35-181-130-01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_105/image.jpg',
     category_id: 9,
   },
   {
@@ -1119,7 +1119,7 @@ const productsData = [
     stock: 32,
     date_posted: '2021-04-20',
     product_img:
-      'https://m.media-amazon.com/images/I/71FrDcQjSmL.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_106/image.jpg',
     category_id: 9,
   },
   {
@@ -1129,7 +1129,7 @@ const productsData = [
     stock: 17,
     date_posted: '2021-04-20',
     product_img:
-      'https://m.media-amazon.com/images/I/81gIOOqmS7L._AC_SL1500_.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_107/image.jpg',
     category_id: 9,
   },
   {
@@ -1139,7 +1139,7 @@ const productsData = [
     stock: 5,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/35-101-051-07.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_108/image.jpg',
     category_id: 9,
   },
   {
@@ -1149,7 +1149,7 @@ const productsData = [
     stock: 22,
     date_posted: '2021-04-20',
     product_img:
-      'https://xbit.com.bd/wp-content/uploads/2021/06/h100x-500x500-1.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_109/image.jpg',
     category_id: 9,
   },
   {
@@ -1159,7 +1159,7 @@ const productsData = [
     stock: 4,
     date_posted: '2021-04-20',
     product_img:
-      'https://m.media-amazon.com/images/I/71OreGhgjtL._AC_SL1500_.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_110/image.jpg',
     category_id: 9,
   },
   {
@@ -1169,7 +1169,7 @@ const productsData = [
     stock: 15,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/35-146-084-07.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_111/image.jpg',
     category_id: 9,
   },
   {
@@ -1179,7 +1179,7 @@ const productsData = [
     stock: 12,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImageCompressAll1280/A73MS210725ryfxC.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_112/image.jpg',
     category_id: 9,
   },
   {
@@ -1189,7 +1189,7 @@ const productsData = [
     stock: 5,
     date_posted: '2021-04-20',
     product_img:
-      'https://c1.neweggimages.com/ProductImage/37B-000B-003G2-S01.jpg',
+      'https://tabk-aws-s3.s3.us-west-1.amazonaws.com/Products/product_id_113/image.jpg',
     category_id: 9,
   },
 ];
