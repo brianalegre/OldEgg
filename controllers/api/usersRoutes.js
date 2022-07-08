@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Users } = require('../../models');
+const { Users, Carts } = require('../../models');
 const bcrypt = require('bcrypt');
 
 //end point of /api/users routes
@@ -91,11 +91,19 @@ router.post('/login', async (req, res) => {
       return;
     }
 
+    const dbCartData =  await Carts.findAll({
+      where: { user_id: userData.user_id }
+    })
+    const carts = dbCartData.map(
+      (product) => product.get({ plain: true })
+    );
+    console.log(carts.length)
     // Create session variables based on the logged in user
     req.session.save(() => {
 
       req.session.user_id = userData.user_id;
       req.session.logged_in = true;
+      req.session.cart_count = carts.length;
 
       res.json({ user: userData, message: 'You are now logged in!' });
     });

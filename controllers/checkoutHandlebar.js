@@ -23,7 +23,7 @@ router.get('/checkout', loggedIn, async (req, res) => {
     const hasItems = cartProducts.length > 0 ? true : false;
     const subTotal = cartProducts
       .map((product) => {
-        return parseInt(product.price);
+        return Number(product.price);
       })
       .reduce((a, b) => a + b, 0);
 
@@ -39,7 +39,8 @@ router.get('/checkout', loggedIn, async (req, res) => {
       hasItems,
       subTotal,
       userBalance,
-      logged_in: req.session.logged_in,
+      logged_in: req.session.logged_in, 
+      cart_count: req.session.cart_count
     });
   } catch (err) {
     console.log(err);
@@ -70,7 +71,7 @@ router.post('/checkout', loggedIn, async (req, res) => {
 
     const subTotal = cartProducts
       .map((product) => {
-        return parseInt(product.price);
+        return Number(product.price);
       })
       .reduce((a, b) => a + b, 0);
 
@@ -81,7 +82,7 @@ router.post('/checkout', loggedIn, async (req, res) => {
       (product) => product.get({ plain: true }).balance
     )[0];
 
-    const resultingUserBalance = parseInt(userBalance) - parseInt(subTotal);
+    const resultingUserBalance = Number(userBalance) - Number(subTotal);
     const checkPayment = resultingUserBalance < 0 ? false : true;
 
     // Error 1 = insufficient bal, Error 2 = stock is empty for item
