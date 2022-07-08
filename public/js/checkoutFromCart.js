@@ -1,7 +1,8 @@
 const paymentCheckoutBtn = document.getElementById('payment-checkout-btn');
-const btnMsgContainer = document.querySelector('.btn-msg-container');
+const btnMsgContainer = document.querySelector('#pcb-container');
 
-const checkoutFromCart = async () => {
+const checkoutFromCart = async targ => {
+  targ.preventDefault()
   try {
     const response = await fetch('/cart/checkout', { method: 'POST' });
     if (response.ok) {
