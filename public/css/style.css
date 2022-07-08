@@ -755,6 +755,7 @@ hr {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  /* bottom: 0; */
 }
 
 .footer-top {
@@ -783,9 +784,9 @@ ul {
   padding-inline-start: 40px;
 }
 
-.footer-bottom {
+/* .footer-bottom {
   padding: 2rem;
-}
+} */
 
 .add-to-cart {
   --color: #fff;
@@ -1348,6 +1349,7 @@ form .form-group .material-icons {
   width: 100%;
   /* background-color: #4d4d4d; */
   position: relative;
+  margin-bottom: 20px;
 }
 
 .nav > .nav-header {
