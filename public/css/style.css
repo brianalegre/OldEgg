@@ -1298,6 +1298,7 @@ form .form-group select {
   transform: translateX(1%) rotateY(var(--pseudo-rotate, 90deg)) translateZ(0);
   transition: background var(--duration), transform var(--duration) ease,
     filter var(--duration);
+  border-right: solid #ce4100 1px;
 }
 .heart .heart-flip:after,
 .heart-button .heart-flip:after {
@@ -1316,6 +1317,10 @@ form .form-group select {
   --pseudo-rotate: 0deg;
   --pseudo-rotate-second: 90deg;
   --heart-background: var(--active);
+}
+
+.heart .heart-flip:after {
+  border-right-width: 0px !important;
 }
 .heart {
   background: none;

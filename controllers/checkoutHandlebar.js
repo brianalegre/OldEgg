@@ -35,6 +35,7 @@ router.get('/checkout', loggedIn, async (req, res) => {
     )[0];
 
     res.render('checkout', {
+      cartProducts,
       hasItems,
       subTotal,
       userBalance,
