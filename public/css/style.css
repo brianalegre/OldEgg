@@ -1447,8 +1447,12 @@ form {
 .category-container {
   display: grid;
   grid-template-columns: 100%;
-  gap: 5rem;
   height: fit-content;
   padding: 1rem;
 }
+
+.btn {
+  margin: auto;
+}
+
 }
