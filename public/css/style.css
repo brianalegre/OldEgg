@@ -1026,7 +1026,6 @@ ul {
 }
 
 /* CHECKOUT PAGE */
-
 :root {
   --text-xs: 10px;
   --text-s: 12px;
@@ -1095,14 +1094,14 @@ header.principal > h1 {
   line-height: 12px;
 }
 
-/* .cart-preview > .cart-item .price > .discounted {
+ .cart-preview > .cart-item .price > .discounted {
   font-size: var(--text-s);
   font-weight: 600;
   line-height: 17px;
   margin-right: 15px;
   text-decoration: none;
   color: #F2994A;
-} */
+} 
 
 .cart-preview > .cart-item .qty-selector {
   border: 1px solid #828282;
@@ -1177,11 +1176,11 @@ form .form-groups {
   grid-column-gap: 25px;
 }
 
-form .form-group > label {
+/* form .form-group > label {
   font-size: var(--text-xs);
   color: #4f4f4f;
   font-weight: 600;
-}
+} */
 
 form .form-group > div {
   position: relative;
@@ -1197,8 +1196,8 @@ form .form-group .material-icons {
   color: #828282;
 }
 
-form .form-group input,
-form .form-group select {
+#checkout-form input,
+#checkout-form select {
   width: 100%;
   padding: 12px 10px 12px 12px;
   border-radius: 12px;
@@ -1250,7 +1249,7 @@ form .form-group select {
     --text-l: 36px;
     --one-em: 22px;
   }
-}
+} 
 
 /* wishlistbtn codepen */
 
