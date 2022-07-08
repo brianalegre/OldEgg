@@ -1,12 +1,10 @@
 const router = require('express').Router();
-const { Wishlist, Products, Wishlist } = require('../models');
+const { Wishlist, Products } = require('../models');
 const loggedIn = require('../utils/auth');
-
-// For checkout route = /wishlist/checkout
-router.use('/wishlist', checkoutHandlebar)
 
 router.get('/wishlist', loggedIn, async (req, res) => {
   try {
+    console.log('RUNNING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
     // Grabbing wishlist data and mapping it into an array of product ids
     const dbWishlistData = await Wishlist.findAll({where: {user_id: req.session.user_id}})
     const wishlistProductsIds = dbWishlistData.map(product => product.get({plain:true}).product_id)
@@ -16,6 +14,7 @@ router.get('/wishlist', loggedIn, async (req, res) => {
     const wishlistProducts = dbProductInfo.map(product => product.get({plain:true}))
     const wishlistProdLength = wishlistProducts.length
     const hasItems = wishlistProdLength > 0 ? true : false
+
 
     res.render('wishlist', {
       wishlistProducts,

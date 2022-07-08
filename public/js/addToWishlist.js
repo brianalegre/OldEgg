@@ -1,4 +1,4 @@
-const heartBtns = document.querySelectorAll('.heart')
+const heartBtn = document.querySelector('.heart')
 
 const addToWishList = async id => {
     try {
@@ -18,8 +18,10 @@ const addToWishList = async id => {
     }
 }
 
-heartBtns.forEach(button => {
-    button.addEventListener('click', e => {
-        button.classList.toggle('active')
+if (heartBtn) {
+    const productId = heartBtn.dataset.id
+    heartBtn.addEventListener('click', () => {
+        addToWishList(productId)
+        heartBtn.classList.toggle('active')
     })
-});
+}
