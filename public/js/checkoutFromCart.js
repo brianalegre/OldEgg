@@ -40,7 +40,7 @@ const checkoutFromCart = async targ => {
         appendContent(message);
         break;
       default:
-        break;
+        console.log('what');
     }
   } catch (err) {
     console.log(err);

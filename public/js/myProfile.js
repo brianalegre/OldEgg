@@ -16,8 +16,6 @@ const updateUserInfo = async (event) => {
   const checkMessage = document.querySelector('.invalid-auth');
   const checkValidMessage = document.querySelector('.valid-auth');
 
-  if (password === '' && confirmPassword === '') return
-
   if (checkMessage) {
     checkMessage.remove();
   }
@@ -25,6 +23,20 @@ const updateUserInfo = async (event) => {
   if (checkValidMessage) {
     checkValidMessage.remove();
   }
+
+  if (password === '' || confirmPassword === '' || first_name === '' || last_name === '' || email === '') {
+    const message = {
+      tag: 'p',
+      setAttr: {
+        class: 'invalid-auth',
+      },
+      // Display message on page
+      textContent: 'Please fill out all fields.',
+      appendTo: userUpdateForm,
+    };
+    return appendContent(message);
+  }
+
 
   // Check if password and confirm password match
   if (password === confirmPassword) {
