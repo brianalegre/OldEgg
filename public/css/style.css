@@ -764,12 +764,22 @@ hr {
   height: 100%;
 }
 
-.sr-item-details {
+.sr-item-box {
   color: black;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 30rem;
+}
+
+.sr-details h3, b {
+  color: #cc4100;
+}
+
+
+.price-stock p {
+  margin-block-start: 1rem;
+  margin-block-end: 1em;
 }
 
 /* footer */
@@ -1543,9 +1553,9 @@ form {
     height: 1em;
   }
 
-  .sr-item-details {
+  /* .sr-item-box {
     padding-right: 10vh;
-  }
+  } */
 }
 
 /* MEDIA QUERIES */
