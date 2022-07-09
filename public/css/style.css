@@ -1460,6 +1460,10 @@ form {
     font-size: 18px;
     margin-right: 40px;
   }
+
+  #cart-btn {
+    padding-right: 13px;
+  }
   .nav > .nav-links > a {
     display: block;
     width: 100%;
