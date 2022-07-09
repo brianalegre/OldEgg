@@ -587,6 +587,11 @@ hr {
   padding: 0.5em;
   width: 70vw;
   min-width: fit-content;
+  margin-bottom: 5em;
+}
+
+#no-cart-items h1 {
+  padding-left: 0;
 }
 
 .cart-item {

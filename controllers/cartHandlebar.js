@@ -25,7 +25,7 @@ router.get('/cart', loggedIn, async (req, res) => {
     req.session.cart_count = cartProdLength
 
     const subTotal = cartProducts.map(product=> {
-      return Number(product.price).toFixed(2)
+      return Number(product.price)
     }).reduce((a,b) => a+b, 0)
 
     res.render('cart', {
