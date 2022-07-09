@@ -264,7 +264,7 @@ nav {
 
 #searchText {
   height: 40px;
-  width: 25vh;
+  width: 20vh;
 }
 
 .nav-options {
@@ -1483,5 +1483,10 @@ form {
   font-size: 20px;
   color: white;
 }
+/* 
+.category-container {
+  margin-bottom: 1000px;
+  
+} */
 
 }
