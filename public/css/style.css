@@ -688,7 +688,8 @@ hr {
   cursor: pointer;
 }
 
-#cart-item-delete:hover {
+#cart-item-delete:hover,
+#wishlist-item-delete:hover {
   color: white;
   border: 1px solid darkred;
   background-color: darkred;
@@ -1310,7 +1311,7 @@ form .form-group .material-icons {
 #payment-checkout-btn:hover {
   background: darkgreen;
   border: darkgreen;
-  color: black;
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {
