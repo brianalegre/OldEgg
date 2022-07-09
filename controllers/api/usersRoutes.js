@@ -45,32 +45,35 @@ router.post('/', async (req, res) => {
       cart_id: req.body.cart_id,
       balance: req.body.balance,
     });
-    res.json('Success')
+    res.json('Success');
   } catch (err) {
-    const [error] = err.errors.map(error => {
+    const [error] = err.errors.map((error) => {
       return {
         message: error.message,
         key: error.validatorKey,
         args: error.validatorArgs,
-      }
-    })
+      };
+    });
 
     switch (error.key) {
       case 'len':
         // In this case we only have the length sequelize argument for the password
         // If change later must change this too.
-        const [num] = error.args
-        res.status(400).json(`Password must be ${num} or more characters.`)
+        const [num] = error.args;
+        res.status(400).json(`Password must be ${num} or more characters.`);
         break;
       case 'not_unique':
-        const message = (error.message && error.message[0].toUpperCase() + error.message.slice(1) + '.') || ''
-        res.status(400).json(message)
+        const message =
+          (error.message &&
+            error.message[0].toUpperCase() + error.message.slice(1) + '.') ||
+          '';
+        res.status(400).json(message);
         break;
       case 'isEmail':
-        res.status(400).json('Please enter a valid email.')
+        res.status(400).json('Please enter a valid email.');
         break;
       default:
-        res.status(400).json('Unable to post user data. ')
+        res.status(400).json('Unable to post user data. ');
     }
   }
 });
@@ -98,9 +101,7 @@ router.post('/login', async (req, res) => {
     const userData = await Users.findOne({ where: { email: req.body.email } });
 
     if (!userData) {
-      res
-        .status(400)
-        .json({ message: 'Email is not registered.' });
+      res.status(400).json({ message: 'Email is not registered.' });
       return;
     }
 
@@ -118,15 +119,12 @@ router.post('/login', async (req, res) => {
     }
 
     const dbCartData = await Carts.findAll({
-      where: { user_id: userData.user_id }
-    })
-    const carts = dbCartData.map(
-      (product) => product.get({ plain: true })
-    );
-    console.log(carts.length)
+      where: { user_id: userData.user_id },
+    });
+    const carts = dbCartData.map((product) => product.get({ plain: true }));
+    console.log(carts.length);
     // Create session variables based on the logged in user
     req.session.save(() => {
-
       req.session.user_id = userData.user_id;
       req.session.logged_in = true;
       req.session.cart_count = carts.length;
@@ -153,27 +151,26 @@ router.put('/', loggedIn, async (req, res) => {
   try {
     const singleUser = await Users.findOne({
       where: {
-        user_id: req.session.user_id
-      }
+        user_id: req.session.user_id,
+      },
     });
 
-    await singleUser.update(
-      {
-        // username: req.body.username,
-        first_name: req.body.first_name,
-        last_name: req.body.last_name,
-        email: req.body.email,
-        password: req.body.password,
-      });
+    await singleUser.update({
+      // username: req.body.username,
+      first_name: req.body.first_name,
+      last_name: req.body.last_name,
+      email: req.body.email,
+      password: req.body.password,
+    });
     res.status(200).json('User updated!');
   } catch (err) {
-    const [error] = err.errors.map(error => {
+    const [error] = err.errors.map((error) => {
       return {
         message: error.message,
         key: error.validatorKey,
         args: error.validatorArgs,
-      }
-    })
+      };
+    });
 
     switch (error.key) {
       case 'len':
@@ -183,8 +180,11 @@ router.put('/', loggedIn, async (req, res) => {
         res.status(400).json(`Password must be ${num} or more characters.`);
         break;
       case 'not_unique':
-        const message = (error.message && error.message[0].toUpperCase() + error.message.slice(1) + '.') || ''
-        res.status(400).json(message)
+        const message =
+          (error.message &&
+            error.message[0].toUpperCase() + error.message.slice(1) + '.') ||
+          '';
+        res.status(400).json(message);
         break;
       case 'isEmail':
         res.status(400).json('Please enter a valid email.');

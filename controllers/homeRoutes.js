@@ -4,7 +4,10 @@ const router = require('express').Router();
 //when a GET request is received on the root(/) route,
 //render the home.handlebars view
 router.get('/', (req, res) => {
-  res.render('home', {logged_in: req.session.logged_in, cart_count: req.session.cart_count});
+  res.render('home', {
+    logged_in: req.session.logged_in,
+    cart_count: req.session.cart_count,
+  });
 });
 
 router.get('/login', (req, res) => {
@@ -16,7 +19,10 @@ router.get('/signup', (req, res) => {
 });
 
 router.get('/portal', (req, res) => {
-  res.render('portal', {logged_in: req.session.logged_in, cart_count: req.session.cart_count});
+  res.render('portal', {
+    logged_in: req.session.logged_in,
+    cart_count: req.session.cart_count,
+  });
 });
 
 // router.get('/singleproduct', (req, res) => {

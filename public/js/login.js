@@ -14,7 +14,7 @@ const loginFormHandler = async (event) => {
         body: JSON.stringify({ email, password }),
         headers: { 'Content-Type': 'application/json' },
       });
-      const { message:dbMessage } = await response.json()
+      const { message: dbMessage } = await response.json();
 
       if (response.ok) {
         return document.location.replace('/');
@@ -56,5 +56,4 @@ const loginFormHandler = async (event) => {
   appendContent(message);
 };
 
-loginForm
-  .addEventListener('submit', loginFormHandler);
+loginForm.addEventListener('submit', loginFormHandler);

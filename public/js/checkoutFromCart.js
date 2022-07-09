@@ -1,10 +1,10 @@
 const paymentCheckoutBtn = document.getElementById('payment-checkout-btn');
 const btnMsgContainer = document.querySelector('#pcb-container');
 const checkoutForm = document.querySelector('#checkout-form');
-const pcbContainer = document.querySelector('#pcb-container')
+const pcbContainer = document.querySelector('#pcb-container');
 
-const checkoutFromCart = async targ => {
-  targ.preventDefault()
+const checkoutFromCart = async (targ) => {
+  targ.preventDefault();
 
   // HTML Targeting Elements
   const userEmail = document.querySelector('#email').value.trim();
@@ -16,7 +16,6 @@ const checkoutFromCart = async targ => {
   const checkMessage = document.querySelector('.invalid-auth');
   const checkValidMessage = document.querySelector('.valid-auth');
 
-
   if (checkMessage) {
     checkMessage.remove();
   }
@@ -25,7 +24,14 @@ const checkoutFromCart = async targ => {
     checkValidMessage.remove();
   }
 
-  if (userEmail === '' || userPhone === '' || userFullName === '' || userAddress === '' || userCity === '' || userZip === '') {
+  if (
+    userEmail === '' ||
+    userPhone === '' ||
+    userFullName === '' ||
+    userAddress === '' ||
+    userCity === '' ||
+    userZip === ''
+  ) {
     const message = {
       tag: 'p',
       setAttr: {
@@ -70,10 +76,9 @@ const checkoutFromCart = async targ => {
     }
   } catch (err) {
     console.log(err);
-  };
+  }
 };
-
 
 if (paymentCheckoutBtn) {
   paymentCheckoutBtn.addEventListener('click', checkoutFromCart);
-};
+}

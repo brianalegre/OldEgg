@@ -3,13 +3,14 @@ const userUpdateForm = document.querySelector('#userUpdate-form');
 const updateBtn = document.querySelector('#update-btn');
 const cancelBtn = document.querySelector('#cancel-btn');
 
-
 const updateUserInfo = async (event) => {
   event.preventDefault();
 
   // HTML Targeting Elements
   const password = document.querySelector('#password-login').value.trim();
-  const confirmPassword = document.querySelector('#password-confirm').value.trim();
+  const confirmPassword = document
+    .querySelector('#password-confirm')
+    .value.trim();
   const first_name = document.querySelector('#update-firstname').value.trim();
   const last_name = document.querySelector('#update-lastname').value.trim();
   const email = document.querySelector('#update-email').value.trim();
@@ -24,7 +25,13 @@ const updateUserInfo = async (event) => {
     checkValidMessage.remove();
   }
 
-  if (password === '' || confirmPassword === '' || first_name === '' || last_name === '' || email === '') {
+  if (
+    password === '' ||
+    confirmPassword === '' ||
+    first_name === '' ||
+    last_name === '' ||
+    email === ''
+  ) {
     const message = {
       tag: 'p',
       setAttr: {
@@ -36,7 +43,6 @@ const updateUserInfo = async (event) => {
     };
     return appendContent(message);
   }
-
 
   // Check if password and confirm password match
   if (password === confirmPassword) {
@@ -92,7 +98,7 @@ const updateUserInfo = async (event) => {
       body: JSON.stringify({ first_name, last_name, email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
-    const dbMessage = await response.json()
+    const dbMessage = await response.json();
     const message = {
       tag: 'p',
       setAttr: {

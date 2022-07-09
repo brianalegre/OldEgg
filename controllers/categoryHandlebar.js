@@ -6,7 +6,7 @@ const { Categories, Products } = require('../models');
 router.get('/categories', async (req, res) => {
   try {
     const categoriesData = await Categories.findAll({
-      include: [{ model: Products }]
+      include: [{ model: Products }],
     });
 
     const categories = categoriesData.map((category) =>
@@ -14,7 +14,7 @@ router.get('/categories', async (req, res) => {
     );
     res.render('categoriespage', {
       categories,
-      cart_count: req.session.cart_count
+      cart_count: req.session.cart_count,
     });
   } catch (err) {
     console.log(err);
@@ -27,7 +27,7 @@ router.get('/categories', async (req, res) => {
 router.get('/categories/:id', async (req, res) => {
   try {
     const categoriesData = await Categories.findByPk(req.params.id, {
-      include: [{ model: Products }]
+      include: [{ model: Products }],
     });
     if (!categoriesData) {
       return res.status(404).json({
@@ -40,7 +40,7 @@ router.get('/categories/:id', async (req, res) => {
     res.render('categoriespage', {
       categories,
       logged_in: req.session.logged_in,
-      cart_count: req.session.cart_count
+      cart_count: req.session.cart_count,
     });
   } catch (err) {
     console.log(err);

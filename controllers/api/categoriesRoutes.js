@@ -80,7 +80,8 @@ router.delete('/:id', async (req, res) => {
     //error handling for when user inputs a category_id that does not exist
     if (!deletedCategory) {
       return res.status(404).json({
-        message: 'This category ID does not exist. Please enter a valid category ID!',
+        message:
+          'This category ID does not exist. Please enter a valid category ID!',
       });
     }
     res.status(200).json(deletedCategory);

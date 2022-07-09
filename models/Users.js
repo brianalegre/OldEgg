@@ -2,7 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 
-class Users extends Model { }
+class Users extends Model {}
 
 Users.init(
   {
@@ -59,7 +59,7 @@ Users.init(
     balance: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
-      defaultValue: 500.00,
+      defaultValue: 500.0,
       validate: {
         isDecimal: true,
       },
@@ -82,7 +82,10 @@ Users.init(
         return userData;
       },
       beforeUpdate: async (updatedUserData) => {
-        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 5);
+        updatedUserData.password = await bcrypt.hash(
+          updatedUserData.password,
+          5
+        );
         return updatedUserData;
       },
     },

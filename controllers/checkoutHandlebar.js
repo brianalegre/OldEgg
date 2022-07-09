@@ -39,8 +39,8 @@ router.get('/checkout', loggedIn, async (req, res) => {
       hasItems,
       subTotal,
       userBalance,
-      logged_in: req.session.logged_in, 
-      cart_count: req.session.cart_count
+      logged_in: req.session.logged_in,
+      cart_count: req.session.cart_count,
     });
   } catch (err) {
     console.log(err);
@@ -82,14 +82,14 @@ router.post('/checkout', loggedIn, async (req, res) => {
       (product) => product.get({ plain: true }).balance
     )[0];
 
-    const resultingUserBalance = (parseFloat(userBalance) - parseFloat(subTotal)).toFixed(2);
+    const resultingUserBalance = (
+      parseFloat(userBalance) - parseFloat(subTotal)
+    ).toFixed(2);
     const checkPayment = resultingUserBalance < 0 ? false : true;
 
     // Error 1 = insufficient bal, Error 2 = stock is empty for item
     if (!checkPayment) {
-      return res
-        .status(400)
-        .json('Insufficient balance amount.');
+      return res.status(400).json('Insufficient balance amount.');
       // If there are empty stocks we res.send the array of empty stocked items
     } else if (checkEmptyStock.length > 0) {
       const emptyStockNames = checkEmptyStock
