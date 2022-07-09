@@ -798,6 +798,11 @@ hr {
   padding: 0.5rem;
 } */
 
+.footer-list li a {
+  color: white;
+  text-decoration: none;
+}
+
 ul {
   display: block;
   list-style-type: disc;
