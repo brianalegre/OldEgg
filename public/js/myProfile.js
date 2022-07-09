@@ -16,6 +16,7 @@ const updateUserInfo = async (event) => {
   const checkMessage = document.querySelector('.invalid-auth');
   const checkValidMessage = document.querySelector('.valid-auth');
 
+  if (password === '' && confirmPassword === '') return
 
   if (checkMessage) {
     checkMessage.remove();
@@ -24,7 +25,6 @@ const updateUserInfo = async (event) => {
   if (checkValidMessage) {
     checkValidMessage.remove();
   }
-
 
   // Check if password and confirm password match
   if (password === confirmPassword) {
@@ -80,17 +80,14 @@ const updateUserInfo = async (event) => {
       body: JSON.stringify({ first_name, last_name, email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
-    const loggedIn = await response.json();
-    if (!loggedIn) {
-      console.log('something went wrong');
-    }
+    const dbMessage = await response.json()
     const message = {
       tag: 'p',
       setAttr: {
         class: 'valid-auth',
       },
       // Display message on page
-      textContent: 'User Info Updated!',
+      textContent: dbMessage,
       appendTo: userUpdateForm,
     };
     return appendContent(message);
