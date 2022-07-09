@@ -779,7 +779,7 @@ hr {
   color: white;
   /* bottom: -40vmax; */
   width: 100%;
-  height: 200px;
+  height: 225px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -819,8 +819,8 @@ ul {
   padding-inline-start: 40px;
 }
 
-.footer-bottom {
-  padding-bottom: 2rem;
+.footer-bottom p {
+  padding-bottom: 3rem;
 }
 
 .add-to-cart {
@@ -1495,6 +1495,7 @@ form {
     text-align: right;
     font-size: 18px;
     margin-right: 40px;
+    z-index: 1;
   }
 
   #cart-btn {
