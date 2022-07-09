@@ -52,15 +52,14 @@ body {
 }
 
 #login-container {
-  height: fit-content;
-  width: 22vw;
-  min-width: 300px;
+  height: 50vh;
+  width: 400px;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 1em;
+  padding: 0.5em;
   margin: 1em;
   background-color: white;
 }
@@ -126,8 +125,7 @@ body {
 
 #signup-container {
   height: fit-content;
-  width: 22vw;
-  min-width: 300px;
+  width: 400px;
   background-color: white;
   border-radius: 20px;
   display: flex;
@@ -1425,9 +1423,9 @@ form {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
-    top: -190px;
+    top: -140px;
     right: 0;
-    margin: 20px;
+    margin: 40px;
   }
   .nav > .nav-btn > label {
     display: inline-block;
@@ -1451,10 +1449,10 @@ form {
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: -160px;
+    top: -80px;
     text-align: right;
     font-size: 18px;
-    margin-right: 20px;
+    margin-right: 40px;
   }
   .nav > .nav-links > a {
     display: block;
@@ -1521,4 +1519,5 @@ form {
   margin-bottom: 1000px;
   
 } */
+
 }
