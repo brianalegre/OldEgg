@@ -38,7 +38,6 @@ const checkoutFromCart = async targ => {
     return appendContent(message);
   }
 
-
   try {
     const response = await fetch('/cart/checkout', { method: 'POST' });
     if (response.ok) {
@@ -52,13 +51,14 @@ const checkoutFromCart = async targ => {
           class: 'valid-auth',
         },
         // Display message on page
-        textContent: 'Order Successful!',
+        textContent: data,
         // textContent: data.message,
         appendTo: checkoutForm,
       };
+      setTimeout(() => document.replace('/'), 2500);
       return appendContent(message);
     }
-  } catch (data) {
+  } catch (err) {
     console.log(err);
   };
 };
