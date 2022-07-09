@@ -655,8 +655,8 @@ hr {
 
 .cart-item-desc p {
   display: block;
-  margin-block-start: .5em;
-  margin-block-end: .5em;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
@@ -786,10 +786,10 @@ hr {
   font-size: 1.1rem;
 }
 
-.sr-details h3, b {
+.sr-details h3,
+b {
   color: #cc4100;
 }
-
 
 .price-stock p {
   margin-block-start: 1rem;
@@ -1090,7 +1090,6 @@ ul {
 #form-btns-container {
   display: flex;
   align-items: center;
-  
 }
 
 #update-btn,

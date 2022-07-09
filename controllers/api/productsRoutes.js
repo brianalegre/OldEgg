@@ -58,7 +58,8 @@ router.delete('/:id', async (req, res) => {
     });
     if (!deleteProduct) {
       return res.status(404).json({
-        message: 'This product ID does not exist. Please enter a valid product ID!',
+        message:
+          'This product ID does not exist. Please enter a valid product ID!',
       });
     }
     res.status(200).json(deleteProduct);

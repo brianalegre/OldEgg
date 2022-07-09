@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { Categories, Products } = require('../models');
 const { Op } = require('sequelize');
 
-
 //end point of /search
 router.get('/search/:product_searched', async (req, res) => {
   try {
@@ -32,8 +31,8 @@ router.get('/search/:product_searched', async (req, res) => {
     }
     res.render('searchPage', {
       products,
-      logged_in: req.session.logged_in, 
-      cart_count: req.session.cart_count
+      logged_in: req.session.logged_in,
+      cart_count: req.session.cart_count,
     });
   } catch (err) {
     console.log(err);

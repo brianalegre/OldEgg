@@ -1,28 +1,28 @@
-const deleteBtns = document.querySelectorAll('#cart-item-delete')
-const cartContainer = document.getElementById('cart-container')
+const deleteBtns = document.querySelectorAll('#cart-item-delete');
+const cartContainer = document.getElementById('cart-container');
 
-const deleteFromCart = async targ => {
-    try {
-        const productId = targ.dataset.id
+const deleteFromCart = async (targ) => {
+  try {
+    const productId = targ.dataset.id;
 
-        const response = await fetch('/cart', {
-            method: 'DELETE',
-            body: JSON.stringify({ productId }),
-            headers: {
-              'Content-Type': 'application/json',
-            },
-        })
-        if (response.ok) return document.location.replace('/cart');
-        if (response.status === 401) return document.location.replace('/login')
-    } catch(err) {
-        console.log(err)
-    }
-}
+    const response = await fetch('/cart', {
+      method: 'DELETE',
+      body: JSON.stringify({ productId }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    if (response.ok) return document.location.replace('/cart');
+    if (response.status === 401) return document.location.replace('/login');
+  } catch (err) {
+    console.log(err);
+  }
+};
 
 if (cartContainer) {
-    cartContainer.addEventListener('click', targ => {
-        if (targ.target && targ.target.matches('#cart-item-delete')) {
-            deleteFromCart(targ.target)
-        }
-    })
+  cartContainer.addEventListener('click', (targ) => {
+    if (targ.target && targ.target.matches('#cart-item-delete')) {
+      deleteFromCart(targ.target);
+    }
+  });
 }

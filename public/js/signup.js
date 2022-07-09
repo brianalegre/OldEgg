@@ -24,7 +24,7 @@ const signupFormHandler = async (event) => {
         headers: { 'Content-Type': 'application/json' },
       });
 
-      const dbMessage = await response.json()
+      const dbMessage = await response.json();
 
       if (response.ok) {
         return document.location.replace('/login');

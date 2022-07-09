@@ -19,9 +19,6 @@ searchKey.addEventListener('keypress', function (event) {
   }
 });
 
-
-
-
 // // API CALL
 // // Test API Call
 // const getProducts = async () => {
