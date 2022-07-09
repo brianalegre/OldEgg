@@ -18,7 +18,8 @@ router.get('/wishlist', loggedIn, async (req, res) => {
       wishlistProducts,
       wishlistProdLength,
       hasItems,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in, 
+      cart_count: req.session.cart_count
     })
   } catch (err) {
     console.log(err)

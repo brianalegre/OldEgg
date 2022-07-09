@@ -16,7 +16,8 @@ router.get('/products/:id', async (req, res) => {
     const products = productById.get({ plain: true });
     res.render('singleproduct', {
       products,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in, 
+      cart_count: req.session.cart_count
     });
   } catch (err) {
     return res.status(500).json(err);

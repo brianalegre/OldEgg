@@ -6,7 +6,7 @@ router.get('/profile', async (req, res) => {
   try {
     const userData = await Users.findOne({
       where: {
-        user_id: req.session.user_id
+        user_id: req.session.user_id,
       }
     });
 
@@ -19,7 +19,8 @@ router.get('/profile', async (req, res) => {
     const users = userData.get({ plain: true });
     res.render('myProfile', {
       users,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in, 
+      cart_count: req.session.cart_count
     });
   } catch (err) {
     return res.status(500).json(err);
