@@ -14,8 +14,7 @@ const loginFormHandler = async (event) => {
         body: JSON.stringify({ email, password }),
         headers: { 'Content-Type': 'application/json' },
       });
-
-      console.log(response);
+      const { message:dbMessage } = await response.json()
 
       if (response.ok) {
         return document.location.replace('/');
@@ -31,7 +30,7 @@ const loginFormHandler = async (event) => {
           class: 'invalid-auth',
         },
         // set this to backend message
-        textContent: 'Unable to confirm username/password combination.',
+        textContent: dbMessage,
         appendTo: loginForm,
       };
       return appendContent(message);

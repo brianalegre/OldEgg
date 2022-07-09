@@ -13,29 +13,41 @@
 
 <body>
   {{! this is the main html file wrapper for all your views }}
-  <nav>
-    <a href="/" id="logo-img" class="hvr-icon-float"><img src="../images/icons/navbar/logo.png" class="hvr-icon"></a>
-    <div class="search-box">
-      <img src="../images/icons/navbar/akar-icons_search.png" alt="search icon">
-      <input type="text" id="searchText" placeholder="Search product..." name="">
+  <header>
+    <div class="nav-title">
+      <a href="/" id="logo-img" class="hvr-icon-float"><img src="../images/icons/navbar/logo2.png" class="hvr-icon"></a>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
     </div>
 
-    <div class="nav-options">
+    <div class="nav-links">
+      <form id="search-form">
+        <input type="text" class="form-control" id="searchText" placeholder="Search Products...">
+      </form>
       <a href="/" class="hvr-icon-float">Home <img src="../images/icons/navbar/akar-icons_home.png"
-          alt="home-button icon" class="hvr-icon">
-        {{#if logged_in}}
-        <a id="logout-btn" class="hvr-icon-up">Logout <img src="../images/icons/navbar/ri_logout-circle-line.png"
-            alt="logout icon" class="hvr-icon"></a>
-        <button data-cart-count="{{cartProdLength}}" id="cart-btn"><a href="/cart" class="hvr-icon-float">Cart <img
-              src="../images/icons/navbar/cart-nav-icon.png" alt="cart icon" class="hvr-icon"></a></button>
-        <a href="/wishlist" class="hvr-icon-float">Wish List <img src="../images/icons/navbar/akar-icons_heart.png"
-            alt="wishlist icon" class="hvr-icon"></a>
-        <a href="/profile" class="hvr-icon-float">Profile <i class="fa fa-address-card-o hvr-icon"
-            aria-hidden="true"></i></i></a>
-        {{else}}
-        <a id="login-btn" href="/login" class="hvr-icon-float">Login <img src="../images/icons/navbar/login-icon.png"
-            alt="login icon" class="hvr-icon"></a>
-        {{/if}}
+          alt="home-button icon" class="hvr-icon"></a>
+      {{#if logged_in}}
+      <a id="logout-btn" class="hvr-icon-up">Logout <img src="../images/icons/navbar/ri_logout-circle-line.png"
+          alt="logout icon" class="hvr-icon"></a>
+      <a href="/cart" class="hvr-icon-float">Cart <img src="../images/icons/navbar/cart-nav-icon.png" alt="cart icon"
+          class="hvr-icon"></a>
+      <a href="/wishlist" class="hvr-icon-float">Wish List <img src="../images/icons/navbar/akar-icons_heart.png"
+          alt="wishlist icon" class="hvr-icon"></a>
+      <a href="/profile" class="hvr-icon-float">Profile <i class="fa fa-address-card-o hvr-icon"
+          aria-hidden="true"></i></a>
+      {{else}}
+      <a id="login-btn" href="/login" class="hvr-icon-float">Login <img src="../images/icons/navbar/login-icon.png"
+          alt="login icon" class="hvr-icon"></a>
+      {{/if}}
     </div>
   </nav>
 
@@ -54,7 +66,7 @@
           <p>Contact Us</p>
         </li>
         <li>
-          <p>About us</p>
+          <p>About Us</p>
         </li>
         <li>
           <p>Careers</p>
@@ -74,7 +86,7 @@
           <p>Shipping</p>
         </li>
         <li>
-          <p>Cancellations & Returns</p>
+          <p>Cancel &amp; Returns</p>
         </li>
         <li>
           <p>FAQs</p>

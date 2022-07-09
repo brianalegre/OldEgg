@@ -13,7 +13,7 @@ const moveToCart = async id => {
             },
         })
         if (wishResponse.ok) {
-            addToCart(productId)
+            await addToCart(productId)
             return document.location.replace('/wishlist')
         }
         if (wishResponse.status === 401) return document.location.replace('/login')
