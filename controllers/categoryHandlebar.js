@@ -14,6 +14,7 @@ router.get('/categories', async (req, res) => {
     );
     res.render('categoriespage', {
       categories,
+      cart_count: req.session.cart_count
     });
   } catch (err) {
     console.log(err);
@@ -38,7 +39,8 @@ router.get('/categories/:id', async (req, res) => {
     const categories = categoriesData.get({ plain: true });
     res.render('categoriespage', {
       categories,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in,
+      cart_count: req.session.cart_count
     });
   } catch (err) {
     console.log(err);

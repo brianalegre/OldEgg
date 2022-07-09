@@ -24,27 +24,28 @@ const signupFormHandler = async (event) => {
         headers: { 'Content-Type': 'application/json' },
       });
 
+      const dbMessage = await response.json()
+
       if (response.ok) {
         return document.location.replace('/login');
       }
+      const checkMessage = document.querySelector('.invalid-auth');
+
+      if (checkMessage) {
+        checkMessage.remove();
+      }
+      const message = {
+        tag: 'p',
+        setAttr: {
+          class: 'invalid-auth',
+        },
+        textContent: dbMessage,
+        appendTo: signupForm,
+      };
+      return appendContent(message);
     } catch (err) {
       console.log(err);
     }
-    const checkMessage = document.querySelector('.invalid-auth');
-
-    if (checkMessage) {
-      checkMessage.remove();
-    }
-
-    const message = {
-      tag: 'p',
-      setAttr: {
-        class: 'invalid-auth',
-      },
-      textContent: 'Unable to post user data, unable to signup.',
-      appendTo: signupForm,
-    };
-    return appendContent(message);
   }
   // If one of the form variables is undefined continue here.
   const checkMessage = document.querySelector('.invalid-auth');

@@ -32,7 +32,8 @@ router.get('/search/:product_searched', async (req, res) => {
     }
     res.render('searchPage', {
       products,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in, 
+      cart_count: req.session.cart_count
     });
   } catch (err) {
     console.log(err);
