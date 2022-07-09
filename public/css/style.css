@@ -1418,9 +1418,9 @@ form {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
-    top: -190px;
+    top: -140px;
     right: 0;
-    margin: 20px;
+    margin: 40px;
   }
   .nav > .nav-btn > label {
     display: inline-block;
@@ -1444,10 +1444,10 @@ form {
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: -160px;
+    top: -80px;
     text-align: right;
     font-size: 18px;
-    margin-right: 20px;
+    margin-right: 40px;
   }
   .nav > .nav-links > a {
     display: block;
