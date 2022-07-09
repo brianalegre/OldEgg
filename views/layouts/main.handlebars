@@ -30,17 +30,19 @@
             </label>
         </div>
 
-        <div class="nav-links">
+        <div class="nav-links" >
             <form id="search-form">
-                <input type="text" class="form-control" id="searchText" placeholder="Search Products...">
+                <img src="../images/icons/navbar/akar-icons_search.png" id="search-icon" class="hvr-icon-up"
+                    alt="search picture"><input type="text" class="form-control" id="searchText"
+                    placeholder="Search Products...">
             </form>
             <a href="/" class="hvr-icon-float">Home <img src="../images/icons/navbar/akar-icons_home.png"
                     alt="home-button icon" class="hvr-icon"></a>
             {{#if logged_in}}
             <a id="logout-btn" class="hvr-icon-up">Logout <img src="../images/icons/navbar/ri_logout-circle-line.png"
                     alt="logout icon" class="hvr-icon"></a>
-            <a href="/cart" class="hvr-icon-float">Cart <img src="../images/icons/navbar/cart-nav-icon.png"
-                    alt="cart icon" class="hvr-icon"></a>
+            <a href="/cart" data-cart-count="{{cart_count}}" id="cart-btn" class="hvr-icon-float">Cart <img
+                    src="../images/icons/navbar/cart-nav-icon.png" alt="cart icon" class="hvr-icon"></a>
             <a href="/wishlist" class="hvr-icon-float">Wish List <img src="../images/icons/navbar/akar-icons_heart.png"
                     alt="wishlist icon" class="hvr-icon"></a>
             <a href="/profile" class="hvr-icon-float">Profile <i class="fa fa-address-card-o hvr-icon"
