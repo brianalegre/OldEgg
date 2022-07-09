@@ -221,6 +221,8 @@ body {
 }
 
 /*NAVBAR*/
+
+
 nav {
   display: flex;
   flex-direction: row;
@@ -245,7 +247,7 @@ nav {
   /* margin: .5em; */
 }
 
-.search-box img {
+#search-icon {
   padding: 5px;
 }
 
@@ -738,6 +740,7 @@ hr {
 
 .sr-item-container {
   padding: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .sr-item-container a {
@@ -747,13 +750,14 @@ hr {
 
 .sr-img-container {
   background-color: white;
+  flex-wrap: wrap;
   width: 25rem;
 }
 
 .sr-item-container img {
   padding: 1.5rem;
   width: 100%;
-  height: 22rem;
+  height: 100%;
 }
 
 .sr-item-details {
@@ -1049,6 +1053,26 @@ ul {
   }
 }
 
+/* PROFILE PAGE */
+#form-btns-container {
+  display: inline-flex;
+}
+
+#update-btn, #cancel-btn {
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#update-btn:hover {
+  background-color: darkgreen;
+}
+
+#cancel-btn:hover {
+  background-color: darkred;
+}
+
+
+
 /* CHECKOUT PAGE */
 :root {
   --text-xs: 10px;
@@ -1248,8 +1272,8 @@ form .form-group .material-icons {
 }
 
 #payment-checkout-btn:hover {
-  background: green;
-  border: green;
+  background: darkgreen;
+  border: darkgreen;
   color: black;
 }
 
@@ -1496,7 +1520,18 @@ form {
 
 #logo-img {
   padding: 0;
+}
 
+#cart-btn::before {
+  font-size: 13px;
+  top: -0.5em;
+  right: .25em;
+  width: 1.15em;
+  height: 1em;
+}
+
+.sr-item-details {
+  padding-right: 10vh;
 }
 
 }
