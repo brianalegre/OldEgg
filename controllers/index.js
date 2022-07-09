@@ -7,7 +7,7 @@ const productHandlebar = require('./productHandlebar');
 const cartHandlebar = require('./cartHandlebar');
 const searchHandlebar = require('./searchHandlebar');
 const myProfileHandlebar = require('./myProfileHandlebar');
-const wishlistHandlebar = require('./wishlistHandlebar')
+const wishlistHandlebar = require('./wishlistHandlebar');
 
 const handleBars = [
   homeRoutes,
