@@ -15,7 +15,6 @@
 * [Deployed Heroku Link](#heroku)
 * [Github Repository](#github-repository)
 * [Contact](#contact-information)
-    * [Github](#github)
 
 ## Installation 
  1. Run ``` npm i ``` in the terminal to install the required dependencies
