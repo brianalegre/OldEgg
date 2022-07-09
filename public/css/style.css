@@ -52,7 +52,7 @@ body {
 
 #login-container {
   height: 50vh;
-  width: 20vw;
+  width: 400px;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -90,6 +90,9 @@ body {
   background-color: inherit;
 }
 
+#login-form button:hover {
+  background-color: darkgreen;
+}
 .form-group {
   margin: 0.5em;
   display: inherit;
@@ -104,7 +107,7 @@ body {
 
 .form-group input {
   height: 4vh;
-  width: 20vw;
+  width: 350px;
   border: 0.1px solid rgb(180, 180, 180);
   border-radius: 5px;
   padding: 0 1em 0 1em;
@@ -121,7 +124,7 @@ body {
 
 #signup-container {
   height: fit-content;
-  width: 22vw;
+  width: 400px;
   background-color: white;
   border-radius: 20px;
   display: flex;
@@ -137,6 +140,10 @@ body {
   display: inherit;
   flex-direction: inherit;
   background-color: white;
+}
+
+#signup-form button:hover {
+  background-color: darkgreen;
 }
 
 /* Home Page */
