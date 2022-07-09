@@ -1,134 +1,136 @@
 <html lang='en'>
 
 <head>
-  <meta charset='UTF-8' />
-  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-  <title>OldEgg</title>
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/91ed65ac39.js" crossorigin="anonymous"></script>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>OldEgg</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/91ed65ac39.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  {{! this is the main html file wrapper for all your views }}
-  <header>
-    <div class="nav-title">
-      <a href="/" id="logo-img" class="hvr-icon-float"><img src="../images/icons/navbar/logo2.png" class="hvr-icon"></a>
-    </div>
-  </header>
+    {{! this is the main html file wrapper for all your views }}
+    <header>
+        <div class="nav-title">
+            <a href="/" id="logo-img" class="hvr-icon-float"><img src="../images/icons/navbar/logo2.png"
+                    class="hvr-icon"></a>
+        </div>
+    </header>
 
-  <nav class="nav">
-    <input type="checkbox" id="nav-check">
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+    <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <form id="search-form">
+                <input type="text" class="form-control" id="searchText" placeholder="Search Products...">
+            </form>
+            <a href="/" class="hvr-icon-float">Home <img src="../images/icons/navbar/akar-icons_home.png"
+                    alt="home-button icon" class="hvr-icon"></a>
+            {{#if logged_in}}
+            <a id="logout-btn" class="hvr-icon-up">Logout <img src="../images/icons/navbar/ri_logout-circle-line.png"
+                    alt="logout icon" class="hvr-icon"></a>
+            <a href="/cart" class="hvr-icon-float">Cart <img src="../images/icons/navbar/cart-nav-icon.png"
+                    alt="cart icon" class="hvr-icon"></a>
+            <a href="/wishlist" class="hvr-icon-float">Wish List <img src="../images/icons/navbar/akar-icons_heart.png"
+                    alt="wishlist icon" class="hvr-icon"></a>
+            <a href="/profile" class="hvr-icon-float">Profile <i class="fa fa-address-card-o hvr-icon"
+                    aria-hidden="true"></i></a>
+            {{else}}
+            <a id="login-btn" href="/login" class="hvr-icon-float">Login <img
+                    src="../images/icons/navbar/login-icon.png" alt="login icon" class="hvr-icon"></a>
+            {{/if}}
+        </div>
+    </nav>
+
+    {{! placeholder for where the view will be injected }}
+    <div class="page-container" id="section-input">
+        {{{body}}}
     </div>
 
-    <div class="nav-links">
-      <form id="search-form">
-        <input type="text" class="form-control" id="searchText" placeholder="Search Products...">
-      </form>
-      <a href="/" class="hvr-icon-float">Home <img src="../images/icons/navbar/akar-icons_home.png"
-          alt="home-button icon" class="hvr-icon"></a>
-      {{#if logged_in}}
-      <a id="logout-btn" class="hvr-icon-up">Logout <img src="../images/icons/navbar/ri_logout-circle-line.png"
-          alt="logout icon" class="hvr-icon"></a>
-      <a href="/cart" class="hvr-icon-float">Cart <img src="../images/icons/navbar/cart-nav-icon.png" alt="cart icon"
-          class="hvr-icon"></a>
-      <a href="/wishlist" class="hvr-icon-float">Wish List <img src="../images/icons/navbar/akar-icons_heart.png"
-          alt="wishlist icon" class="hvr-icon"></a>
-      <a href="/profile" class="hvr-icon-float">Profile <i class="fa fa-address-card-o hvr-icon"
-          aria-hidden="true"></i></a>
-      {{else}}
-      <a id="login-btn" href="/login" class="hvr-icon-float">Login <img src="../images/icons/navbar/login-icon.png"
-          alt="login icon" class="hvr-icon"></a>
-      {{/if}}
-    </div>
-  </nav>
-
-  {{! placeholder for where the view will be injected }}
-  <div class="page-container" id="section-input">
-    {{{body}}}
-  </div>
-
-  <footer class="footer-container">
-    <div class="footer-top">
-      <ul class="footer-list">
-        <li>
-          <h2>About</h2>
-        </li>
-        <li>
-          <p>Contact Us</p>
-        </li>
-        <li>
-          <p>About Us</p>
-        </li>
-        <li>
-          <p>Careers</p>
-        </li>
-        <li>
-          <p>Gift Cards</p>
-        </li>
-      </ul>
-      <ul class="footer-list">
-        <li>
-          <h2>Help</h2>
-        </li>
-        <li>
-          <p>Payments</p>
-        </li>
-        <li>
-          <p>Shipping</p>
-        </li>
-        <li>
-          <p>Cancel &amp; Returns</p>
-        </li>
-        <li>
-          <p>FAQs</p>
-        </li>
-      </ul>
-      <ul class="footer-list">
-        <li>
-          <h2>Github</h2>
-        </li>
-        <li>
-          <p>Brian</p>
-        </li>
-        <li>
-          <p>Allec</p>
-        </li>
-        <li>
-          <p>Tony</p>
-        </li>
-        <li>
-          <p>Kevin</p>
-        </li>
-      </ul>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-copyright">
-        <p>Copyright © 2022 Old Egg. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-  {{! placeholder for where the view will be injected }}
-  {{#if logged_in}}
-  <script src="/js/logout.js"></script>
-  {{!--
-  <script src="../../controllers/cartHandlebar.js"></script> --}}
-  {{/if}}
-  <script src="/js/addToCart.js"></script>
-  <script src="/js/search.js"></script>
-  <script src="/js/appendContent.js"></script>
-  <script src="/js/moveToCart.js"></script>
-  <script src="/js/addToWishlist.js"></script>
-  <script src="/js/deleteFromWishlist.js"></script>
-  <script src="/js/moveToWishlist.js"></script>
+    <footer class="footer-container">
+        <div class="footer-top">
+            <ul class="footer-list">
+                <li>
+                    <h2>About</h2>
+                    <a href=" mailto: OldEgg@WostBuy.com" target="_blank">Careers</a>
+                </li>
+                <li>
+                    <a href=" mailto: OldEgg@WostBuy.com" target="_blank">Contact Us</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">About Us</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/" target="_blank">Careers</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">Gift Cards</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h2>Help</h2>
+                </li>
+                <li>
+                    <a href="" target="_blank">Payments</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">Shipping</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">Cancel &amp; Returns</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">FAQs</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h2>Github</h2>
+                </li>
+                <li>
+                    <a href="https://github.com/brianalegre" target="_blank">Brian</a>
+                </li>
+                <li>
+                    <a href="https://github.com/axe714" target="_blank">Allec</a>
+                </li>
+                <li>
+                    <a href="https://github.com/keeezy" target="_blank">Tony</a>
+                </li>
+                <li>
+                    <a href="https://brianalegre.github.io/Project1/" target="_blank">Kevin</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>Copyright © 2022 Old Egg. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    {{! placeholder for where the view will be injected }}
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{!--
+    <script src="../../controllers/cartHandlebar.js"></script> --}}
+    {{/if}}
+    <script src="/js/addToCart.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/appendContent.js"></script>
+    <script src="/js/moveToCart.js"></script>
+    <script src="/js/addToWishlist.js"></script>
+    <script src="/js/deleteFromWishlist.js"></script>
+    <script src="/js/moveToWishlist.js"></script>
 </body>
 
 </html>
