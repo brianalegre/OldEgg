@@ -33,6 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   /* height: 75vh; */
+  padding-bottom: 25vh;
 }
 
 .page-container h1 {
@@ -217,7 +218,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 3em 3em 3em;
+  /* padding: 0 3em 3em 3em; */
   width: 100vw;
 }
 
@@ -265,6 +266,8 @@ nav {
 #searchText {
   height: 40px;
   width: 20vh;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .nav-options {
@@ -290,6 +293,7 @@ button {
   margin-top: -5vh; */
   height: 15vh;
   width: 20vh;
+  padding: 3rem 0 0 3rem;
 }
 
 #logout-btn {
@@ -1351,11 +1355,12 @@ form .form-group .material-icons {
 /* Brian Started */
 
 .nav {
-  height: 50px;
+  /* height: 50px; */
   width: 100%;
   /* background-color: #4d4d4d; */
   position: relative;
   margin-bottom: 20px;
+  justify-content: space-evenly;
 }
 
 .nav > .nav-header {
@@ -1401,8 +1406,8 @@ form {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
-    left: 0px;
-    top: 0px;
+    top: -190px;
+    right: 0;
     margin: 20px;
   }
   .nav > .nav-btn > label {
@@ -1417,6 +1422,7 @@ form {
     width: 25px;
     height: 10px;
     border-top: 2px solid #000;
+
   }
   .nav > .nav-links {
     position: absolute;
@@ -1426,9 +1432,10 @@ form {
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 50px;
-    left: 0px;
+    top: -160px;
+    text-align: right;
     font-size: 18px;
+    margin-right: 20px;
   }
   .nav > .nav-links > a {
     display: block;
@@ -1447,6 +1454,7 @@ form {
     gap: 5rem;
     height: fit-content;
     padding: 1rem;
+    padding-bottom: 25vh;
   }
 
   .footer-top {
@@ -1459,6 +1467,9 @@ form {
     color: white;
   }
 
+#logo-img {
+  padding: 0;
+
 }
 
 /* MEDIA QUERIES */
@@ -1468,6 +1479,7 @@ form {
   grid-template-columns: 100%;
   height: fit-content;
   padding: 1rem;
+  padding-bottom: 30vh;
 }
 
 .btn {
