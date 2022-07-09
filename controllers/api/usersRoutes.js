@@ -47,7 +47,7 @@ router.post('/', async (req, res) => {
     });
     res.json('Success')
   } catch (err) {
-    const [ error ] = err.errors.map(error => {
+    const [error] = err.errors.map(error => {
       return {
         message: error.message,
         key: error.validatorKey,
@@ -59,7 +59,7 @@ router.post('/', async (req, res) => {
       case 'len':
         // In this case we only have the length sequelize argument for the password
         // If change later must change this too.
-        const [ num ] = error.args
+        const [num] = error.args
         res.status(400).json(`Password must be ${num} or more characters.`)
         break;
       case 'not_unique':
@@ -117,7 +117,7 @@ router.post('/login', async (req, res) => {
       return;
     }
 
-    const dbCartData =  await Carts.findAll({
+    const dbCartData = await Carts.findAll({
       where: { user_id: userData.user_id }
     })
     const carts = dbCartData.map(
@@ -167,7 +167,7 @@ router.put('/', loggedIn, async (req, res) => {
       });
     res.status(200).json('User updated!');
   } catch (err) {
-    const [ error ] = err.errors.map(error => {
+    const [error] = err.errors.map(error => {
       return {
         message: error.message,
         key: error.validatorKey,
@@ -179,18 +179,18 @@ router.put('/', loggedIn, async (req, res) => {
       case 'len':
         // In this case we only have the length sequelize argument for the password
         // If change later must change this too.
-        const [ num ] = error.args
-        res.status(400).json(`Password must be ${num} or more characters.`)
+        const [num] = error.args;
+        res.status(400).json(`Password must be ${num} or more characters.`);
         break;
       case 'not_unique':
         const message = (error.message && error.message[0].toUpperCase() + error.message.slice(1) + '.') || ''
         res.status(400).json(message)
         break;
       case 'isEmail':
-        res.status(400).json('Please enter a valid email.')
+        res.status(400).json('Please enter a valid email.');
         break;
       default:
-        res.status(400).json('Unable to post user data. ')
+        res.status(400).json('Unable to post user data. ');
     }
   }
 });
