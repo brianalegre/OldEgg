@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Users, Carts } = require('../../models');
 const bcrypt = require('bcrypt');
 const { create } = require('../../models/Users');
+const loggedIn = require('../../utils/auth');
 
 //end point of /api/users routes
 
@@ -148,14 +149,15 @@ router.post('/logout', (req, res) => {
 });
 
 // PUT Update user information
-router.put('/', async (req, res) => {
+router.put('/', loggedIn, async (req, res) => {
   try {
     const singleUser = await Users.findOne({
       where: {
         user_id: req.session.user_id
       }
     });
-    const userUpdate = await singleUser.update(
+
+    await singleUser.update(
       {
         // username: req.body.username,
         first_name: req.body.first_name,
@@ -163,9 +165,33 @@ router.put('/', async (req, res) => {
         email: req.body.email,
         password: req.body.password,
       });
-    res.status(200).json(userUpdate);
+    res.status(200).json('User updated!');
   } catch (err) {
-    return res.status(500).json(err);
+    const [ error ] = err.errors.map(error => {
+      return {
+        message: error.message,
+        key: error.validatorKey,
+        args: error.validatorArgs,
+      }
+    })
+
+    switch (error.key) {
+      case 'len':
+        // In this case we only have the length sequelize argument for the password
+        // If change later must change this too.
+        const [ num ] = error.args
+        res.status(400).json(`Password must be ${num} or more characters.`)
+        break;
+      case 'not_unique':
+        const message = (error.message && error.message[0].toUpperCase() + error.message.slice(1) + '.') || ''
+        res.status(400).json(message)
+        break;
+      case 'isEmail':
+        res.status(400).json('Please enter a valid email.')
+        break;
+      default:
+        res.status(400).json('Unable to post user data. ')
+    }
   }
 });
 

@@ -1,8 +1,9 @@
 const router = require('express').Router();
 const { Users } = require('../models');
+const loggedIn = require('../utils/auth');
 
 //end point of /profile
-router.get('/profile', async (req, res) => {
+router.get('/profile', loggedIn, async (req, res) => {
   try {
     const userData = await Users.findOne({
       where: {
