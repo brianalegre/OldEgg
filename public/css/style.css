@@ -1442,6 +1442,16 @@ form {
     padding: 1rem;
   }
 
+  .footer-top {
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    /* height: fit-content; */
+    font-size: 20px;
+    color: white;
+  }
+
 }
 
 /* MEDIA QUERIES */
@@ -1455,6 +1465,16 @@ form {
 
 .btn {
   margin: auto;
+}
+
+.footer-top {
+  align-items: flex-start;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+  /* height: fit-content; */
+  font-size: 20px;
+  color: white;
 }
 
 }
