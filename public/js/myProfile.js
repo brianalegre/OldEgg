@@ -16,7 +16,15 @@ const updateUserInfo = async (event) => {
   const checkMessage = document.querySelector('.invalid-auth');
   const checkValidMessage = document.querySelector('.valid-auth');
 
-  if (password === '' && confirmPassword === '') {
+  if (checkMessage) {
+    checkMessage.remove();
+  }
+
+  if (checkValidMessage) {
+    checkValidMessage.remove();
+  }
+
+  if (password === '' || confirmPassword === '' || first_name === '' || last_name === '' || email === '') {
     const message = {
       tag: 'p',
       setAttr: {
@@ -29,13 +37,6 @@ const updateUserInfo = async (event) => {
     return appendContent(message);
   }
 
-  if (checkMessage) {
-    checkMessage.remove();
-  }
-
-  if (checkValidMessage) {
-    checkValidMessage.remove();
-  }
 
   // Check if password and confirm password match
   if (password === confirmPassword) {
