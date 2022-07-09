@@ -8,8 +8,8 @@
 - OldEgg utilizes both the front/back-end to provide a demo of an e-commerce website that sells electronics.
 
 ## Table Of Contents 📜
-* [Installation](##installation)
-* [Usage](##usage)
+* [Installation](#installation)
+* [Usage](#usage)
 * [License](#license)
 * [Contribution Guidelines](#contribution-guidelines)
 * [Deployed Heroku Link](#heroku)
@@ -196,7 +196,7 @@
 - [OldEgg Heroku](oldegg.herokuapp.com/)
 
 ##  Github Repository 
-- [OldEgg Repository](https://github.com/brianalegre/Project2)
+- [OldEgg Repository](https://github.com/brianalegre/OldEgg)
 
 ##  Contact Information
 - Github Profiles:
