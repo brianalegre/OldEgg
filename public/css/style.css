@@ -635,6 +635,7 @@ hr {
   align-items: center;
   text-decoration: none;
   color: black;
+  width: 40rem;
 }
 
 .cart-item-image {
@@ -650,6 +651,14 @@ hr {
   flex-direction: column;
   padding: 1em;
   max-width: 25vw;
+}
+
+.cart-item-desc p {
+  display: block;
+  margin-block-start: .5em;
+  margin-block-end: .5em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .cart-item-options {
@@ -770,6 +779,10 @@ hr {
   flex-direction: column;
   justify-content: space-evenly;
   width: 30rem;
+}
+
+.sr-details {
+  font-size: 1.1rem;
 }
 
 .sr-details h3, b {

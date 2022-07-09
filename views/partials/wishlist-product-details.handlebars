@@ -2,12 +2,11 @@
     <a href="/products/{{product_id}}">
         <img src="{{product_img}}" class="cart-item-image"></img>
         <div class="cart-item-desc">
-            <h1>{{product_name}}</h1>
+            <h2>{{product_name}}</h2>
             <hr>
-            <p>{{description}}</p>
-            <p>{{stock}}</p>
-            <p>{{price}}</p>
-            <p>Quantity to Buy</p>
+            <p class="product-description"><b>Description :</b>&nbsp;{{description}}</p>
+            <p class="product-price"><b>Price :</b>&nbsp;${{price}}</p>
+            <p class="product-stock"><b>Stock :</b>&nbsp;{{stock}}</p>
         </div>
     </a>
     <div class="cart-item-options">
