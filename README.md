@@ -196,7 +196,7 @@
 - [OldEgg Heroku](oldegg.herokuapp.com/)
 
 ##  Github Repository 
-- [OldEgg Repository](https://github.com/brianalegre/Project2)
+- [OldEgg Repository](https://github.com/brianalegre/OldEgg)
 
 ##  Contact Information
 - Github Profiles:
