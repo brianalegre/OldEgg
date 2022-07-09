@@ -82,7 +82,7 @@ router.post('/checkout', loggedIn, async (req, res) => {
       (product) => product.get({ plain: true }).balance
     )[0];
 
-    const resultingUserBalance = Number(userBalance) - Number(subTotal);
+    const resultingUserBalance = (parseFloat(userBalance) - parseFloat(subTotal)).toFixed(2);
     const checkPayment = resultingUserBalance < 0 ? false : true;
 
     // Error 1 = insufficient bal, Error 2 = stock is empty for item
