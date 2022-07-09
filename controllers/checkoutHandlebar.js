@@ -89,16 +89,13 @@ router.post('/checkout', loggedIn, async (req, res) => {
     if (!checkPayment) {
       return res
         .status(400)
-        .json({ error: 0, message: 'Insufficient balance amount.' });
+        .json('Insufficient balance amount.');
       // If there are empty stocks we res.send the array of empty stocked items
     } else if (checkEmptyStock.length > 0) {
       const emptyStockNames = checkEmptyStock
         .map((product) => product.product_name)
         .join(', ');
-      return res.status(400).json({
-        error: 1,
-        message: `Empty stock for items: ${emptyStockNames}`,
-      });
+      return res.status(400).json(`Empty stock for items: ${emptyStockNames}`);
     }
     await Users.update(
       { balance: resultingUserBalance },
@@ -113,7 +110,8 @@ router.post('/checkout', loggedIn, async (req, res) => {
     });
     //destroying current cart items for the user
     await Carts.destroy({ where: { user_id: req.session.user_id } });
-    res.status(200).json(resultingUserBalance);
+    res.status(200).json(`Checkout successful. 
+    Balance: $${resultingUserBalance}`);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

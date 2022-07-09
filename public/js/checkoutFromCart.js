@@ -1,7 +1,7 @@
 const paymentCheckoutBtn = document.getElementById('payment-checkout-btn');
 const btnMsgContainer = document.querySelector('#pcb-container');
 const checkoutForm = document.querySelector('#checkout-form');
-
+const pcbContainer = document.querySelector('#pcb-container')
 
 const checkoutFromCart = async targ => {
   targ.preventDefault()
@@ -40,10 +40,8 @@ const checkoutFromCart = async targ => {
 
   try {
     const response = await fetch('/cart/checkout', { method: 'POST' });
-    if (response.ok) {
-      return document.location.replace('/cart');
-    }
-    const data = await response.json();
+    const dbMessage = await response.json();
+
     if (response.ok) {
       const message = {
         tag: 'p',
@@ -51,12 +49,24 @@ const checkoutFromCart = async targ => {
           class: 'valid-auth',
         },
         // Display message on page
-        textContent: data,
+        textContent: dbMessage,
         // textContent: data.message,
-        appendTo: checkoutForm,
+        appendTo: pcbContainer,
       };
-      setTimeout(() => document.replace('/'), 2500);
-      return appendContent(message);
+      appendContent(message);
+      return setTimeout(() => document.location.replace('/'), 2500);
+    } else {
+      const message = {
+        tag: 'p',
+        setAttr: {
+          class: 'invalid-auth',
+        },
+        // Display message on page
+        textContent: dbMessage,
+        // textContent: data.message,
+        appendTo: pcbContainer,
+      };
+      appendContent(message);
     }
   } catch (err) {
     console.log(err);
